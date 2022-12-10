@@ -9,6 +9,7 @@ public class PlayerChange : MonoBehaviour
     public int ch = 0;
 
     public PlayerHealth[] playerHealths;
+    //자기자체 하는거 만들어야겠다.
     void Start()
     {
         player[1].SetActive(false);
@@ -28,20 +29,21 @@ public class PlayerChange : MonoBehaviour
     
     void Change()
     {
+        //플레이어 죽으면 바로 다른걸로 바뀌게
         if (Input.GetKeyDown(KeyCode.Alpha1) && ch != 0 && playerHealths[0].dead == false)
         {
-
             
             player[1].SetActive(false);
             player[2].SetActive(false);
             player[0].SetActive(true);
-
+            
             
             ch = 0;
             playerSelectFrame.Select(ch);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && ch != 1 && playerHealths[1].dead == false)
         {
+
             
             player[0].SetActive(false);
             player[2].SetActive(false);
@@ -59,5 +61,7 @@ public class PlayerChange : MonoBehaviour
             playerSelectFrame.Select(ch);
         }
         
+
+      
     }
 }

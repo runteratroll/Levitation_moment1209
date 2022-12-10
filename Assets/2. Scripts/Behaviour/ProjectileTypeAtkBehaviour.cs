@@ -16,11 +16,22 @@ public class ProjectileTypeAtkBehaviour : AtkBehaviour
         }
         //Ÿ���� �����ִ� �Ű��� 
 
-        pitch = Random.RandomRange(0.8f, 1.2f);
-        audioSource.pitch = pitch;
 
-        audioSource.Play();
-        particle.Play();
+        if(audioSource!= null)
+        {
+            pitch = Random.RandomRange(0.8f, 1.2f);
+            audioSource.pitch = pitch;
+
+
+
+            audioSource.Play();
+        }
+        
+        if(particle != null)
+        {
+            particle.Play();
+        }
+  
 
         Vector3 vecProjectile = posAtkStart?.position ?? transform.position; //�߻���ġ�� ���̶�� �ڱ���ġ����
 
