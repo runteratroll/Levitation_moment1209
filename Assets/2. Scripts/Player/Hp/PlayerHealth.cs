@@ -9,5 +9,10 @@ public class PlayerHealth : LivingEntity
         base.Start();
     }
 
+    public override void Die()
+    {
+        PlayerHPManager.Instance.PlayerHelathCheck(this); //그냥 여기서 deathCount++해도 될꺼같은데
+    }
+
 
 }

@@ -5,13 +5,13 @@ using UnityEngine;
 public class LivingEntity : MonoBehaviour, IDmgAble
 {
     
-    [SerializeField] protected int maxHealth;
+    [SerializeField] public int maxHealth;
     
     
     //HealthSystem healthSystem;
     [SerializeField]
-    protected int currentHealth;
-    protected bool dead;
+    public int currentHealth;
+    public bool dead;
 
     public bool getFlagLive => currentHealth > 0;
     public HpBar hpBar;
@@ -23,10 +23,12 @@ public class LivingEntity : MonoBehaviour, IDmgAble
         
     }
 
-
+    //3명이 죽으면 다시시작
     public virtual void Die()
     {
-        dead = true;
+        //dead = true;
+
+
         Debug.Log("죽음");
     }
 
