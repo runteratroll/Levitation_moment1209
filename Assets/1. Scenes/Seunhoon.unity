@@ -593,6 +593,22 @@ PrefabInstance:
       propertyPath: player.Array.data[2]
       value: 
       objectReference: {fileID: 5420998721237131737}
+    - target: {fileID: 7695243918929559307, guid: 48fc7c9f02f22b8448885d1639cdcc5c, type: 3}
+      propertyPath: playerHealths.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7695243918929559307, guid: 48fc7c9f02f22b8448885d1639cdcc5c, type: 3}
+      propertyPath: playerHealths.Array.data[0]
+      value: 
+      objectReference: {fileID: 9068482495443205051}
+    - target: {fileID: 7695243918929559307, guid: 48fc7c9f02f22b8448885d1639cdcc5c, type: 3}
+      propertyPath: playerHealths.Array.data[1]
+      value: 
+      objectReference: {fileID: 4868711235384792623}
+    - target: {fileID: 7695243918929559307, guid: 48fc7c9f02f22b8448885d1639cdcc5c, type: 3}
+      propertyPath: playerHealths.Array.data[2]
+      value: 
+      objectReference: {fileID: 8361771986509795695}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48fc7c9f02f22b8448885d1639cdcc5c, type: 3}
 --- !u!1001 &413326350
