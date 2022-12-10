@@ -9,8 +9,11 @@ public class SecondaryBattery : MonsterFSM_Behaviour
     //관찰자 패턴으로 화면 흔들리게
 
     public GameObject healthBar;
+    public ShipEnemy shipEnemy;
+
     private void Awake()
     {
+        shipEnemy = transform.root.gameObject.GetComponent<ShipEnemy>();
         hp = maxHp;
     }
 
@@ -47,7 +50,7 @@ public class SecondaryBattery : MonsterFSM_Behaviour
  
     public override void OnExecuteAttack(int attackIndex)
     {
-        if(getFlagLive)
+        if(getFlagLive) //살아있을때만 공격하기
         {
             base.OnExecuteAttack(attackIndex);
         }
@@ -68,6 +71,8 @@ public class SecondaryBattery : MonsterFSM_Behaviour
         hp -= dmg;
         if(hp <= 0) //-가 안되게 하고 
         {
+
+            //
             hp = 0;
         }
 
@@ -88,11 +93,11 @@ public class SecondaryBattery : MonsterFSM_Behaviour
         }
         else
         {
-
+            shipEnemy.shipHealth -= 10000f;
             //
             //맞는 소리
             //맞는 이펙트 넣기
-            
+
             //죽은 상태면 stateDie로 상태 전환 
             fsmManager.ChangeState<stateMainBatteryDie>(); //
 

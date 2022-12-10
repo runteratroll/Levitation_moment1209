@@ -25,7 +25,7 @@ public class stateAirPlaneDie : State<MonsterFSM>
 
     public override void OnUpdate(float deltaTime)
     {
-        if (stateMachine.getStateDurationTime > 0.5f)
+        if (stateMachine.getStateDurationTime > 0.1f)
         {
             Debug.Log("ав╠Б");
             GameObject.Destroy(stateMachineClass.gameObject);

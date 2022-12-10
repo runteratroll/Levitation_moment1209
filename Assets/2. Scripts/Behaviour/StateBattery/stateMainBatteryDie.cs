@@ -5,7 +5,6 @@ using UnityEngine;
 public class stateMainBatteryDie : State<MonsterFSM>
 {
     private Animator animator;
-
     protected int flagLive = Animator.StringToHash("flagLive");
     public override void OnAwake()
     {
@@ -14,6 +13,8 @@ public class stateMainBatteryDie : State<MonsterFSM>
 
     public override void OnStart()
     {
+
+
         animator?.SetBool(flagLive, false);
     }
 

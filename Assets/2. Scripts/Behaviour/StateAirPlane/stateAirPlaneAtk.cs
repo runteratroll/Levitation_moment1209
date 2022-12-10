@@ -50,8 +50,8 @@ public class stateAirPlaneAtk : State<MonsterFSM>
 
     public void delegateAtkStateStart()
     {
+        stateMachine.ChangeState<stateAirPlaneExit>();
 
-        
         UnityEngine.Debug.Log("delegateAtkStateStart()");
     }
 
@@ -61,7 +61,7 @@ public class stateAirPlaneAtk : State<MonsterFSM>
 
         //끝나면은 이제 탈출하는 State
         UnityEngine.Debug.Log("delegateAtkStateEnd()");
-        stateMachine.ChangeState<stateAirPlaneExit>();
+       
 
     }
 

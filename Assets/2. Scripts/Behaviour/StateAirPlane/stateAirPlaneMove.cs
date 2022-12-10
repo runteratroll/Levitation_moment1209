@@ -39,14 +39,15 @@ public class stateAirPlaneMove : State<MonsterFSM>
         Debug.Log("stateMachineClass.getFlagAtk : " + stateMachineClass.getFlagAtk);
         if (target && !stateMachineClass.getFlagAtk)
         {
-    
+            
 
             dir = target.transform.position - stateMachineClass.transform.position;
 
-            dir.y += 0.5f;
+            //float dist = Vector3.Magnitude(dir);
 
-            rigidbody.velocity = dir * Time.deltaTime * 100f;
-
+           //Vector3 dirDown =  Vector3.Lerp(stateMachineClass.transform.position, dir, 0.5f);
+            rigidbody.velocity = dir * Time.deltaTime * 20f ;
+            
 
             //float distance = Vector3.Distance(target.transform.position, stateMachineClass.transform.position);
 

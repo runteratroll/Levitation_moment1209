@@ -7,7 +7,7 @@ public class stateAirPlaneExit : State<MonsterFSM>
 
     public override void OnStart()
     {
-        stateMachineClass.transform.DOLocalMove(stateMachineClass.transform.position + stateMachineClass.transform.up * 10f + stateMachineClass.transform.forward * 20f , 1f).OnComplete(() =>
+        stateMachineClass.transform.DOLocalMove(stateMachineClass.transform.position + stateMachineClass.transform.up * 15f + stateMachineClass.transform.forward * 30f , 3f).OnComplete(() =>
         {
             stateMachine.ChangeState<stateAirPlaneDie>();
         });

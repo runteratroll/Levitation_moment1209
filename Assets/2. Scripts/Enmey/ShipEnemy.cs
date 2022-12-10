@@ -6,10 +6,12 @@ public class ShipEnemy : MonsterFSM_Behaviour
 {
 
     public SecondaryBattery[] secondaryBatterys;
-
+    public MainBattery[] mainBatteries;
 
     public ShipEnemyHealthBar shipEnemyHealthBar;
 
+
+    public float shipHealth;
     protected override void Start()
     {
 
@@ -37,6 +39,12 @@ public class ShipEnemy : MonsterFSM_Behaviour
         {
             maxHp += tem.hp;
         }
+        foreach (MainBattery tem in mainBatteries)
+        {
+            maxHp += tem.hp;
+        }
+
+        maxHp += shipHealth;
     }
 
 
@@ -58,6 +66,22 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
             batterysHp += tem.hp;
         }
+        foreach(MainBattery tem in mainBatteries)
+        {
+            if (tem.hp <= 0) //함포체력이 0보다 작거나 같다면
+            {
+                tem.hp = 0;
+            }
+
+            batterysHp += tem.hp;
+        }
+
+        if(batterysHp <= 0)
+        {
+            shipHealth = 0;
+        }
+
+        batterysHp += shipHealth;
         hp = batterysHp;
 
 
@@ -86,7 +110,12 @@ public class ShipEnemy : MonsterFSM_Behaviour
             return;
         }
 
+        shipHealth -= dmg;
 
+        if( shipHealth <= 0)
+        {
+            shipHealth = 0;
+        }
        // hp -= dmg;
         //healthSystem.Damage(dmg); //이것도 자동으로 처리해주는건데
         //HealthSystem

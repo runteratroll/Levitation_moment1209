@@ -27,7 +27,7 @@ public class stateAirPlaneIdle : State<MonsterFSM>
     protected int hashMoveSpd = Animator.StringToHash("MoveSpd");
     public override void OnUpdate(float deltaTime)
     {
-        rigid.velocity = stateMachineClass.transform.forward  * 30f;
+        rigid.velocity = stateMachineClass.transform.forward  * 10f;
 
         Debug.Log("되니?");
         Debug.Log("되니앞에는 target이 있는지 체크");

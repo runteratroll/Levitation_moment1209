@@ -5,8 +5,10 @@ using UnityEngine;
 public class MainBattery : MonsterFSM_Behaviour
 {
     public GameObject healthBar;
+    public ShipEnemy shipEnemy;
     private void Awake()
     {
+        shipEnemy = transform.root.gameObject.GetComponent<ShipEnemy>();
         hp = maxHp;
     }
 
@@ -87,6 +89,7 @@ public class MainBattery : MonsterFSM_Behaviour
         else
         {
 
+            shipEnemy.shipHealth -= 20000f;
             //
             //맞는 소리
             //맞는 이펙트 넣기
