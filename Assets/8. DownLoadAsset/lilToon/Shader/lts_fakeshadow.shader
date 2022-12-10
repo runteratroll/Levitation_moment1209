@@ -160,7 +160,7 @@ Shader "_lil/[Optional] lilToonFakeShadow"
             #pragma skip_variants LIGHTMAP_ON DYNAMICLIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE
             #define LIL_SRP_VERSION_MAJOR 12
             #define LIL_SRP_VERSION_MINOR 1
-            #define LIL_SRP_VERSION_PATCH 7
+            #define LIL_SRP_VERSION_PATCH 8
 
             #pragma target 4.5
             #pragma fragmentoption ARB_precision_hint_fastest
@@ -350,7 +350,7 @@ Shader "_lil/[Optional] lilToonFakeShadow"
             #pragma skip_variants LIGHTMAP_ON DYNAMICLIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE
             #define LIL_SRP_VERSION_MAJOR 12
             #define LIL_SRP_VERSION_MINOR 1
-            #define LIL_SRP_VERSION_PATCH 7
+            #define LIL_SRP_VERSION_PATCH 8
 
             #pragma target 3.5
             #pragma fragmentoption ARB_precision_hint_fastest
