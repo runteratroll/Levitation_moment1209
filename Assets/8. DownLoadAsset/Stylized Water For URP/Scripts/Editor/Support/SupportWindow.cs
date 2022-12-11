@@ -117,7 +117,6 @@ namespace StylizedWater
             return window;
         }
 
-       
         private void OnEnable()
         {
             titleContent.text = "Support";
