@@ -15,7 +15,7 @@ public class stateMainBatteryDie : State<MonsterFSM>
 
     private bool isExplosion;
 
-    public stateMainBatteryDie(GameObject effecf, ShipEnemy shipEnemy, float dieDamage , GameObject fireSmoke = null)
+    public stateMainBatteryDie(GameObject effecf = null, ShipEnemy shipEnemy = null, float dieDamage  = 0f, GameObject fireSmoke = null)
     {
         explosion = effecf;
         shipHealth = shipEnemy;

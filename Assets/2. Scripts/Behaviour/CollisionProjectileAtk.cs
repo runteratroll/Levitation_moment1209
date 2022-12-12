@@ -9,7 +9,6 @@ public class CollisionProjectileAtk : MonoBehaviour
     public GameObject ObjProjectileHitEffect; 
     public AudioClip projectileStartClip; 
     public AudioClip projectileHitClip;
-     
     protected bool getFlagProjectileCollid; 
     protected Rigidbody rigidbody;
 

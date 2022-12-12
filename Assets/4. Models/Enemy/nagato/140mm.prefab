@@ -366,6 +366,7 @@ MonoBehaviour:
   healthBar: {fileID: 7933872996790585587, guid: 16297bb79bfe96741b22ab330953987f, type: 3}
   shipEnemy: {fileID: 0}
   explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
 --- !u!136 &2097407120455078311
 CapsuleCollider:
   m_ObjectHideFlags: 0

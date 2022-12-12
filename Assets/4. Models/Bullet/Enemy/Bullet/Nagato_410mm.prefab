@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3675041851814238302}
   - component: {fileID: -8551049534158284398}
   - component: {fileID: 8853597342371308217}
-  - component: {fileID: -4509560590492044946}
   - component: {fileID: -6400198141009581000}
+  - component: {fileID: 5791457944101135555}
   m_Layer: 6
   m_Name: Nagato_410mm
   m_TagString: Untagged
@@ -116,27 +116,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.012592594, y: 0.012592594, z: 0.033182047}
   m_Center: {x: 0, y: 0, z: 0.008195963}
---- !u!114 &-4509560590492044946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2882483428165122443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a48722f74f6f96418efcf0237208004, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileSpd: 50
-  ObjProjectileStartEffect: {fileID: 0}
-  ObjProjectileHitEffect: {fileID: 0}
-  projectileStartClip: {fileID: 0}
-  projectileHitClip: {fileID: 0}
-  damage: 1625
-  attackBehaviour: {fileID: 0}
-  projectileParents: {fileID: 0}
-  target: {fileID: 0}
 --- !u!96 &-6400198141009581000
 TrailRenderer:
   serializedVersion: 2
@@ -245,3 +224,25 @@ TrailRenderer:
   m_MinVertexDistance: 0.05
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &5791457944101135555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2882483428165122443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 121e7072080809846804faad0387b06f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpd: 50
+  ObjProjectileStartEffect: {fileID: 0}
+  ObjProjectileHitEffect: {fileID: 0}
+  projectileStartClip: {fileID: 0}
+  projectileHitClip: {fileID: 0}
+  damage: 1625
+  attackBehaviour: {fileID: 0}
+  projectileParents: {fileID: 0}
+  target: {fileID: 0}
+  damageAround: {fileID: 3753530267161176618, guid: a1987261414406c488a5fef35205a9f7, type: 3}
