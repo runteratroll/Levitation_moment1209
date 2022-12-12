@@ -10,10 +10,12 @@ public class SecondaryBattery : MonsterFSM_Behaviour
 
     public GameObject healthBar;
     public ShipEnemy shipEnemy;
-
+    public GameObject explosionEffect;
+    public GameObject fireSmoke;
     private void Awake()
     {
         shipEnemy = transform.root.gameObject.GetComponent<ShipEnemy>();
+        
         hp = maxHp;
     }
 
@@ -24,7 +26,7 @@ public class SecondaryBattery : MonsterFSM_Behaviour
         //Debug.Log("세컨더리 배터리");
         fsmManager = new StateMachine<MonsterFSM>(this, new stateIdleBattery());
         fsmManager.AddStateList(new stateAtkBattery());
-        fsmManager.AddStateList(new stateMainBatteryDie());
+        fsmManager.AddStateList(new stateMainBatteryDie(explosionEffect, shipEnemy,10000f , fireSmoke));
 
         OnAwakeAtkBehaviour();
 
@@ -93,7 +95,7 @@ public class SecondaryBattery : MonsterFSM_Behaviour
         }
         else
         {
-            shipEnemy.shipHealth -= 10000f;
+            
             //
             //맞는 소리
             //맞는 이펙트 넣기

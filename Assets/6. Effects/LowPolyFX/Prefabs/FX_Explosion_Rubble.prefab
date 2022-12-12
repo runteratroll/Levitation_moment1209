@@ -6150,10 +6150,10 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 0.9254902, b: 0.68235296, a: 1}
-        key1: {r: 1, g: 0.7647059, b: 0, a: 1}
-        key2: {r: 1, g: 0, b: 0, a: 1}
-        key3: {r: 0.42745098, g: 0, b: 0, a: 0}
-        key4: {r: 1, g: 0, b: 0, a: 0}
+        key1: {r: 0, g: 0.7249274, b: 1, a: 1}
+        key2: {r: 0, g: 0.38262558, b: 1, a: 1}
+        key3: {r: 0.008471966, g: 0, b: 0.42745098, a: 0}
+        key4: {r: 0.008471966, g: 0, b: 0.42745098, a: 0}
         key5: {r: 1, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
@@ -9624,16 +9624,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191186}
-  m_LocalRotation: {x: -0.7008359, y: 0, z: 0, w: 0.7133226}
+  m_LocalRotation: {x: -0.7008346, y: 0, z: 0, w: 0.7133239}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 462712}
   - {fileID: 452148}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -88.988, y: 0, z: 0}
 --- !u!198 &19821056
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -9717,7 +9717,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 15
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -9752,7 +9752,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 20
+      scalar: 10
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -10616,7 +10616,7 @@ ParticleSystem:
         m_RotationOrder: 4
     y:
       serializedVersion: 2
-      minMaxState: 1
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -10669,7 +10669,7 @@ ParticleSystem:
         m_RotationOrder: 4
     z:
       serializedVersion: 2
-      minMaxState: 1
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -10896,7 +10896,7 @@ ParticleSystem:
         key1: {r: 1, g: 0.7647059, b: 0, a: 1}
         key2: {r: 1, g: 0, b: 0, a: 1}
         key3: {r: 0.42745098, g: 0, b: 0, a: 0}
-        key4: {r: 1, g: 0, b: 0, a: 0}
+        key4: {r: 0.42745098, g: 0, b: 0, a: 0}
         key5: {r: 1, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}

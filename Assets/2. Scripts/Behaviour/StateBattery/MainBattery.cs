@@ -5,7 +5,11 @@ using UnityEngine;
 public class MainBattery : MonsterFSM_Behaviour
 {
     public GameObject healthBar;
-    public ShipEnemy shipEnemy;
+    private ShipEnemy shipEnemy;
+    public float dieDamage;
+
+    public GameObject explosionEffect;
+    public GameObject fireSmoke;
     private void Awake()
     {
         shipEnemy = transform.root.gameObject.GetComponent<ShipEnemy>();
@@ -21,7 +25,7 @@ public class MainBattery : MonsterFSM_Behaviour
         //Debug.Log("세컨더리 배터리");
         fsmManager = new StateMachine<MonsterFSM>(this, new stateIdleBattery());
         fsmManager.AddStateList(new stateAtkBattery());
-        fsmManager.AddStateList(new stateMainBatteryDie());
+        fsmManager.AddStateList(new stateMainBatteryDie(explosionEffect, shipEnemy, dieDamage , fireSmoke));
 
         OnAwakeAtkBehaviour();
 
@@ -89,7 +93,7 @@ public class MainBattery : MonsterFSM_Behaviour
         else
         {
 
-            shipEnemy.shipHealth -= 20000f;
+    
             //
             //맞는 소리
             //맞는 이펙트 넣기

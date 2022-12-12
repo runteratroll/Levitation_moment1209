@@ -6,6 +6,22 @@ public class stateMainBatteryDie : State<MonsterFSM>
 {
     private Animator animator;
     protected int flagLive = Animator.StringToHash("flagLive");
+
+    private GameObject explosion;
+    private ShipEnemy shipHealth;
+    private GameObject fireSomok;
+    private float dmg;
+
+
+    private bool isExplosion;
+
+    public stateMainBatteryDie(GameObject effecf, ShipEnemy shipEnemy, float dieDamage , GameObject fireSmoke = null)
+    {
+        explosion = effecf;
+        shipHealth = shipEnemy;
+        dmg = dieDamage;
+        fireSomok = fireSmoke;
+    }
     public override void OnAwake()
     {
         animator = stateMachineClass.GetComponent<Animator>();
@@ -13,19 +29,24 @@ public class stateMainBatteryDie : State<MonsterFSM>
 
     public override void OnStart()
     {
-
+        //fire
 
         animator?.SetBool(flagLive, false);
+
+        GameObject.Instantiate(fireSomok, stateMachineClass.transform.position, Quaternion.identity);
     }
 
     public override void OnUpdate(float deltaTime)
     {
 
-        ////플레이어 Hp가 0이면
-        //if (stateMachine.getStateDurationTime > 3.0f)
-        //{
-        //    GameObject.Destroy(stateMachineClass.gameObject);
-        //}
+        //플레이어 Hp가 0이면
+        if (stateMachine.getStateDurationTime > 3.0f && !isExplosion)
+        {
+            isExplosion = true;
+            GameObject.Instantiate(explosion, stateMachineClass.transform.position, Quaternion.identity);
+            shipHealth.shipHealth -= dmg;
+           // GameObject.Destroy(stateMachineClass.gameObject);
+        }
     }
 
     public override void OnEnd() {
