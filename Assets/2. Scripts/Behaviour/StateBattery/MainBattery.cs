@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(BoxCollider))]
+[RequireComponent(typeof(stateAtkController))]
+[RequireComponent(typeof(LookAtPlayer))]
+[RequireComponent(typeof(ProjectileTypeAtkBehaviour))]
+
 public class MainBattery : MonsterFSM_Behaviour
 {
     public GameObject healthBar;
@@ -13,16 +19,18 @@ public class MainBattery : MonsterFSM_Behaviour
     private void Awake()
     {
         shipEnemy = transform.root.gameObject.GetComponent<ShipEnemy>();
+
+        //gameObject.AddComponent
         hp = maxHp;
     }
 
 
-    //monsterFSMÀº ±×³É 
+    //monsterFSMï¿½ï¿½ ï¿½×³ï¿½ 
     // Start is called before the first frame update
     protected override void Start()
     {
 
-        //Debug.Log("¼¼ÄÁ´õ¸® ¹èÅÍ¸®");
+        //Debug.Log("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Í¸ï¿½");
         fsmManager = new StateMachine<MonsterFSM>(this, new stateIdleBattery());
         fsmManager.AddStateList(new stateAtkBattery());
         fsmManager.AddStateList(new stateMainBatteryDie(explosionEffect, shipEnemy, dieDamage , fireSmoke));
@@ -60,17 +68,17 @@ public class MainBattery : MonsterFSM_Behaviour
 
     public override void setDmg(int dmg, GameObject atkEffectPrefab)
     {
-        Debug.Log("¼Âµ¥¹ÌÁö");
-        //Á×¾ú³Ä ?
+        Debug.Log("ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½");
+        //ï¿½×¾ï¿½ï¿½ï¿½ ?
         if (!getFlagLive)
         {
-            //µ¥¹ÌÁö Ã³¸® ¾ÈÇÔ 
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
             return;
         }
 
 
         hp -= dmg;
-        if (hp <= 0) //-°¡ ¾ÈµÇ°Ô ÇÏ°í 
+        if (hp <= 0) //-ï¿½ï¿½ ï¿½ÈµÇ°ï¿½ ï¿½Ï°ï¿½ 
         {
             hp = 0;
         }
@@ -81,24 +89,24 @@ public class MainBattery : MonsterFSM_Behaviour
 
         if (atkEffectPrefab)
         {
-            Instantiate(atkEffectPrefab, weaponHitTransform); //µ¥¹ÌÁö ÁÙ‹š, ¾îÆåÆ®ÀÌÆåÆ®µµ ÁÖ³×
+            Instantiate(atkEffectPrefab, weaponHitTransform); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù‹ï¿½, ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ö³ï¿½
         }
 
-        //µ¥¹ÌÁö Â÷°¨ ÇÏ°í 0 ÀÌÇÏ°¡ µÇ¸é Á×Àº »óÅÂ°¡ µÇ°ÚÁö
-        //±Ùµ¥ µ¥¹ÌÁö Â÷°¨ÇØµµ »ì¾Æ ÀÖ´Â »óÅÂ¸é 
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï°ï¿½ 0 ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â°ï¿½ ï¿½Ç°ï¿½ï¿½ï¿½
+        //ï¿½Ùµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½Â¸ï¿½ 
         if (getFlagLive)
         {
-            //animator?.SetTrigger("hitTriggerHash"); /¸Â´Â ¾Ö´Ï¸ÞÀÌ¼Ç
+            //animator?.SetTrigger("hitTriggerHash"); /ï¿½Â´ï¿½ ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½
         }
         else
         {
 
     
             //
-            //¸Â´Â ¼Ò¸®
-            //¸Â´Â ÀÌÆåÆ® ³Ö±â
+            //ï¿½Â´ï¿½ ï¿½Ò¸ï¿½
+            //ï¿½Â´ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Ö±ï¿½
 
-            //Á×Àº »óÅÂ¸é stateDie·Î »óÅÂ ÀüÈ¯ 
+            //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¸ï¿½ stateDieï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ 
             fsmManager.ChangeState<stateMainBatteryDie>(); //
 
         }
