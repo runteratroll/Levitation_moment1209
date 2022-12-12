@@ -739,17 +739,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.28622296, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.28621504, b: 0.50980073, a: 1}
   colorDepth: 0.84
-  horizonColor: {r: 0, g: 0.22739947, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22739154, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30190927, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30190134, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20387274, g: 0.30975237, b: 0.517647, a: 1}
+  underwaterColor: {r: 0.20386523, g: 0.30974445, b: 0.517647, a: 1}
   underwaterColorStrength: 1
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -40667,6 +40667,10 @@ PrefabInstance:
     - target: {fileID: 8476417569628319961, guid: 77b2ddc2340a786469e0002b2d4504b2, type: 3}
       propertyPath: m_Name
       value: Nagato
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476417569628319961, guid: 77b2ddc2340a786469e0002b2d4504b2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9145008133865941603, guid: 77b2ddc2340a786469e0002b2d4504b2, type: 3}
       propertyPath: m_RootOrder
