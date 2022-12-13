@@ -26541,6 +26541,10 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5948837300911716584, guid: 8a06decc31163ca4a8ab2aca2ecd3110, type: 3}
+      propertyPath: dieDamage
+      value: 30000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948837300911716584, guid: 8a06decc31163ca4a8ab2aca2ecd3110, type: 3}
       propertyPath: explosionEffect
       value: 
       objectReference: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}

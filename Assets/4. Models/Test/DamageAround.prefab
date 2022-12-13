@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5221155122711312181}
   - component: {fileID: 1817382923561011525}
   - component: {fileID: 4109355184941569614}
+  - component: {fileID: 5970291954310997197}
   m_Layer: 0
   m_Name: DamageAround
-  m_TagString: Untagged
+  m_TagString: DamageAround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3753530267161176618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1, y: 0.20000005, z: -80}
-  m_LocalScale: {x: 4, y: 0.16, z: 4}
+  m_LocalScale: {x: 5.72, y: 0.22879998, z: 5.72}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,3 +99,15 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &5970291954310997197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3753530267161176618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b53ebf4bad8e72e4abc73aff0f61434b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
