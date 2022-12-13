@@ -5,12 +5,11 @@ using UnityEngine;
 public class MonsterFSM : MonoBehaviour
 {
 
-    protected StateMachine<MonsterFSM> fsmManager; //fsmManager¿¡ Statemachine<MonsterFSM>À» »ý¼º
+    protected StateMachine<MonsterFSM> fsmManager; //fsmManagerï¿½ï¿½ Statemachine<MonsterFSM>ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     public StateMachine<MonsterFSM> FsmManager => fsmManager;
 
     protected UnityEngine.AI.NavMeshAgent agent;
     protected Animator animator;
-
 
 
     public FieldofCollider foc;
@@ -21,12 +20,10 @@ public class MonsterFSM : MonoBehaviour
       
     protected virtual void Start()
     {
-
         fsmManager = new StateMachine<MonsterFSM>(this, new stateIdle());
         fsmManager.AddStateList(new stateMove());
         fsmManager.AddStateList(new stateAtk());
-
-
+        
 
 
     }
@@ -38,7 +35,7 @@ public class MonsterFSM : MonoBehaviour
 
     public virtual Transform SearchMonster()
     {
-        return target; //Å¸°Ù 
+        return target; //Å¸ï¿½ï¿½ 
     }
 
     public float atkRange;

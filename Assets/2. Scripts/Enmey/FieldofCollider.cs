@@ -4,11 +4,29 @@ using UnityEngine;
 
 public class FieldofCollider : MonoBehaviour
 {
-
+    [Header("RotationConstraint ì¶”ê°€í•˜ê¸°!!!")]
 
     public LookAtPlayer lookAtPlayer;
-    public Transform target; //ÀÌ°É ´Ù¸¥»ç¶÷ÀÌ ¾Ë¼öÀÖ°Ô
+    public Transform target; 
 
+
+    
+
+    private void Awake()
+    {
+        //Debug.Log("LookAtPlayerCheck");
+        
+
+        // for(int i = 0; i < transform.childCount; i++)
+        // {
+        //     transform.GetChild(i).gameObject.AddComponent<FieldofCollider>(); 
+        // }
+    }
+    
+    private void Start()
+    {
+        lookAtPlayer = transform.parent.GetComponentInParent<LookAtPlayer>();
+    }
 
     private void OnTriggerStay(Collider other)
     {
@@ -16,9 +34,9 @@ public class FieldofCollider : MonoBehaviour
         if (other.CompareTag("Player"))
         {
 
-            //¾Æ¸¶µµ taretÀÌ ÀÖ´Ù ¹Ù·Î »ç¶óÁö´Ï±î ±×·±°Å¾Æ´Ò±î?
+            //ï¿½Æ¸ï¿½ï¿½ï¿½ taretï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Ù·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½×·ï¿½ï¿½Å¾Æ´Ò±ï¿½?
             target = other.transform;
-            Debug.Log("Æ®¸®°Å ¼¼ÀÌ" + other.gameObject.name);
+            Debug.Log("Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½" + other.gameObject.name);
 
             if(lookAtPlayer != null)
             {
@@ -29,20 +47,20 @@ public class FieldofCollider : MonoBehaviour
 
 
 
-            //¿©±â¿¡ ½î´Â ÄÚµå
-            //ÀûÇÑÅ× ½î´Â ÄÚµå 
-            //Àû°¨Áö Çß´Ù´Â °É ¾Ë¸®´Â ÄÚµå 
-            // µ¥¹ÌÁö¿Í ÀÌÆåÆ®¸¦ ³ÖÀ¸¸é ½ò¶§ ÇÏ´Â ÄÚµå, 
-            //ÃÑ¾Ë±×ÀÚÃ¼¿¡ ¹ß»çÄÚµå ½î´Â ÄÚµå ³Ö±â
-            // ±×¸®°í ÄðÅ¸ÀÓ¸¶´Ù ½î´Â ÄÚµå ¸¸µé±â TIme.timeÇÏ±â
-            //ÄðÅ¸ÀÓ¾µÀÏÀÌ ¸¹Àºµ¥ ÀÌ°É ¹º°¡ ÇÔ¼öÈ­ ½ÃÅ°¸é µÇÁö ¾ÊÀ»±î? 
-            //FUncitonTImerÇÏ¸é µÉÁöµµ ÀÌ°É ¹Ýº¹ÇÏ¸é µÇ±äÇÏ´Âµ¥, °è¼Ó ³»ºÎÀûÀ¸·Î ¸¸µé ÀÌÀ¯´Â ¾øÀÜÇ×
+            //ï¿½ï¿½ï¿½â¿¡ ï¿½ï¿½ï¿½ ï¿½Úµï¿½
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Úµï¿½ 
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß´Ù´ï¿½ ï¿½ï¿½ ï¿½Ë¸ï¿½ï¿½ï¿½ ï¿½Úµï¿½ 
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½Úµï¿½, 
+            //ï¿½Ñ¾Ë±ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ß»ï¿½ï¿½Úµï¿½ ï¿½ï¿½ï¿½ ï¿½Úµï¿½ ï¿½Ö±ï¿½
+            // ï¿½×¸ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½Ó¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ TIme.timeï¿½Ï±ï¿½
+            //ï¿½ï¿½Å¸ï¿½Ó¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½È­ ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? 
+            //FUncitonTImerï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì°ï¿½ ï¿½Ýºï¿½ï¿½Ï¸ï¿½ ï¿½Ç±ï¿½ï¿½Ï´Âµï¿½, ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         }
        
     }
 
     private void OnTriggerExit(Collider other)
     {
-        target = null;
+        //target = null;
     }
 }

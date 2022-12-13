@@ -26,6 +26,8 @@ public class LookAtPlayer : MonoBehaviour
 
     public void LookPlayer()
     {
+
+        Debug.Log("lookPlayerì‹¤í–‰");
         Vector3 dir = player.position - transform.position;
 
         Quaternion p = Quaternion.LookRotation(dir);
@@ -39,7 +41,7 @@ public class LookAtPlayer : MonoBehaviour
 
         transform.rotation = Quaternion.RotateTowards(
             transform.rotation,
-            Quaternion.Euler(new Vector3(0, y, z)), //¿·, 
+            Quaternion.Euler(new Vector3(0, y, z)), //ï¿½ï¿½, 
             180 * Time.deltaTime / degSec);
     }
   

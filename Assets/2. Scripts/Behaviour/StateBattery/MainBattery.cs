@@ -16,12 +16,40 @@ public class MainBattery : MonsterFSM_Behaviour
 
     public GameObject explosionEffect;
     public GameObject fireSmoke;
+
+    public int colliderAngle = 360;
+    public float colliderSize = 100;
+    public enum ColliderArrow 
+    {
+        Front,
+        Back
+    }
+    public ColliderArrow colliderArrow;
+    private ColliderManger colliderManger;
+
+    private GameObject coll;
     private void Awake()
     {
         shipEnemy = transform.root.gameObject.GetComponent<ShipEnemy>();
-
-        //gameObject.AddComponent
+        colliderManger = FindObjectOfType<ColliderManger>();
+        colliderAngle = (int)(colliderAngle * 0.1f);
+        colliderSize = colliderSize * 0.01f;
         hp = maxHp;
+
+        if(colliderArrow == ColliderArrow.Front)
+        {
+            coll = Instantiate( colliderManger.fieldofCollidersF[colliderAngle].gameObject, Vector3.zero , Quaternion.identity);
+        }
+        if(colliderArrow == ColliderArrow.Back)
+        {
+            coll = Instantiate( colliderManger.fieldofCollidersB[colliderAngle].gameObject, Vector3.zero , Quaternion.identity);
+        }
+
+        coll.transform.parent = transform;
+        coll.transform.localScale = new Vector3(colliderSize,colliderSize,colliderSize);
+        coll.transform.localPosition = new Vector3(0,0,0);
+        
+        foc = coll.GetComponent<FieldofCollider>();
     }
 
 
@@ -29,11 +57,9 @@ public class MainBattery : MonsterFSM_Behaviour
     // Start is called before the first frame update
     protected override void Start()
     {
-
-        //Debug.Log("�������� ���͸�");
         fsmManager = new StateMachine<MonsterFSM>(this, new stateIdleBattery());
         fsmManager.AddStateList(new stateAtkBattery());
-        fsmManager.AddStateList(new stateMainBatteryDie(explosionEffect, shipEnemy, dieDamage , fireSmoke));
+        fsmManager.AddStateList(new stateMainBatteryDie(explosionEffect, shipEnemy, dieDamage, fireSmoke));
 
         OnAwakeAtkBehaviour();
 
@@ -101,7 +127,7 @@ public class MainBattery : MonsterFSM_Behaviour
         else
         {
 
-    
+
             //
             //�´� �Ҹ�
             //�´� ����Ʈ �ֱ�
@@ -115,6 +141,5 @@ public class MainBattery : MonsterFSM_Behaviour
     {
         OnCheckAtkBehaviour();
         base.Update();
-
     }
 }
