@@ -6,4 +6,6 @@ public class ColliderManger : MonoBehaviour
 {
     public FieldofCollider[] fieldofCollidersF;
     public FieldofCollider[] fieldofCollidersB;
+    public FieldofCollider[] fieldofCollidersL;
+    public FieldofCollider[] fieldofCollidersR;
 }

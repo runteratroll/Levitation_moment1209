@@ -23,6 +23,9 @@ public class MainBattery : MonsterFSM_Behaviour
     {
         Front,
         Back
+        ,
+        Left,
+        Right
     }
     public ColliderArrow colliderArrow;
     private ColliderManger colliderManger;
@@ -43,6 +46,14 @@ public class MainBattery : MonsterFSM_Behaviour
         if(colliderArrow == ColliderArrow.Back)
         {
             coll = Instantiate( colliderManger.fieldofCollidersB[colliderAngle].gameObject, Vector3.zero , Quaternion.identity);
+        }
+        if(colliderArrow == ColliderArrow.Left)
+        {
+            coll = Instantiate( colliderManger.fieldofCollidersL[colliderAngle].gameObject, Vector3.zero , Quaternion.identity);
+        }
+        if(colliderArrow == ColliderArrow.Right)
+        {
+            coll = Instantiate( colliderManger.fieldofCollidersR[colliderAngle].gameObject, Vector3.zero , Quaternion.identity);
         }
 
         coll.transform.parent = transform;

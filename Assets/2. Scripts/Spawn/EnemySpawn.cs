@@ -10,9 +10,9 @@ public class EnemySpawn : MonoBehaviour
 
     public GameObject nextWaveButton;
 
-    [SerializeField] private int stageWave = 0; // ±âº»ÀûÀÎ ¿þÀÌºê
-    [SerializeField] private int wave = 0; // ÀÛÀº ¿þÀÌºê 3¹ø ±ú¸é ½ºÅ×ÀÌÁö ¿þÀÌºê Áõ°¡µÊ
-    [SerializeField] private bool waveRun = false; // ¿þÀÌºê ½ÇÇàÁßÀÎ°¡
+    [SerializeField] private int stageWave = 0; // ï¿½âº»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìºï¿½
+    [SerializeField] private int wave = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìºï¿½ 3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    [SerializeField] private bool waveRun = false; // ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î°ï¿½
 
     private void Awake()
     {
@@ -26,7 +26,7 @@ public class EnemySpawn : MonoBehaviour
     }
 
     /// <summary>
-    /// ¿þÀÌºê ¹öÆ° ´­·¶À»¶§ ½ÇÇàµÇ´Â³ð
+    /// ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç´Â³ï¿½
     /// </summary>
     public void WaveRun()
     {
@@ -37,13 +37,13 @@ public class EnemySpawn : MonoBehaviour
     }
 
     /// <summary>
-    /// ¿þÀÌºê Àü¹ÝÀûÀ» °ü¸®
+    /// ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     /// </summary>
     private void Wavebool()
     {
         if (waveRun)
         {
-            //ÀûÀÌ ¾ø´Â°É È®ÀÎ½Ã
+            //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â°ï¿½ È®ï¿½Î½ï¿½
             if (!IsEnemyLive())
             {
                 wave++;
@@ -54,8 +54,8 @@ public class EnemySpawn : MonoBehaviour
 
     private bool IsEnemyLive()
     {
-        Move checkObj;
-        checkObj = FindObjectOfType<Move>();
+        ShipEnemy checkObj;
+        checkObj = FindObjectOfType<ShipEnemy>();
         if(checkObj == null)
         {
             return false;
@@ -90,14 +90,15 @@ public class EnemySpawn : MonoBehaviour
     }
 
     /// <summary>
-    /// ¸ó½ºÅÍ¸¦ ½ºÆù½ÃÅ°´Â ÇÔ¼ö
+    /// ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½Ô¼ï¿½
     /// </summary>
-    /// <param name="posi"> ½ºÆùµÇ´Â ÁÂÇ¥ ¶óÀÎ¾÷ </param>
-    /// <param name="prei"> ½ºÆùµÇ´Â Àû ¶óÀÎ¾÷ </param>
+    /// <param name="posi"> ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ ï¿½ï¿½Ç¥ ï¿½ï¿½ï¿½Î¾ï¿½ </param>
+    /// <param name="prei"> ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Î¾ï¿½ </param>
     private void PosSpawn(int posi, int prei)
     {
         float x = pos[posi].transform.position.x;
         float z = pos[posi].transform.position.z;
-        enemyPrefabI[prei] = Instantiate(enemyPrefab[prei], new Vector3(x, 0, z), Quaternion.identity);
+        enemyPrefabI[prei] = Instantiate(enemyPrefab[prei], new Vector3(x, -5.5f, z), Quaternion.identity);
+        enemyPrefabI[prei].SetActive(true);
     }
 }

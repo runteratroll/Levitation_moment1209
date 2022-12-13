@@ -6,7 +6,16 @@ public class MouseEvent : MonoBehaviour
 {
     void Update()
     {
-        Cursor.visible = false;                     //¸¶¿ì½º Ä¿¼­°¡ º¸ÀÌÁö ¾Ê°Ô ÇÔ
-        Cursor.lockState = CursorLockMode.Locked;   //¸¶¿ì½º Ä¿¼­¸¦ °íÁ¤½ÃÅ´
+
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            Cursor.visible = true;                     //ï¿½ï¿½ï¿½ì½º Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê°ï¿½ ï¿½ï¿½
+            Cursor.lockState = CursorLockMode.None;   //ï¿½ï¿½ï¿½ì½º Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å´
+        }
+        else
+        {
+            Cursor.visible = false;                     //ï¿½ï¿½ï¿½ì½º Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê°ï¿½ ï¿½ï¿½
+            Cursor.lockState = CursorLockMode.Locked;   //ï¿½ï¿½ï¿½ì½º Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å´
+        }
     }
 }
