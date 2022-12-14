@@ -48,20 +48,22 @@ public class CollisionProjectileAtk : MonoBehaviour
         if (ObjProjectileStartEffect != null) 
         { 
             var projectileStartEffect = Instantiate(this.ObjProjectileStartEffect, transform.position, Quaternion.identity);
-     
+
+
+            
             projectileStartEffect.transform.forward = gameObject.transform.forward;
            
             ParticleSystem particleSystem = projectileStartEffect.GetComponent<ParticleSystem>();
         
             if (particleSystem != null)
             {
-                Destroy(projectileStartEffect, particleSystem.main.duration);
+                Destroy(projectileStartEffect, particleSystem.main.duration * 20);
             }
             else
             { 
                 ParticleSystem particleSystemChild = projectileStartEffect.transform.GetChild(0).GetComponent<ParticleSystem>();
         
-                Destroy(projectileStartEffect, particleSystemChild.main.duration);
+                Destroy(projectileStartEffect, particleSystemChild.main.duration * 20);
             }
         }
          

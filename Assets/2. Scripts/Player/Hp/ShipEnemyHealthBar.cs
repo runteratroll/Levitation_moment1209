@@ -10,7 +10,7 @@ public class ShipEnemyHealthBar : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("UpdateHealthBar", 0, 0.01f); //0ÃÊÈÄ 0.1ÃÊ¸¶´Ù ½ÇÇà
+        InvokeRepeating("UpdateHealthBar", 0, 0.01f); //0ï¿½ï¿½ï¿½ï¿½ 0.1ï¿½Ê¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     }
     public void Setup(HealthSystem healthSystem)
     {
@@ -25,22 +25,21 @@ public class ShipEnemyHealthBar : MonoBehaviour
         UpdateHealthBar();
     }
 
-    //ÀÚ±â Çï½º½Ã½ºÅÛ¿¡¼­, ÇÇ°¡ ±ïÀÏ¶§ ÀÌº¥Æ®¸¦ ¼ÒÈ¯ÇÏ´Ï±î 
+    //ï¿½Ú±ï¿½ ï¿½ï½ºï¿½Ã½ï¿½ï¿½Û¿ï¿½ï¿½ï¿½, ï¿½Ç°ï¿½ ï¿½ï¿½ï¿½Ï¶ï¿½ ï¿½Ìºï¿½Æ®ï¿½ï¿½ ï¿½ï¿½È¯ï¿½Ï´Ï±ï¿½ 
 
-    //µî·Ï½ÃÄÑÁÜ 
+    //ï¿½ï¿½Ï½ï¿½ï¿½ï¿½ï¿½ï¿½ 
     
     public void UpdateHealthBar()
     {
 
-        //¾ÈµÇ´ÂÀÌÀ¯°¡, OnHealth 
+        //ï¿½ÈµÇ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, OnHealth 
 
-        //±Ùµ¥ÀÌ°Å ÇÇ°¡ ´Þ¾Æµµ ¹Ù·Î´Â ½ÇÇà¾ÈµÇ³×? ¿ÖÁö? ]
-        //µ¥ÀÌÅÍ°¡ µé¾î°¡±âÀü¿¡ ÇØ¼­ ±×·±°¡
+        //ï¿½Ùµï¿½ï¿½Ì°ï¿½ ï¿½Ç°ï¿½ ï¿½Þ¾Æµï¿½ ï¿½Ù·Î´ï¿½ ï¿½ï¿½ï¿½ï¿½ÈµÇ³ï¿½? ï¿½ï¿½ï¿½ï¿½? ]
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½î°¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø¼ï¿½ ï¿½×·ï¿½ï¿½ï¿½
 
         //yield return null;
-        Debug.Log("ShipEnmeyHealthBa");
      
-        transform.Find("Bar").localScale = new Vector3(shipEnemy.GetBatteryCurrentHp(), 1); //ÀÚ½Ä Hp°¡ ¾È±¸ÇØÁ³´Âµ¥
+        transform.Find("Bar").localScale = new Vector3(shipEnemy.GetBatteryCurrentHp(), 1); //ï¿½Ú½ï¿½ Hpï¿½ï¿½ ï¿½È±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½
 
 
     }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class stateAtkBattery : State<MonsterFSM> //ÀÌ°Íµµ ¸ó½ºÅÍ°¡ ¾Æ´Ï¶ó Á¾·ùº°·Î ÇØ¾ß°Ú±¸¸¸
+public class stateAtkBattery : State<MonsterFSM> //ï¿½Ì°Íµï¿½ ï¿½ï¿½ï¿½Í°ï¿½ ï¿½Æ´Ï¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø¾ß°Ú±ï¿½ï¿½ï¿½
 {
 
     private Animator animator;
@@ -23,16 +23,15 @@ public class stateAtkBattery : State<MonsterFSM> //ÀÌ°Íµµ ¸ó½ºÅÍ°¡ ¾Æ´Ï¶ó Á¾·ùº°
     public override void OnStart()
     {
        // Debug.Log("IatkAbalbe" + )
-       //ÄðÅ¸ÀÓÀÌ¶ó ±×·±°Å ¾Æ´Ô? 
-        if (iAtkAble == null || iAtkAble.nowAtkBehaviour == null) //ÀÌ°Å ¾ÆÀÌµéµÇ¼­ ±×¤Ã¤©¤¤°Å ¾Æ´Ï¾ß? ¾Ö´Ï¸ÞÀÌÅÍ ¾Ö´Ï¸ÞÀÌ¼Ç ¹®Á¦°Å³ª, null¶§¹®¿¡ idle µÇ°Å³ª
+       //ï¿½ï¿½Å¸ï¿½ï¿½ï¿½Ì¶ï¿½ ï¿½×·ï¿½ï¿½ï¿½ ï¿½Æ´ï¿½? 
+        if (iAtkAble == null || iAtkAble.nowAtkBehaviour == null) //ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½Ìµï¿½Ç¼ï¿½ ï¿½×¤Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ï¾ï¿½? ï¿½Ö´Ï¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Å³ï¿½, nullï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ idle ï¿½Ç°Å³ï¿½
         {
-            stateMachine.ChangeState<stateIdleBattery>(); //±×·¯°íº¸´Ï±î ÀÌ°Íµµ ÇÏ³ª »ý¼ºÇØ¾ßµÇ´Ï
+            stateMachine.ChangeState<stateIdleBattery>(); //ï¿½×·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Ì°Íµï¿½ ï¿½Ï³ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ßµÇ´ï¿½
             
-            Debug.Log("ÇìÂm");
             return;
         }
 
-        stateAtkCtrl.stateAtkControllerStartHandler += delegateAtkStateStart; //stateAtkCtrl¸¸ ´Þ¸é, ½ÃÀÛ°ú ³¡¿¡ ¾Ë¸²À» ÇÒ ¼ö ÀÖ±¸¸¸
+        stateAtkCtrl.stateAtkControllerStartHandler += delegateAtkStateStart; //stateAtkCtrlï¿½ï¿½ ï¿½Þ¸ï¿½, ï¿½ï¿½ï¿½Û°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¸ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö±ï¿½ï¿½ï¿½
         stateAtkCtrl.stateAtkControllerEndHandler += delegateAtkStateEnd;
 
         Debug.Log(iAtkAble.nowAtkBehaviour.aniMotionIdx + ": " + iAtkAble.nowAtkBehaviour.atkRange);

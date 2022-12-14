@@ -17,9 +17,9 @@ GameObject:
   - component: {fileID: 9099982077902528612}
   - component: {fileID: 1422704193410415403}
   - component: {fileID: 2872938684667555868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 127R
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 2200910302079990121}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5f669111e4c6c634587f3602d530c6bb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
   foc: {fileID: 0}
   atkRange: 0
   attackBehaviours:
-  - {fileID: 5098647009246294450, guid: c83c9fb2dbda2eb4c91a066f5541c88a, type: 3}
+  - {fileID: 1422704193410415403}
   maxHp: 100
   hp: 0
   targetLayerMask:

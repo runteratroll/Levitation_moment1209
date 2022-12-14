@@ -34,7 +34,6 @@ public class FieldofCollider : MonoBehaviour
 
             //�Ƹ��� taret�� �ִ� �ٷ� ������ϱ� �׷��žƴұ�?
             target = other.transform;
-            Debug.Log("Ʈ���� ����" + other.gameObject.name);
 
             if(lookAtPlayer != null)
             {

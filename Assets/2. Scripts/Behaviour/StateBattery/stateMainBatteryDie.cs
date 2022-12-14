@@ -7,7 +7,6 @@ public class stateMainBatteryDie : State<MonsterFSM>
     private Animator animator;
     protected int flagLive = Animator.StringToHash("flagLive");
 
-    private GameObject explosion;
     private ShipEnemy shipHealth;
     private GameObject fireSomok;
     private float dmg;
@@ -15,9 +14,8 @@ public class stateMainBatteryDie : State<MonsterFSM>
 
     private bool isExplosion;
 
-    public stateMainBatteryDie(GameObject effecf = null, ShipEnemy shipEnemy = null, float dieDamage  = 0f, GameObject fireSmoke = null)
+    public stateMainBatteryDie( ShipEnemy shipEnemy = null, float dieDamage  = 0f, GameObject fireSmoke = null)
     {
-        explosion = effecf;
         shipHealth = shipEnemy;
         dmg = dieDamage;
         fireSomok = fireSmoke;
@@ -33,17 +31,17 @@ public class stateMainBatteryDie : State<MonsterFSM>
 
         animator?.SetBool(flagLive, false);
 
-        GameObject.Instantiate(fireSomok, stateMachineClass.transform.position, Quaternion.identity);
+        GameObject rot =   GameObject.Instantiate(fireSomok, stateMachineClass.transform.position, Quaternion.identity);
+        rot.transform.rotation = Quaternion.Euler(0, 0, 90);
     }
 
     public override void OnUpdate(float deltaTime)
     {
 
-        //ÇÃ·¹ÀÌ¾î Hp°¡ 0ÀÌ¸é
+        //ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ Hpï¿½ï¿½ 0ï¿½Ì¸ï¿½
         if (stateMachine.getStateDurationTime > 3.0f && !isExplosion)
         {
             isExplosion = true;
-            GameObject.Instantiate(explosion, stateMachineClass.transform.position, Quaternion.identity);
             shipHealth.shipHealth -= dmg;
            // GameObject.Destroy(stateMachineClass.gameObject);
         }
@@ -52,6 +50,6 @@ public class stateMainBatteryDie : State<MonsterFSM>
     public override void OnEnd() {
     
         
-        //°ø°ÝÁßÁöÇÏ±â
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½
     }
 }

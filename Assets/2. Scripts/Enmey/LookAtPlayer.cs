@@ -27,7 +27,6 @@ public class LookAtPlayer : MonoBehaviour
     public void LookPlayer()
     {
 
-        Debug.Log("lookPlayer실행");
         Vector3 dir = player.position - transform.position;
 
         Quaternion p = Quaternion.LookRotation(dir);

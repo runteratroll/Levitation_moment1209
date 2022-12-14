@@ -98,7 +98,7 @@ public class EnemySpawn : MonoBehaviour
     {
         float x = pos[posi].transform.position.x;
         float z = pos[posi].transform.position.z;
-        enemyPrefabI[prei] = Instantiate(enemyPrefab[prei], new Vector3(x, -5.5f, z), Quaternion.identity);
+        enemyPrefabI[prei] = Instantiate(enemyPrefab[prei], new Vector3(x, 0, z), Quaternion.identity);
         enemyPrefabI[prei].SetActive(true);
     }
 }

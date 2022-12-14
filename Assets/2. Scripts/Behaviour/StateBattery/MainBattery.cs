@@ -14,7 +14,6 @@ public class MainBattery : MonsterFSM_Behaviour
     private ShipEnemy shipEnemy;
     public float dieDamage;
 
-    public GameObject explosionEffect;
     public GameObject fireSmoke;
 
     public float colliderSize = 100;
@@ -51,7 +50,7 @@ public class MainBattery : MonsterFSM_Behaviour
     {
         fsmManager = new StateMachine<MonsterFSM>(this, new stateIdleBattery());
         fsmManager.AddStateList(new stateAtkBattery());
-        fsmManager.AddStateList(new stateMainBatteryDie(explosionEffect, shipEnemy, dieDamage, fireSmoke));
+        fsmManager.AddStateList(new stateMainBatteryDie( shipEnemy, dieDamage, fireSmoke));
 
         OnAwakeAtkBehaviour();
 
