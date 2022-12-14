@@ -90,7 +90,11 @@ public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
         //Debug.Log("발사");
         if (nowAtkBehaviour != null && target != null)
         {
+            if(launchWeaponTransform != null)
             nowAtkBehaviour.callAtkMotion(target.gameObject, launchWeaponTransform);
+            else{
+                  nowAtkBehaviour.callAtkMotion(target.gameObject, transform);
+            }
         }
     }
 

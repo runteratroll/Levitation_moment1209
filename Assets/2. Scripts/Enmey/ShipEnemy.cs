@@ -19,17 +19,17 @@ public class ShipEnemy : MonsterFSM_Behaviour
         fsmManager.AddStateList(new stateShipMove());
         fsmManager.AddStateList(new stateDie());
 
-        //OnAwakeAtkBehaviour(); °ø°Ý ¾ÈÇÒ°Å¶ó
+        //OnAwakeAtkBehaviour(); ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ò°Å¶ï¿½
         GetMaxHpSBattery();
         //atkRange = nowAtkBehaviour?.atkRange ?? 5.0f;
-        hp = maxHp; // maxHp¿¡ ÀÚ½ÄµéÀ» ÀüºÎ ´õÇØ¾ßµÇ
-        //´Ù ´õÇÒ¶§±îÁö ±â´Ù·Á¾ßÇÏ´Âµð
+        hp = maxHp; // maxHpï¿½ï¿½ ï¿½Ú½Äµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¾ßµï¿½
+        //ï¿½ï¿½ ï¿½ï¿½ï¿½Ò¶ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ù·ï¿½ï¿½ï¿½ï¿½Ï´Âµï¿½
         healthSystem = new HealthSystem(maxHp);
-        shipEnemyHealthBar.Setup(healthSystem);
+        shipEnemyHealthBar?.Setup(healthSystem);
 
-        //ÀÚ½ÄÀÌ ´Þ¸é ÀüÃ¼°¡ ´Þ°ÔÇÏ´Â°Ô...
+        //ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½Þ¸ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½Þ°ï¿½ï¿½Ï´Â°ï¿½...
     }
-    //ÀÏ´Ü ·¹ÄÚÀÏ ¸ÕÀú ¸¸µéÀÚ
+    //ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 
     void GetMaxHpSBattery()
@@ -50,16 +50,16 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
 
 
-    public float GetBatteryCurrentHp() //ÇöÀç ÀÌ°É ¹Þ¾Æ°¡Áö°í ¾÷µ¥ÀÌÆ® Çï½º¹Ù ÇÏ±â
+    public float GetBatteryCurrentHp() //ï¿½ï¿½ï¿½ï¿½ ï¿½Ì°ï¿½ ï¿½Þ¾Æ°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï½ºï¿½ï¿½ ï¿½Ï±ï¿½
     {
 
-        //Debug.Log("GetBatter°¡ ½ÇÇàµÇ´Ï?");
+        //Debug.Log("GetBatterï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç´ï¿½?");
 
-        //±Ùµ¥ÀÌ°Å ¿ÖÄÉ´Ê³Ä
+        //ï¿½Ùµï¿½ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½É´Ê³ï¿½
         float batterysHp = 0;
         foreach (SecondaryBattery tem in secondaryBatterys)
         {
-            if(tem.hp <= 0) //ÇÔÆ÷Ã¼·ÂÀÌ 0º¸´Ù ÀÛ°Å³ª °°´Ù¸é
+            if(tem.hp <= 0) //ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½ ï¿½Û°Å³ï¿½ ï¿½ï¿½ï¿½Ù¸ï¿½
             {
                 tem.hp = 0;
             }
@@ -68,7 +68,7 @@ public class ShipEnemy : MonsterFSM_Behaviour
         }
         foreach(MainBattery tem in mainBatteries)
         {
-            if (tem.hp <= 0) //ÇÔÆ÷Ã¼·ÂÀÌ 0º¸´Ù ÀÛ°Å³ª °°´Ù¸é
+            if (tem.hp <= 0) //ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½ ï¿½Û°Å³ï¿½ ï¿½ï¿½ï¿½Ù¸ï¿½
             {
                 tem.hp = 0;
             }
@@ -88,11 +88,11 @@ public class ShipEnemy : MonsterFSM_Behaviour
  
         if (getFlagLive)
         {
-            //animator?.SetTrigger("hitTriggerHash"); /¸Â´Â ¾Ö´Ï¸ÞÀÌ¼Ç
+            //animator?.SetTrigger("hitTriggerHash"); /ï¿½Â´ï¿½ ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½
         }
         else
         {
-            //Á×Àº »óÅÂ¸é stateDie·Î »óÅÂ ÀüÈ¯ 
+            //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¸ï¿½ stateDieï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ 
             fsmManager.ChangeState<stateDie>(); //
         }
 
@@ -102,11 +102,11 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
     public override void setDmg(int dmg, GameObject atkEffectPrefab)
     {
-        Debug.Log("ShipEnemyµ¥¹ÌÁö");
-        //Á×¾ú³Ä ?
+        Debug.Log("ShipEnemyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        //ï¿½×¾ï¿½ï¿½ï¿½ ?
         if (!getFlagLive)
         {
-            //µ¥¹ÌÁö Ã³¸® ¾ÈÇÔ 
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
             return;
         }
 
@@ -117,17 +117,17 @@ public class ShipEnemy : MonsterFSM_Behaviour
             shipHealth = 0;
         }
        // hp -= dmg;
-        //healthSystem.Damage(dmg); //ÀÌ°Íµµ ÀÚµ¿À¸·Î Ã³¸®ÇØÁÖ´Â°Çµ¥
+        //healthSystem.Damage(dmg); //ï¿½Ì°Íµï¿½ ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ï¿½Ö´Â°Çµï¿½
         //HealthSystem
         shipEnemyHealthBar.UpdateHealthBar();
 
         if (atkEffectPrefab)
         {
-            Instantiate(atkEffectPrefab, weaponHitTransform); //µ¥¹ÌÁö ÁÙ‹š, ¾îÆåÆ®ÀÌÆåÆ®µµ ÁÖ³×
+            Instantiate(atkEffectPrefab, weaponHitTransform); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù‹ï¿½, ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ö³ï¿½
         }
 
-        //µ¥¹ÌÁö Â÷°¨ ÇÏ°í 0 ÀÌÇÏ°¡ µÇ¸é Á×Àº »óÅÂ°¡ µÇ°ÚÁö
-        //±Ùµ¥ µ¥¹ÌÁö Â÷°¨ÇØµµ »ì¾Æ ÀÖ´Â »óÅÂ¸é 
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï°ï¿½ 0 ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â°ï¿½ ï¿½Ç°ï¿½ï¿½ï¿½
+        //ï¿½Ùµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½Â¸ï¿½ 
         
     }
 }

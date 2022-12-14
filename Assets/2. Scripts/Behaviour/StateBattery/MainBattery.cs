@@ -10,51 +10,32 @@ using UnityEngine;
 
 public class MainBattery : MonsterFSM_Behaviour
 {
-    public GameObject healthBar;
+    
     private ShipEnemy shipEnemy;
     public float dieDamage;
 
     public GameObject explosionEffect;
     public GameObject fireSmoke;
 
-    public int colliderAngle = 360;
     public float colliderSize = 100;
-    public enum ColliderArrow 
-    {
-        Front,
-        Back
-        ,
-        Left,
-        Right
-    }
-    public ColliderArrow colliderArrow;
-    private ColliderManger colliderManger;
+    public int colliderArrow;
+    public ColliderManger colliderManger;
 
     private GameObject coll;
+
+    [Header("Health관련")]
+    [SerializeField] private Vector3 healthBarScale;
+
+    [SerializeField] private Vector3 healthBarPosition;
+    public GameObject healthBar;
     private void Awake()
     {
         shipEnemy = transform.root.gameObject.GetComponent<ShipEnemy>();
-        colliderManger = FindObjectOfType<ColliderManger>();
-        colliderAngle = (int)(colliderAngle * 0.1f);
         colliderSize = colliderSize * 0.01f;
         hp = maxHp;
 
-        if(colliderArrow == ColliderArrow.Front)
-        {
-            coll = Instantiate( colliderManger.fieldofCollidersF[colliderAngle].gameObject, Vector3.zero , Quaternion.identity);
-        }
-        if(colliderArrow == ColliderArrow.Back)
-        {
-            coll = Instantiate( colliderManger.fieldofCollidersB[colliderAngle].gameObject, Vector3.zero , Quaternion.identity);
-        }
-        if(colliderArrow == ColliderArrow.Left)
-        {
-            coll = Instantiate( colliderManger.fieldofCollidersL[colliderAngle].gameObject, Vector3.zero , Quaternion.identity);
-        }
-        if(colliderArrow == ColliderArrow.Right)
-        {
-            coll = Instantiate( colliderManger.fieldofCollidersR[colliderAngle].gameObject, Vector3.zero , Quaternion.identity);
-        }
+        coll = Instantiate( colliderManger.fieldofColliders[colliderArrow].gameObject, Vector3.zero , Quaternion.identity);
+
 
         coll.transform.parent = transform;
         coll.transform.localScale = new Vector3(colliderSize,colliderSize,colliderSize);
@@ -80,14 +61,22 @@ public class MainBattery : MonsterFSM_Behaviour
 
 
         healthSystem = new HealthSystem(maxHp);
-        GameObject newHealthBar = Instantiate(healthBar, new Vector3(transform.GetChild(0).position.x, transform.GetChild(0).position.y, transform.GetChild(0).position.z), Quaternion.identity);
-        newHealthBar.transform.SetParent(transform.GetChild(0));
-        newHealthBar.GetComponent<HealthBar>().Setup(healthSystem);
 
-        newHealthBar.transform.localPosition = Vector3.zero;
+        if(healthBar !=null)
+        {
 
 
-        newHealthBar.transform.localPosition = new Vector3(-0.0468f, 0.0014f, 0.0674f);
+
+            GameObject newHealthBar = Instantiate(healthBar, new Vector3(transform.GetChild(0).position.x, transform.GetChild(0).position.y, transform.GetChild(0).position.z), Quaternion.identity);
+            newHealthBar.transform.SetParent(transform.GetChild(0));
+            newHealthBar.GetComponent<HealthBar>().Setup(healthSystem);
+
+            newHealthBar.transform.localPosition = Vector3.zero;
+            newHealthBar.transform.localScale = healthBarScale;
+
+            newHealthBar.transform.localPosition = healthBarPosition;
+        }
+    
 
 
     }

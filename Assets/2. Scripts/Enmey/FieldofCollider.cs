@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Animations;
 public class FieldofCollider : MonoBehaviour
 {
     [Header("RotationConstraint 추가하기!!!")]
@@ -9,8 +9,6 @@ public class FieldofCollider : MonoBehaviour
     public LookAtPlayer lookAtPlayer;
     public Transform target; 
 
-
-    
 
     private void Awake()
     {

@@ -11,14 +11,15 @@ public class Main410mmProejctilAtk : CollisionProjectileAtk
 
     
 
+
     protected override void Start()
     {
         base.Start();
         damageObj = Instantiate(damageAround, transform.position, Quaternion.identity);
-
+    
         
 
-        damageObj.transform.position = target.transform.position; //¼ÒÈ¯µÇ°í
+        damageObj.transform.position = target.transform.position; //ï¿½ï¿½È¯ï¿½Ç°ï¿½
 
     }
 
@@ -28,19 +29,19 @@ public class Main410mmProejctilAtk : CollisionProjectileAtk
         if (other.CompareTag("DamageAround"))
         {
             
-            //µ¥¹ÌÁö ¿ø¹üÀ§¿¡ ÀÖ´Ù¸é 
-            //ÇÃ·¹ÀÌ¾î°¡ ¸ÂÀ»‹šµµ ÇØ¾ß°Ú³×
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Ù¸ï¿½ 
+            //ï¿½Ã·ï¿½ï¿½Ì¾î°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø¾ß°Ú³ï¿½
 
-            //DamageAroundÀÚÃ¼¿¡¼­ 
+            //DamageAroundï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ 
             //Damag
-            //Damage //Æ®¸®°Å¿¡ ÇÃ·¹ÀÌ¾î°¡ ÀÖÀ¸¸é 
-            //setDamage¢B±â
+            //Damage //Æ®ï¿½ï¿½ï¿½Å¿ï¿½ ï¿½Ã·ï¿½ï¿½Ì¾î°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
+            //setDamageï¿½Bï¿½ï¿½
 
             DamageAroundfor damageAroundfor = damageObj.GetComponent<DamageAroundfor>();
             damageAroundfor.DamageBulletHit(damage, true);
 
 
-            //µ¥¹ÌÁö¸¦ Áá´Ù¸é
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ù¸ï¿½
 
         }
     }

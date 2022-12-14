@@ -133,7 +133,7 @@ MonoBehaviour:
   ObjProjectileHitEffect: {fileID: 0}
   projectileStartClip: {fileID: 0}
   projectileHitClip: {fileID: 0}
-  damage: 600
+  damage: 392
   attackBehaviour: {fileID: 0}
   projectileParents: {fileID: 0}
   target: {fileID: 0}

@@ -4,8 +4,5 @@ using UnityEngine;
 
 public class ColliderManger : MonoBehaviour
 {
-    public FieldofCollider[] fieldofCollidersF;
-    public FieldofCollider[] fieldofCollidersB;
-    public FieldofCollider[] fieldofCollidersL;
-    public FieldofCollider[] fieldofCollidersR;
+    public FieldofCollider[] fieldofColliders;
 }

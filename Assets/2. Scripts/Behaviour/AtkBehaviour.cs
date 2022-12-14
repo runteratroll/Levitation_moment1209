@@ -15,7 +15,7 @@ public abstract class AtkBehaviour : MonoBehaviour
     public int aniMotionIdx; 
     public int importanceAtkNo; 
     public int atkDmg =  10; 
-    public float atkRange = 3f;
+    public float atkRange = 70f;
 
     [SerializeField]
     private float atkCoolTime;                  
@@ -28,7 +28,7 @@ public abstract class AtkBehaviour : MonoBehaviour
 
     protected virtual void Start()
     { 
-        nowAtkCoolTime = atkCoolTime; //¾ø´Ù, ¾ö¸¶
+        nowAtkCoolTime = atkCoolTime; //ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½
     }
 
 
@@ -38,7 +38,7 @@ public abstract class AtkBehaviour : MonoBehaviour
     protected void Update()
     {
        
-        if (nowAtkCoolTime < atkCoolTime) //¿©±â¼­ ÀÌÁ¦ ÄðÅ¸ÀÓÇØÁÖ°í
+        if (nowAtkCoolTime < atkCoolTime) //ï¿½ï¿½ï¿½â¼­ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö°ï¿½
         {    
             nowAtkCoolTime += Time.deltaTime;
         }  
