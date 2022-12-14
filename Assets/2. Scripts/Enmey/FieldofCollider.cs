@@ -59,6 +59,6 @@ public class FieldofCollider : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        //target = null;
+        target = null;
     }
 }

@@ -21,7 +21,7 @@ public class DamageAroundfor : MonoBehaviour
 
         if(isBulletHit)
         {
-            if(other.CompareTag("Player"))
+            if(other.CompareTag("Player") || other.CompareTag("Base"))
             {
 
                 IDmgAble iDmgAble = other.gameObject.GetComponent<IDmgAble>();

@@ -32,13 +32,7 @@ public class ShipEnemy : MonsterFSM_Behaviour
     //�ϴ� ������ ���� ������
 
 
-    private void Update()
-    {
-        if(target != null)
-        {
-
-        }
-    }
+   
 
     void GetMaxHpSBattery()
     {

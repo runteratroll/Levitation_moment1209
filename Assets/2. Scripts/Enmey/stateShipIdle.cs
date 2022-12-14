@@ -25,13 +25,14 @@ public class stateShipIdle : State<MonsterFSM>
 
     public override void OnUpdate(float deltaTime)
     {
+        stateMachine.ChangeState<stateShipMove>();
         if (stateMachineClass.target)
         {
 
             //이거를 이제 조정해야 되는구만
             //stateHampo이렇게
             Debug.Log("State를 이동으로");
-                stateMachine.ChangeState<stateShipMove>();
+                
             
         }
     }

@@ -9,6 +9,7 @@ TagManager:
   - PlayerBullet
   - CamRoot
   - DamageAround
+  - Base
   layers:
   - Default
   - TransparentFX

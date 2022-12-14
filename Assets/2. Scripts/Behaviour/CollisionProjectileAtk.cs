@@ -159,10 +159,17 @@ public class CollisionProjectileAtk : MonoBehaviour
 
     protected virtual void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") || other.CompareTag("Base"))
         {
             OnProjectileStartCollision(other);
         }
+
+      
+
+        //if((1 << LayerMask) & other.gameObject.layer > 0)
+        //{
+
+        //}
        
     }
 
