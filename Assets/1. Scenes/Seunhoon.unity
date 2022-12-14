@@ -34057,6 +34057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nagato
       objectReference: {fileID: 0}
+    - target: {fileID: 7800812679055824033, guid: 9ecef6348c324574a89fd3708617dfd1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ecef6348c324574a89fd3708617dfd1, type: 3}
 --- !u!4 &6956518559117219782
