@@ -190,7 +190,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 7814556825867123986}
-  maxHp: 100
+  maxHp: 17800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -198,9 +198,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 22800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 5
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -397,7 +397,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 7814556826276793437}
-  maxHp: 100
+  maxHp: 17800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -405,9 +405,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 22800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 5
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -604,7 +604,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 8675484438257897950}
-  maxHp: 100
+  maxHp: 12800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -612,9 +612,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 17800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 2
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -811,7 +811,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 8675484438578521337}
-  maxHp: 100
+  maxHp: 12800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -819,9 +819,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 17800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 2
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -1018,7 +1018,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 7252391216841206116}
-  maxHp: 100
+  maxHp: 17800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -1026,9 +1026,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 22800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 6
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -1225,7 +1225,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 7252391216749305894}
-  maxHp: 100
+  maxHp: 17800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -1233,9 +1233,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 22800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 6
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -1432,7 +1432,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 7252391218515338495}
-  maxHp: 100
+  maxHp: 17800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -1440,9 +1440,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 22800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 6
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -1639,7 +1639,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 7252391218288138313}
-  maxHp: 100
+  maxHp: 17800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -1647,9 +1647,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 22800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 6
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -1846,7 +1846,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 1509321468043639046}
-  maxHp: 100
+  maxHp: 17800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -1854,9 +1854,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 22800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 7
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -2053,7 +2053,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 1509321466821146841}
-  maxHp: 100
+  maxHp: 17800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -2061,9 +2061,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 22800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 7
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -2260,7 +2260,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 5408254818638722723}
-  maxHp: 100
+  maxHp: 30000
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -2268,9 +2268,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 25000
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 1
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -2467,7 +2467,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 5425454141925265548}
-  maxHp: 100
+  maxHp: 30000
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -2475,9 +2475,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 25000
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 0
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -2674,7 +2674,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 8729897837564025044}
-  maxHp: 100
+  maxHp: 12800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -2682,9 +2682,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 17800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 4
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -2881,7 +2881,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 8729897838712883522}
-  maxHp: 100
+  maxHp: 12800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -2889,9 +2889,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 17800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 4
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -3089,7 +3089,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 3628336519209945953}
-  maxHp: 100
+  maxHp: 6700
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -3097,9 +3097,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 12800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 9
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -3297,7 +3297,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 3628336518629439030}
-  maxHp: 100
+  maxHp: 6700
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -3305,9 +3305,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 12800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 9
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -3505,7 +3505,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 3628336518981717022}
-  maxHp: 100
+  maxHp: 6700
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -3513,9 +3513,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 12800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 9
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -3713,7 +3713,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 1533103032019095268}
-  maxHp: 100
+  maxHp: 6700
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -3721,9 +3721,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 12800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 8
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -3921,7 +3921,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 1533103032724271010}
-  maxHp: 100
+  maxHp: 6700
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -3929,9 +3929,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 12800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 8
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -4129,7 +4129,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 1533103033060541640}
-  maxHp: 100
+  maxHp: 6700
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -4137,9 +4137,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 12800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 8
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -4336,7 +4336,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 2624899624403755556}
-  maxHp: 100
+  maxHp: 30000
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -4344,9 +4344,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 25000
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 1
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -4543,7 +4543,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 3114876478941514892}
-  maxHp: 100
+  maxHp: 12800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -4551,9 +4551,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 17800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 3
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -4750,7 +4750,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 3114876478766661430}
-  maxHp: 100
+  maxHp: 12800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -4758,9 +4758,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 17800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 3
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -4957,7 +4957,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 3114876478295851870}
-  maxHp: 100
+  maxHp: 12800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -4965,9 +4965,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 17800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 3
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
@@ -5164,7 +5164,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 3114876478269166315}
-  maxHp: 100
+  maxHp: 12800
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -5172,9 +5172,9 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  explosionEffect: {fileID: 0}
-  fireSmoke: {fileID: 0}
+  dieDamage: 17800
+  explosionEffect: {fileID: 191186, guid: 079954accd64b32419ec069129c81273, type: 3}
+  fireSmoke: {fileID: 101130, guid: d7bf18dd20422304ea868e95c3518f19, type: 3}
   colliderSize: 1
   colliderArrow: 3
   colliderManger: {fileID: 7406695793483172653, guid: 70a49b0abb881d74b8ca55b3f94fc8ba, type: 3}
