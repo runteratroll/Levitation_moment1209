@@ -36,7 +36,8 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
             if (agent.remainingDistance > agent.stoppingDistance)
             {
 
-                boxController.transform.Translate(agent.velocity * Time.deltaTime);
+                Debug.Log("이동허니?");
+                stateMachineClass.transform.Translate(target.position * 100 * Time.deltaTime);
                 animator.SetFloat(hashMoveSpeed, agent.velocity.magnitude / agent.speed, 0.1f, Time.deltaTime);
                 return;
             }
