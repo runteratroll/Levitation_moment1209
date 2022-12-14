@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -8551049534158284398}
   - component: {fileID: 8853597342371308217}
   - component: {fileID: -4509560590492044946}
-  - component: {fileID: -184167805998596314}
   m_Layer: 6
   m_Name: _76mm
   m_TagString: Untagged
@@ -123,7 +122,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2882483428165122443}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a48722f74f6f96418efcf0237208004, type: 3}
   m_Name: 
@@ -137,25 +136,3 @@ MonoBehaviour:
   attackBehaviour: {fileID: 0}
   projectileParents: {fileID: 0}
   target: {fileID: 0}
---- !u!114 &-184167805998596314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2882483428165122443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 121e7072080809846804faad0387b06f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileSpd: 50
-  ObjProjectileStartEffect: {fileID: 0}
-  ObjProjectileHitEffect: {fileID: 0}
-  projectileStartClip: {fileID: 0}
-  projectileHitClip: {fileID: 0}
-  damage: 115
-  attackBehaviour: {fileID: 0}
-  projectileParents: {fileID: 0}
-  target: {fileID: 0}
-  damageAround: {fileID: 3753530267161176618, guid: 1aa55e4c44f1a3c4eba6d06d00940bd5, type: 3}
