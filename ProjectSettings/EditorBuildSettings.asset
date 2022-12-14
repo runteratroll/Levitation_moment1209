@@ -8,5 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1. Scenes/JeongHwan.unity
     guid: 7444301711b2d8d4a85a7d60c43cb6d1
+  - enabled: 1
+    path: Assets/1. Scenes/SeungHoon2.unity
+    guid: 61b71675a02daac41aac30d31bb02701
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 72973d6bc5d370c498662e87e6720735, type: 2}

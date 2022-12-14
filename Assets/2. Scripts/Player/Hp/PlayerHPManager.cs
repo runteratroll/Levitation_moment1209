@@ -34,7 +34,7 @@ public class PlayerHPManager : MonoSingleton<PlayerHPManager>
                 //æ¿ ¿ÁΩ√¿€
 
                 deathCount = 0;
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene("SeungHoon2");
 
             }
         }

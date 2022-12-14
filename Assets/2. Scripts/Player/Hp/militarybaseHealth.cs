@@ -8,7 +8,7 @@ public class militarybaseHealth : LivingEntity {
 
     public override void Die()
     {
-        BaseManager.Instance.Relode();
+        SceneManager.LoadScene("SeungHoon2");
     }
 
     public override void setDmg(int dmg, GameObject prefabEffect)

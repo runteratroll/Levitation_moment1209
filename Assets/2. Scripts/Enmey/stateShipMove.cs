@@ -30,16 +30,16 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
         //Debug.Log("stateMachineClass.getFlagAtk : " + stateMachineClass.getFlagAtk);
         if (target && !stateMachineClass.getFlagAtk)
         {
-            //agent.SetDestination(stateMachineClass.target.position);
-           
-            //if (agent.remainingDistance > agent.stoppingDistance)
-            //{
+            agent.SetDestination(stateMachineClass.target.position);
 
-            //    Debug.Log("이동허니?");
-          
-            //    //animator.SetFloat(hashMoveSpeed, agent.velocity.magnitude / agent.speed, 0.1f, Time.deltaTime);
-            //    return;
-            //}
+            if (agent.remainingDistance > agent.stoppingDistance)
+            {
+
+                Debug.Log("이동허니?");
+
+                //animator.SetFloat(hashMoveSpeed, agent.velocity.magnitude / agent.speed, 0.1f, Time.deltaTime);
+                return;
+            }
         }
         stateMachine.ChangeState<stateShipIdle>();
     }

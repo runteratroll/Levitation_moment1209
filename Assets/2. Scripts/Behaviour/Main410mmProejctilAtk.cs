@@ -11,19 +11,15 @@ public class Main410mmProejctilAtk : CollisionProjectileAtk
 
 
 
-    private void Awake()
-    {
-        damageObj = Instantiate(damageAround, transform.position, Quaternion.identity);
-
-        damageObj.transform.position = target.transform.position + Vector3.up * 0.14f; //��ȯ�ǰ�
-    }
 
     protected override void Start()
     {
         base.Start();
- 
-        
-        
+
+
+        damageObj = Instantiate(damageAround, transform.position, Quaternion.identity);
+
+        damageObj.transform.position = target.transform.position + Vector3.up * 0.14f; //��ȯ�ǰ�
 
 
 
@@ -36,19 +32,12 @@ public class Main410mmProejctilAtk : CollisionProjectileAtk
         if (other.CompareTag("DamageAround"))
         {
             
-            //������ �������� �ִٸ� 
-            //�÷��̾ �������� �ؾ߰ڳ�
-
-            //DamageAround��ü���� 
-            //Damag
-            //Damage //Ʈ���ſ� �÷��̾ ������ 
-            //setDamage�B��
+            
 
             DamageAroundfor damageAroundfor = damageObj.GetComponent<DamageAroundfor>();
             damageAroundfor.DamageBulletHit(damage, true);
 
 
-            //�������� ��ٸ�
 
         }
     }

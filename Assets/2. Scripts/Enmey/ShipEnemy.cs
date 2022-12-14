@@ -11,6 +11,12 @@ public class ShipEnemy : MonsterFSM_Behaviour
     public ShipEnemyHealthBar shipEnemyHealthBar;
 
 
+
+    public void SerchBase()
+    {
+
+    }
+
     public float shipHealth;
     protected override void Start()
     {
