@@ -202,7 +202,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 0}
   fireSmoke: {fileID: 0}
   colliderSize: 1
-  colliderArrow: 9
+  colliderArrow: 4
   colliderManger: {fileID: 4288596776159400013, guid: 9ba711fa0d70c154eb16ed02a6d41103, type: 3}
   healthBarScale: {x: 0.013, y: 0.01, z: 0.01}
   healthBarPosition: {x: 0.01, y: 0.05, z: 0}
