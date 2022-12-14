@@ -16,10 +16,11 @@ public class Main410mmProejctilAtk : CollisionProjectileAtk
     {
         base.Start();
         damageObj = Instantiate(damageAround, transform.position, Quaternion.identity);
-    
+        
         
 
-        damageObj.transform.position = target.transform.position; //��ȯ�ǰ�
+        damageObj.transform.position = target.transform.position  + Vector3.up * 0.14f ; //��ȯ�ǰ�
+
 
     }
 
