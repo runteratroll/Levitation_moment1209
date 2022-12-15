@@ -6,8 +6,8 @@ using UnityEngine.AI;
 public class ShipEnemy : MonsterFSM_Behaviour
 {
 
-    public SecondaryBattery[] secondaryBatterys;
-    public MainBattery[] mainBatteries;
+    //public SecondaryBattery[] secondaryBatterys;
+    //public MainBattery[] mainBatteries;
 
     public ShipEnemyHealthBar shipEnemyHealthBar;
 
