@@ -6,9 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class militarybaseHealth : LivingEntity {
 
+    private void Awake()
+    {
+
+        dead = false;
+
+    }
     public override void Die()
     {
-        SceneManager.LoadScene("SeungHoon2");
+
+        
+        BaseManager.Instance?.MilitaryBaseCheck(this);
+
+        //SceneManager.LoadScene("SeungHoon2");
     }
 
     public override void setDmg(int dmg, GameObject prefabEffect)

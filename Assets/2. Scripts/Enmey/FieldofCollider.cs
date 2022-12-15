@@ -28,8 +28,12 @@ public class FieldofCollider : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Base"))
+      
+
+        if (other.CompareTag("Base"))
         {
+
+            target = null;
             target = other.transform;
 
             return;
