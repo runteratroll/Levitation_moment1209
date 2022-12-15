@@ -16,9 +16,8 @@ public class BulletMove : MonoBehaviour
        
   
     }
-    private void Update()
+    protected virtual void Update()
     {
-        
         transform.Translate((Vector3.forward ) * Time.deltaTime * speed);
     }
     protected virtual void OnProjectileStartCollision(Collider other)
