@@ -33,10 +33,8 @@ public class ShipEnemy : MonsterFSM_Behaviour
         //atkRange = nowAtkBehaviour?.atkRange ?? 5.0f;
         hp = maxHp; // maxHp�� �ڽĵ��� ���� ���ؾߵ�
         //�� ���Ҷ����� ��ٷ����ϴµ�
-        //agent = GetComponent<NavMeshAgent>();
 
 
-        //agent.SetDestination(baseTarget.transform.position);
 
 
        
@@ -71,14 +69,14 @@ public class ShipEnemy : MonsterFSM_Behaviour
     void GetMaxHpSBattery()
     {
         maxHp = 0;
-        foreach (SecondaryBattery tem in secondaryBatterys)
-        {
-            maxHp += tem.hp;
-        }
-        foreach (MainBattery tem in mainBatteries)
-        {
-            maxHp += tem.hp;
-        }
+        //foreach (SecondaryBattery tem in secondaryBatterys)
+        //{
+        //    maxHp += tem.hp;
+        //}
+        //foreach (MainBattery tem in mainBatteries)
+        //{
+        //    maxHp += tem.hp;
+        //}
 
         maxHp += shipHealth;
     }
@@ -93,31 +91,32 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
         //�ٵ��̰� ���ɴʳ�
         float batterysHp = 0;
-        foreach (SecondaryBattery tem in secondaryBatterys)
-        {
-            if(tem.hp <= 0) //����ü���� 0���� �۰ų� ���ٸ�
-            {
-                tem.hp = 0;
-            }
+        //foreach (SecondaryBattery tem in secondaryBatterys)
+        //{
+        //    if(tem.hp <= 0) //����ü���� 0���� �۰ų� ���ٸ�
+        //    {
+        //        tem.hp = 0;
+        //    }
 
-            batterysHp += tem.hp;
-        }
-        foreach(MainBattery tem in mainBatteries)
-        {
-            if (tem.hp <= 0) //����ü���� 0���� �۰ų� ���ٸ�
-            {
-                tem.hp = 0;
-            }
+        //    batterysHp += tem.hp;
+        //}
+        //foreach(MainBattery tem in mainBatteries)
+        //{
+        //    if (tem.hp <= 0) //����ü���� 0���� �۰ų� ���ٸ�
+        //    {
+        //        tem.hp = 0;
+        //    }
 
-            batterysHp += tem.hp;
-        }
+        //    batterysHp += tem.hp;
+        //}
+        batterysHp += shipHealth;
 
-        if(batterysHp <= 0)
+        if (batterysHp <= 0)
         {
             shipHealth = 0;
         }
 
-        batterysHp += shipHealth;
+  
         hp = batterysHp;
 
 

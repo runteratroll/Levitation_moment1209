@@ -16,7 +16,7 @@ public class stateDie : State<MonsterFSM>
 
     public override void OnStart()
     {
-        animator?.SetBool(flagLive, false);
+        //animator?.SetBool(flagLive, false);
 
 
 
