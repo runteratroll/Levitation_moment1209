@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpd: 50
-  ObjProjectileStartEffect: {fileID: 0}
+  ObjProjectileStartEffect: {fileID: 2779821304842803158, guid: 54871af0f5628bc4fb40bc72b997d7aa, type: 3}
   ObjProjectileHitEffect: {fileID: 0}
   projectileStartClip: {fileID: 0}
   projectileHitClip: {fileID: 0}
