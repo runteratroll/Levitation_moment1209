@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 0ecbc4dd277cac84986665aa66e4d93b, type: 2}
 --- !u!1001 &7754884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5972,21 +5972,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\uB9C8\uC694\uAE30"
       objectReference: {fileID: 0}
+    - target: {fileID: 7924166935416582054, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
+      propertyPath: baseTarget
+      value: 
+      objectReference: {fileID: 1739163693}
+    - target: {fileID: 7924166935416582054, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
+      propertyPath: basePosition
+      value: 
+      objectReference: {fileID: 1739163693}
+    - target: {fileID: 7924166935416582055, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
+      propertyPath: m_Speed
+      value: 13.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924166935416582055, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
+      propertyPath: m_BaseOffset
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924166935416582055, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1.59
+      objectReference: {fileID: 0}
     - target: {fileID: 7924166935416582057, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7924166935416582057, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7924166935416582057, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7924166935416582057, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7924166935416582057, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6552,7 +6572,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &439687163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6605,17 +6625,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.28618005, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.28617993, b: 0.50980073, a: 1}
   colorDepth: 0.84
-  horizonColor: {r: 0, g: 0.22735655, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22735643, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30186635, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30186623, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20383206, g: 0.30970946, b: 0.517647, a: 1}
+  underwaterColor: {r: 0.20383194, g: 0.3097093, b: 0.517647, a: 1}
   underwaterColorStrength: 1
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -23743,6 +23763,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1552249189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7924166935416582053, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
+  m_PrefabInstance: {fileID: 413186567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1552249202
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552249189}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1563446668
 GameObject:
   m_ObjectHideFlags: 0
@@ -27058,6 +27103,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735382209}
   m_CullTransparentMesh: 1
+--- !u!4 &1739163693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6441625840811964443, guid: 9b1b23b2778efd3448e0ec372629206e, type: 3}
+  m_PrefabInstance: {fileID: 424080793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1741968164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32547,7 +32597,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105172420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -484, y: -4, z: -339}
+  m_LocalPosition: {x: -484, y: -21, z: -339}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ShipEnemy : MonsterFSM_Behaviour
 {
@@ -11,10 +12,13 @@ public class ShipEnemy : MonsterFSM_Behaviour
     public ShipEnemyHealthBar shipEnemyHealthBar;
 
 
+    //public Transform basePosition;
 
-    public void SerchBase()
+
+
+    public override Transform SearchMonster()
     {
-
+        return baseTarget;
     }
 
     public float shipHealth;
@@ -24,12 +28,22 @@ public class ShipEnemy : MonsterFSM_Behaviour
         fsmManager = new StateMachine<MonsterFSM>(this, new stateShipIdle());
         fsmManager.AddStateList(new stateShipMove());
         fsmManager.AddStateList(new stateDie());
-
         //OnAwakeAtkBehaviour(); ���� ���ҰŶ�
         GetMaxHpSBattery();
         //atkRange = nowAtkBehaviour?.atkRange ?? 5.0f;
         hp = maxHp; // maxHp�� �ڽĵ��� ���� ���ؾߵ�
         //�� ���Ҷ����� ��ٷ����ϴµ�
+        //agent = GetComponent<NavMeshAgent>();
+
+
+        //agent.SetDestination(baseTarget.transform.position);
+
+
+       
+
+
+        //Debug.Log("AgnntewrwerewrwVelocity " + agent.velocity);
+
         healthSystem = new HealthSystem(maxHp);
         shipEnemyHealthBar?.Setup(healthSystem);
 
@@ -38,8 +52,22 @@ public class ShipEnemy : MonsterFSM_Behaviour
     //�ϴ� ������ ���� ������
 
 
-   
 
+    public override bool getFlagAtk
+    {
+        get
+        {
+            Debug.Log("getFlagAtk");
+            if (!target)
+            {
+                return false;
+            }
+
+            float distance = Vector3.Distance(transform.position, baseTarget.position);
+            Debug.Log("=======atkRange" + atkRange);
+            return (distance <= atkRange);
+        }
+    }
     void GetMaxHpSBattery()
     {
         maxHp = 0;

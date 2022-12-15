@@ -16,6 +16,7 @@ public class MonsterFSM : MonoBehaviour
 
     public Transform target => foc?.target;
 
+    public Transform baseTarget;
 
       
     protected virtual void Start()
