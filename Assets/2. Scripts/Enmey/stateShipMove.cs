@@ -12,13 +12,14 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
     private int hashMove = Animator.StringToHash("Move");
     private int hashMoveSpeed = Animator.StringToHash("MoveSpd");
 
-    
 
+
+    private rotationColliderCheck rotationColliderCheck;
     public override void OnAwake()
     {
 
         //animator = stateMachineClass.GetComponent<Animator>();
-
+        rotationColliderCheck = stateMachineClass.GetComponentInChildren<rotationColliderCheck>();
     }
 
     public override void OnStart()
@@ -33,8 +34,12 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
     public override void OnUpdate(float deltaTime)
     {
 
-      
-            stateMachineClass.transform.Translate(stateMachineClass.transform.right * Time.deltaTime * -1 * -1);
+        stateMachineClass.transform.rotation = rotationColliderCheck.rotShipEnemy();
+
+        stateMachineClass.transform.Translate(stateMachineClass.transform.right * Time.deltaTime * -10);
+
+
+
 
     }
 

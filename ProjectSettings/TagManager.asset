@@ -10,6 +10,7 @@ TagManager:
   - CamRoot
   - DamageAround
   - Base
+  - rotationCheck
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - rotationColliderCheck
   - 
   - 
   - 

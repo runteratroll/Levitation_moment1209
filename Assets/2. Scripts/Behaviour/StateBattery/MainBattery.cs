@@ -30,7 +30,13 @@ public class MainBattery : MonsterFSM_Behaviour
     private void Awake()
     {
         shipEnemy = transform.root.gameObject.GetComponent<ShipEnemy>();
+
+
+
+
         colliderSize = colliderSize * 0.01f;
+        
+        
         hp = maxHp;
 
         coll = Instantiate( colliderManger.fieldofColliders[colliderArrow].gameObject, Vector3.zero , Quaternion.identity);
