@@ -17,30 +17,15 @@ public class ShipEnemy : MonsterFSM_Behaviour
     //[Header("콜라이더매니저 부분")]
     //public float colliderSize = 100;
     //public int colliderArrow;
-    //public ColliderManger colliderManger;
+    //public ColliderManger colliderManger = null;
 
 
-    //private GameObject coll;
+    //private GameObject coll = null;
+
+    
 
 
-
-    private void Awake()
-    {
-        //colliderSize = colliderSize * 0.01f;
-
-        //coll = Instantiate(colliderManger.fieldofColliders[colliderArrow].gameObject, Vector3.zero, Quaternion.identity);
-
-
-        //coll.transform.parent = transform;
-        //coll.transform.localScale = new Vector3(colliderSize, colliderSize, colliderSize);
-        //coll.transform.localPosition = new Vector3(0, 0, 0);
-
-        //foc = coll.GetComponent<FieldofCollider>();
-    }
-    public override Transform SearchMonster()
-    {
-        return baseTarget;
-    }
+ 
 
     public float shipHealth;
     protected override void Start()
@@ -49,6 +34,8 @@ public class ShipEnemy : MonsterFSM_Behaviour
         fsmManager = new StateMachine<MonsterFSM>(this, new stateShipIdle());
         fsmManager.AddStateList(new stateShipMove());
         fsmManager.AddStateList(new stateDie());
+
+        //감지되면 모든포의 target이 baseTarget됨
         //OnAwakeAtkBehaviour(); ���� ���ҰŶ�
         GetMaxHpSBattery();
         //atkRange = nowAtkBehaviour?.atkRange ?? 5.0f;
@@ -70,23 +57,9 @@ public class ShipEnemy : MonsterFSM_Behaviour
     }
     //�ϴ� ������ ���� ������
 
+   
+  
 
-
-    public override bool getFlagAtk
-    {
-        get
-        {
-            Debug.Log("getFlagAtk");
-            if (!target)
-            {
-                return false;
-            }
-
-            float distance = Vector3.Distance(transform.position, baseTarget.position);
-            Debug.Log("=======atkRange" + atkRange);
-            return (distance <= atkRange);
-        }
-    }
     void GetMaxHpSBattery()
     {
         maxHp = 0;

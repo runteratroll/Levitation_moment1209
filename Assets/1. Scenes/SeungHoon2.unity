@@ -5976,6 +5976,18 @@ PrefabInstance:
       propertyPath: shipHealth
       value: 200000
       objectReference: {fileID: 0}
+    - target: {fileID: 6094433649199113074, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
+      propertyPath: colliderSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094433649199113074, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
+      propertyPath: colliderArrow
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094433649199113074, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
+      propertyPath: colliderManger
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6094433649199113085, guid: c397d15f091f5cc4caaf7578c43c5814, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -6382,7 +6394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6441625840811964443, guid: 9b1b23b2778efd3448e0ec372629206e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 147.4
       objectReference: {fileID: 0}
     - target: {fileID: 6441625840811964443, guid: 9b1b23b2778efd3448e0ec372629206e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6390,7 +6402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6441625840811964443, guid: 9b1b23b2778efd3448e0ec372629206e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -109.3
+      value: 3.4
       objectReference: {fileID: 0}
     - target: {fileID: 6441625840811964443, guid: 9b1b23b2778efd3448e0ec372629206e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6637,17 +6649,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.28616747, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.28616488, b: 0.50980073, a: 1}
   colorDepth: 0.84
-  horizonColor: {r: 0, g: 0.22734398, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22734141, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30185378, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30185118, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20382014, g: 0.30969688, b: 0.517647, a: 1}
+  underwaterColor: {r: 0.2038177, g: 0.3096943, b: 0.517647, a: 1}
   underwaterColorStrength: 1
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -7679,7 +7691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &506998442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18313,7 +18325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1173190648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21051,7 +21063,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7125a709c3dd602429b188580ccb452e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fieldofColliders: []
+  fieldofColliders:
+  - {fileID: 2145382249}
+  - {fileID: 1126339141}
+  - {fileID: 1762358668}
+  - {fileID: 767588559}
+  - {fileID: 1817657735}
+  - {fileID: 1143542906}
+  - {fileID: 1804649036}
+  - {fileID: 1321816499}
+  - {fileID: 815519213}
+  - {fileID: 972374063}
+  - {fileID: 1464751689}
+  - {fileID: 44009082}
+  - {fileID: 415399737}
+  - {fileID: 2051502643}
+  - {fileID: 1674142720}
+  - {fileID: 63696777}
+  - {fileID: 923450798}
+  - {fileID: 172124849}
+  - {fileID: 1754336879}
+  - {fileID: 1119799664}
+  - {fileID: 1273938817}
+  - {fileID: 1257576587}
+  - {fileID: 55917071}
+  - {fileID: 1242065447}
+  - {fileID: 1809664227}
+  - {fileID: 1324409640}
+  - {fileID: 578645287}
+  - {fileID: 1580202855}
+  - {fileID: 1813590564}
+  - {fileID: 712561464}
+  - {fileID: 1622377401}
+  - {fileID: 361033737}
+  - {fileID: 1124213929}
+  - {fileID: 265579185}
+  - {fileID: 1564834190}
+  - {fileID: 988503724}
+  - {fileID: 1833777633}
 --- !u!1001 &1370545139
 PrefabInstance:
   m_ObjectHideFlags: 0

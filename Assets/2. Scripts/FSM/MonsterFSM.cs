@@ -16,10 +16,9 @@ public class MonsterFSM : MonoBehaviour
 
     public Transform target => foc?.target;
 
-    public Transform baseTarget;
 
-    
-      
+
+
     protected virtual void Start()
     {
         fsmManager = new StateMachine<MonsterFSM>(this, new stateIdle());
@@ -40,6 +39,8 @@ public class MonsterFSM : MonoBehaviour
         return target; //Ÿ�� 
     }
 
+
+
     public float atkRange;
 
     public virtual bool getFlagAtk
@@ -57,6 +58,8 @@ public class MonsterFSM : MonoBehaviour
             return (distance <= atkRange);
         }
     }
+
+    
 }
 
 

@@ -26,7 +26,7 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
     {
         
 
-        agent?.SetDestination(stateMachineClass.transform.position + stateMachineClass.baseTarget.position);
+        //agent?.SetDestination(stateMachineClass.transform.position + stateMachineClass.baseTarget.position);
         //animator?.SetBool(hashMove, true);
        
     }
@@ -36,7 +36,7 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
 
         stateMachineClass.transform.rotation = rotationColliderCheck.rotShipEnemy();
 
-        stateMachineClass.transform.Translate(stateMachineClass.transform.right * Time.deltaTime * -10);
+        stateMachineClass.transform.Translate(stateMachineClass.transform.right * Time.deltaTime * -1);
 
 
 

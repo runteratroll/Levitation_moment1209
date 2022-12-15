@@ -66,11 +66,13 @@ public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
                 return false;
             }
 
-            float distance = Vector3.Distance(transform.position, target.position);
+            float distance = Vector3.Distance(transform.position, target.position); //여기서 바꿀까 그냥
             //Debug.Log("distance : " + distance + ">>>>>> atkRange" + atkRange);
             return (distance <= atkRange);
         }
     }
+
+
 
     public J ChangeState<J>() where J : State<MonsterFSM>
     {
@@ -81,6 +83,7 @@ public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
     {
         return base.target;
     }
+
 
 
     //근데 공격을 여기서 하네

@@ -26,12 +26,12 @@ public class stateIdleBattery : State<MonsterFSM>
     {
 
         Debug.Log("stateMachineClass.target = " + stateMachineClass.target);
-        if (stateMachineClass.target)
+        if (stateMachineClass.target )
         {
 
 
             Debug.Log(stateMachineClass.getFlagAtk);
-            if (stateMachineClass.getFlagAtk)
+            if (stateMachineClass.getFlagAtk )
             {
                 Debug.Log("공격공격");
                 stateMachine.ChangeState<stateAtkBattery>();
