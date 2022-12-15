@@ -188,11 +188,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foc: {fileID: 0}
-  baseTarget: {fileID: 0}
   atkRange: 0
   attackBehaviours:
   - {fileID: 7185704368646412259}
-  maxHp: 100
+  maxHp: 3500
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -200,7 +199,7 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 7993315687699069799}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
+  dieDamage: 1750
   fireSmoke: {fileID: 6978197608624937477, guid: c5805c96923164c40a8bfb81fe8d6094, type: 3}
   colliderSize: 1
   colliderArrow: 8

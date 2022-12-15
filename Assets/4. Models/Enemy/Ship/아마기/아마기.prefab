@@ -121,7 +121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foc: {fileID: 0}
-  baseTarget: {fileID: 0}
   atkRange: 0
   attackBehaviours: []
   maxHp: 100
@@ -133,7 +132,7 @@ MonoBehaviour:
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
   shipEnemyHealthBar: {fileID: 8400338662886177501}
-  shipHealth: 300
+  shipHealth: 451125
 --- !u!1 &1601560784322707039
 GameObject:
   m_ObjectHideFlags: 0

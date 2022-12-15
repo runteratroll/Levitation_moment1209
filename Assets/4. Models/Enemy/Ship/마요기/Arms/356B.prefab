@@ -199,7 +199,7 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 1509209384412493327}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 3800
+  dieDamage: 5750
   fireSmoke: {fileID: 6978197608624937477, guid: c5805c96923164c40a8bfb81fe8d6094, type: 3}
   colliderSize: 1
   colliderArrow: 1

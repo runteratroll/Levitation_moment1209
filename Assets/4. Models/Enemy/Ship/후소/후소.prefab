@@ -292,7 +292,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foc: {fileID: 0}
-  baseTarget: {fileID: 0}
   atkRange: 0
   attackBehaviours: []
   maxHp: 100
@@ -303,10 +302,8 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  secondaryBatterys: []
-  mainBatteries: []
   shipEnemyHealthBar: {fileID: 3271388397057004816}
-  shipHealth: 300
+  shipHealth: 40635
 --- !u!1001 &144927528627455743
 PrefabInstance:
   m_ObjectHideFlags: 0
