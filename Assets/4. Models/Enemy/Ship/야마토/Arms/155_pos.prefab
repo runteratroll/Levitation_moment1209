@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1245409243311808727}
   - component: {fileID: 247716367062336760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 155_pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c043b935cc4bf0747b22cd920ce263e8, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.31
   m_Pitch: 1
   Loop: 0
@@ -51,7 +51,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 0
+  DopplerLevel: 1
   MinDistance: 10
   MaxDistance: 500
   Pan2D: 0
