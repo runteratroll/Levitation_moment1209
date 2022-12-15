@@ -47,5 +47,6 @@ public class BulletMove : MonoBehaviour
         
         Debug.Log("OntriggerEnter Bullet");
         OnProjectileStartCollision(other);
+
     }
 }

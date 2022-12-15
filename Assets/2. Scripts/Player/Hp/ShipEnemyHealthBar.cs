@@ -8,9 +8,21 @@ public class ShipEnemyHealthBar : MonoBehaviour
 
     public ShipEnemy shipEnemy;
 
+    private Transform tran;
+    private Transform tranChild;
+    private Transform background;
     private void Start()
     {
         InvokeRepeating("UpdateHealthBar", 0, 0.01f); //0���� 0.1�ʸ��� ����
+        tran = transform.Find("Bar").transform;
+        tranChild = tran.Find("sprite").transform;
+        background = transform.Find("Background").transform;
+        float v = (tranChild.localScale.x / 2) / 100;
+
+        background.localScale = tranChild.localScale;
+        //1300이면 그 반에 / 
+        tran.transform.localPosition = new Vector3(v, 0, 0);
+        tranChild.transform.localPosition = new Vector3(-v, 0, 0);
     }
     public void Setup(HealthSystem healthSystem)
     {
