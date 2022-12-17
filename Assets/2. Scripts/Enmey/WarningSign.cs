@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class WarningSign : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+
+    private void Start()
     {
-        
+        Instantiate(GameAssets.i.WaringSign);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+ 
 }

@@ -22,10 +22,15 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
     //private GameObject coll = null;
 
-    
+    protected void OnEnable()
+    {
+        //워닝사인 표시
 
 
- 
+    }
+
+
+
 
     public float shipHealth;
     protected override void Start()
