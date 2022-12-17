@@ -1,20 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
 public class PlayerChange : MonoBehaviour
 {
     public GameObject[] player;
+
+
     public PlayerSelectFrame playerSelectFrame;
     public int ch = 0;
 
     public PlayerHealth[] playerHealths;
+    [Header("플레이어 포지션")]
+    public Transform[] playerPosition;
     //자기자체 하는거 만들어야겠다.
+
+
     void Start()
     {
         player[1].SetActive(false);
         player[2].SetActive(false);
         player[0].SetActive(true);
+
         //playerHealths[0] = player[0].GetComponent<PlayerHealth>(); 
         //playerHealths[1] = player[1].transform.GetChild(1).GetComponent<PlayerHealth>();
         //playerHealths[2] = player[2].transform.GetChild(1).GetComponent<PlayerHealth>();
@@ -24,16 +28,38 @@ public class PlayerChange : MonoBehaviour
 
     void Update()
     {
+ 
         Change();
+        FollwPosition();
     }
-    
+
+
+    void FollwPosition()
+    {
+        if (ch == 0) whoFollw(0, 1, 2); //뭔가 이게더 알아보기 쉽나?
+        if (ch == 1) whoFollw(1, 0, 2);
+        if (ch == 2) whoFollw(2, 0, 1);
+
+
+    }
+
+    void whoFollw(int idx, int n1, int n2)
+    {
+
+        playerPosition[n1].transform.position = playerPosition[idx].transform.position;
+        playerPosition[n2].transform.position = playerPosition[idx].transform.position;
+
+        playerPosition[n1].transform.rotation = playerPosition[idx].transform.rotation;
+        playerPosition[n2].transform.rotation = playerPosition[idx].transform.rotation;
+
+    }
     void Change()
     {
         //플레이어 죽으면 바로 다른걸로 바뀌게
 
-        if(ch == 0 &&  playerHealths[0].dead)
+        if (ch == 0 && playerHealths[0].dead)
         {
-            if(playerHealths[1].dead == false)
+            if (playerHealths[1].dead == false)
             {
                 ch = 1;
             }
@@ -70,22 +96,23 @@ public class PlayerChange : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1) && ch != 0 && playerHealths[0].dead == false || (ch == 0 && playerHealths[0].dead == false))
         {
-            
+
 
 
 
             player[1].SetActive(false);
             player[2].SetActive(false);
             player[0].SetActive(true);
-            
-            
+
+
+
             ch = 0;
             playerSelectFrame.Select(ch);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && ch != 1 && playerHealths[1].dead == false || (ch == 1 && playerHealths[1].dead == false))
         {
 
-            
+
             player[0].SetActive(false);
             player[2].SetActive(false);
             player[1].SetActive(true);
@@ -94,15 +121,15 @@ public class PlayerChange : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha3) && ch != 2 && playerHealths[2].dead == false || (ch == 2 && playerHealths[2].dead == false))
         {
-            
+
             player[0].SetActive(false);
             player[1].SetActive(false);
             player[2].SetActive(true);
             ch = 2;
             playerSelectFrame.Select(ch);
         }
-        
 
-      
+
+
     }
 }

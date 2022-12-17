@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerPakageFollow : MonoBehaviour
 {
-    public GameObject Player;
+    //public GameObject Player;
 
-    private void Update()
-    {
-        Player = GameObject.FindGameObjectWithTag("CamRoot");
-        transform.position = Player.transform.position;
-    }
+    //private void Update()
+    //{
+    //    Player = GameObject.FindObjectOfType<GunCtrl>().transform.gameObject;
+    //    transform.position = Player.transform.position;
+    //}
 }

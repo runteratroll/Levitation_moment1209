@@ -15,18 +15,18 @@ public class MinimapCameraCtrl : MonoBehaviour
 
     private void Awake()
     {
-        playerPosition = FindObjectOfType<PlayerPakageFollow>().transform;
+        
     }
 
     void Update()
     {
-
         SerachPlayer();
 
     }
 
     void SerachPlayer()
     {
+        playerPosition = FindObjectOfType<PlayerHealth>().transform;
         transform.position = new Vector3(playerPosition.position.x, transform.position.y, playerPosition.position.z) ;
     }
 }
