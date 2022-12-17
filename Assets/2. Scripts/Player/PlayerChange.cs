@@ -71,6 +71,9 @@ public class PlayerChange : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1) && ch != 0 && playerHealths[0].dead == false || (ch == 0 && playerHealths[0].dead == false))
         {
             
+
+
+
             player[1].SetActive(false);
             player[2].SetActive(false);
             player[0].SetActive(true);
