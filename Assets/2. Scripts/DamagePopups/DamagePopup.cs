@@ -20,6 +20,8 @@ public class DamagePopup : MonoBehaviour {
 
     // Create a Damage Popup
     public static DamagePopup Create(Vector3 position, int damageAmount, bool isCriticalHit, bool isPlayer = false) {
+
+        position = new Vector3(position.x , Random.Range(position.y -3, position.y + 3f), position.z);
         Transform damagePopupTransform = Instantiate(GameAssets.i.pfDamagePopup, position, Quaternion.identity);
 
         DamagePopup damagePopup = damagePopupTransform.GetComponent<DamagePopup>();
@@ -77,7 +79,8 @@ public class DamagePopup : MonoBehaviour {
         textMesh.sortingOrder = sortingOrder;
 
         //Vector3 vectorSet = new Vector3(Random.Range) 
-        moveVector = new Vector3(.7f, 1) * 10f;
+
+        moveVector = new Vector3(1f, Random.Range(0.5f, 2f)) * 15f;
     }
 
     private void Update() {
