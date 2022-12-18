@@ -17,8 +17,6 @@ public class MainBattery : MonsterFSM_Behaviour
     public GameObject fireSmoke;
 
     public float colliderSize = 100;
-    public int colliderArrow;
-    public ColliderManger colliderManger;
 
     private GameObject coll;
 
@@ -39,7 +37,6 @@ public class MainBattery : MonsterFSM_Behaviour
         
         hp = maxHp;
 
-        coll = Instantiate( colliderManger.fieldofColliders[colliderArrow].gameObject, Vector3.zero , Quaternion.identity);
 
 
         coll.transform.parent = transform;
