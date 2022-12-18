@@ -18,7 +18,6 @@ public class MainBattery : MonsterFSM_Behaviour
 
     public float colliderSize = 100;
 
-    private GameObject coll;
 
     [Header("Health관련")]
     [SerializeField] private Vector3 healthBarScale;
@@ -39,11 +38,11 @@ public class MainBattery : MonsterFSM_Behaviour
 
 
 
-        coll.transform.parent = transform;
-        coll.transform.localScale = new Vector3(colliderSize,colliderSize,colliderSize);
-        coll.transform.localPosition = new Vector3(0,0,0);
+        // coll.transform.parent = transform;
+        // coll.transform.localScale = new Vector3(colliderSize,colliderSize,colliderSize);
+        // coll.transform.localPosition = new Vector3(0,0,0);
         
-        foc = coll.GetComponent<FieldofCollider>();
+        // foc = coll.GetComponent<FieldofCollider>();
     }
 
 
