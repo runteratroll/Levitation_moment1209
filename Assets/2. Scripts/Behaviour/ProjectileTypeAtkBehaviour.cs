@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileTypeAtkBehaviour : AtkBehaviour
+public class ProjectileTypeAtkBehaviour : AtkBehaviour 
 {
 
     public AudioSource audioSource;
@@ -76,4 +76,8 @@ public class ProjectileTypeAtkBehaviour : AtkBehaviour
 
         nowAtkCoolTime = 0.0f;
     }
+
+
+
+
 }

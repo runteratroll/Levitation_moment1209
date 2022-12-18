@@ -36,7 +36,7 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
 
         stateMachineClass.transform.rotation = rotationColliderCheck.rotShipEnemy();
 
-        stateMachineClass.transform.Translate(stateMachineClass.transform.forward * Time.deltaTime );
+        stateMachineClass.transform.Translate(stateMachineClass.transform.forward * Time.deltaTime  * 10);
 
 
 

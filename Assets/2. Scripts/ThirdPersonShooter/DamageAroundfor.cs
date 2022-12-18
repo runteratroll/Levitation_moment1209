@@ -8,6 +8,10 @@ public class DamageAroundfor : MonoBehaviour
 
     private bool isBulletHit;
 
+    private void Awake()
+    {
+        isBulletHit = false;
+    }
     public void DamageBulletHit(int _damage, bool _isBulletHit)
     {
         damage = _damage;
@@ -15,7 +19,11 @@ public class DamageAroundfor : MonoBehaviour
 
     }
 
-   
+    private void Update()
+    {
+        Debug.Log("이미 true니?" + isBulletHit);
+    }
+
     public void OnTriggerStay(Collider other)
     {
 
@@ -23,7 +31,9 @@ public class DamageAroundfor : MonoBehaviour
         {
             if(other.CompareTag("Player") || other.CompareTag("Base"))
             {
+                
 
+           
                 IDmgAble iDmgAble = other.gameObject.GetComponent<IDmgAble>();
 
                 if (iDmgAble != null)
@@ -33,6 +43,8 @@ public class DamageAroundfor : MonoBehaviour
                     Debug.Log("플레이어 어라운드 데미진");
                     iDmgAble.setDmg(damage, null); //atk 데미지 할 필요없지?
                     DamagePopup.Create(other.transform.position, damage, false, true);
+
+                    Destroy(gameObject);
                     //그러네 플레이어는 MonsterFsm에 attackBehaviour가 없었잖아 그러니 그렇지 0이니까 안바뀐거였어
                 }
 
@@ -41,7 +53,6 @@ public class DamageAroundfor : MonoBehaviour
                 
             }
 
-            Destroy(gameObject);
         }
         //콜라이더 불렛에 맞을때 true되가지고 그때 Player감지
 

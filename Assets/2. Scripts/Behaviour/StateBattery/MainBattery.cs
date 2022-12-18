@@ -86,6 +86,9 @@ public class MainBattery : MonsterFSM_Behaviour
 
     public override void OnExecuteAttack(int attackIndex)
     {
+        
+
+
         if (getFlagLive)
         {
             base.OnExecuteAttack(attackIndex);
@@ -93,6 +96,8 @@ public class MainBattery : MonsterFSM_Behaviour
         
 
     }
+
+
 
     public override void setDmg(int dmg, GameObject atkEffectPrefab)
     {

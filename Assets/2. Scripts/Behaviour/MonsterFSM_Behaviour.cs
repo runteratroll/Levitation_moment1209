@@ -93,6 +93,7 @@ public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
         //Debug.Log("발사");
         if (nowAtkBehaviour != null && target != null)
         {
+            
             if(launchWeaponTransform != null)
             nowAtkBehaviour.callAtkMotion(target.gameObject, launchWeaponTransform);
             else{
@@ -124,9 +125,9 @@ public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
             foreach (AtkBehaviour behaviour in attackBehaviours)
             {
                 //다른 클래스훓다가 
-                if (behaviour.IsAvailable) //공격가능하면
+                if (behaviour.IsAvailable) //공격가능하면 쿨타임
                 {
-
+                    //중요도 
                     // now가 널이고, 현재 중요도가 다른 behaviour보다 적다면
                     if ((nowAtkBehaviour == null) || (nowAtkBehaviour.importanceAtkNo < behaviour.importanceAtkNo)) //이게 중요도구나 //숫자가 제일낮은거부터 실행
                     {

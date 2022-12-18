@@ -18,13 +18,17 @@ public abstract class AtkBehaviour : MonoBehaviour
     public float atkRange = 70f;
 
     [SerializeField]
-    private float atkCoolTime;                  
+    private float atkCoolTime;
+    [SerializeField]
+    private float atkCoolTimeMinuse;
     protected float nowAtkCoolTime = 0.0f;     
     public GameObject atkEffectPrefab; 
     public LayerMask targetLayerMask;  
 
     [SerializeField]
     public bool IsAvailable => (nowAtkCoolTime >= atkCoolTime); //IsAvailable => (now
+    [SerializeField]
+    public bool IsAvailableBefore => (nowAtkCoolTime >= atkCoolTime - atkCoolTimeMinuse);
 
     protected virtual void Start()
     { 
@@ -45,6 +49,5 @@ public abstract class AtkBehaviour : MonoBehaviour
     }
      
     public abstract void callAtkMotion(GameObject target = null, Transform posAtkStart = null); // callAtkMotion 
-      
 
 } 

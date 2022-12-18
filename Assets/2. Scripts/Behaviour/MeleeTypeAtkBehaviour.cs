@@ -18,4 +18,6 @@ public class MeleeTypeAtkBehaviour : AtkBehaviour
 
         nowAtkCoolTime = 0.0f;
     }
+    //인터페이스로 만들어야겠다.
+
 } 
