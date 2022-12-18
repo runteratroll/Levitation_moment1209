@@ -1,0 +1,828 @@
+# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
+# File Created: 04.08.2017 15:07:58
+
+newmtl JSD005_Mutsuki_1926
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\JSD005_Mutsuki_1926_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JSD005_Mutsuki_1926_a.dds
+
+newmtl C002_Razlom
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\C002_Razlom_a.dds
+
+newmtl JGS016_120mm45_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JGS016_120mm45_a.dds
+
+newmtl JGS051_120mm45_Turret_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JGS051_120mm45_Turret_a.dds
+
+newmtl JGT054_533mm_Type_6
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JGT054_533mm_Type_6_a.dds
+
+newmtl JPT001_Sea_Torpedo_Type93
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JPT001_Sea_Torpedo_Type93_a.dds
+
+newmtl JM219_Barbette_TA
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM219_Barbette_TA_a.dds
+
+newmtl JM013_Reels_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM013_Reels_1_a.dds
+
+newmtl JM023_Ventilators_7
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM023_Ventilators_7_a.dds
+
+newmtl JM188_Depth_Charge_Thrower
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM188_Depth_Charge_Thrower_a.dds
+
+newmtl JM141_Chain_Fairlead
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM141_Chain_Fairlead_a.dds
+
+newmtl JM156_Ventilation
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM156_Ventilation_a.dds
+
+newmtl JM105_Ventilators_9
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM105_Ventilators_9_a.dds
+
+newmtl JM026_Bollards
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM026_Bollards_a.dds
+
+newmtl JM028_Deck_Winch
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM028_Deck_Winch_a.dds
+
+newmtl CM005_Anchor_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\CM005_Anchor_1_a.dds
+
+newmtl JM025_Fairled
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM025_Fairled_a.dds
+
+newmtl JD074_Director_Type_13
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JD074_Director_Type_13_a.dds
+
+newmtl JF054_Rangefinder_2_5m_skinned
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JF054_Rangefinder_2_5m_a.dds
+
+newmtl JGA010_25mm_Type96
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JGA010_25mm_Type96_a.dds
+
+newmtl JGA018_25mm_Type96_single
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JGA018_25mm_Type96_single_a.dds
+
+newmtl Format_0022
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM001_flag_a.dds
+
+newmtl JM052_Deck_Hatch_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM052_Deck_Hatch_1_a.dds
+
+newmtl JM092_Running_Lights_R
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM092_Running_Lights_R_a.dds
+
+newmtl JM124_Signal_Lamp_2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM124_Signal_Lamp_2_a.dds
+
+newmtl CM021_Accommodation_Ladder
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\CM021_Accommodation_Ladder_a.dds
+
+newmtl JM017_Ventilators_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM017_Ventilators_1_a.dds
+
+newmtl CM010_Fire_Hose_Reel
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\CM010_Fire_Hose_Reel_a.dds
+
+newmtl JM058_Deck_Hatch_7
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM058_Deck_Hatch_7_a.dds
+
+newmtl JM009_Signal_Lamp
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM009_Signal_Lamp_a.dds
+
+newmtl JM059_Deck_Hatch_8
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM059_Deck_Hatch_8_a.dds
+
+newmtl JM164_Turning_Indicator
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM164_Turning_Indicator_a.dds
+
+newmtl JM024_Ventilators_8
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM024_Ventilators_8_a.dds
+
+newmtl JM037_Cutter_9m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM037_Cutter_9m_a.dds
+
+newmtl JM030_Wind_detection
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM030_Wind_detection_a.dds
+
+newmtl CM060_Flag_Box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\CM060_Flag_Box_a.dds
+
+newmtl CM029_Emergency_Box
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\CM029_Emergency_Box_a.dds
+
+newmtl JM146_Searchlight_900mm
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM146_Searchlight_900mm_a.dds
+
+newmtl JM159_Ventilation
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM159_Ventilation_a.dds
+
+newmtl JM072_Crane_Small_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM072_Crane_Small_1_a.dds
+
+newmtl JM107_Binocular
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM107_Binocular_a.dds
+
+newmtl JM119_Gun_Deck_3
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM119_Gun_Deck_3_a.dds
+
+newmtl JM189_Compass_Binnacle
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM189_Compass_Binnacle_a.dds
+
+newmtl CM008_Life_Buoy_1
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\CM008_Life_Buoy_1_a.dds
+
+newmtl JM158_Main_Wheel
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM158_Main_Wheel_a.dds
+
+newmtl JM182_deck
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM182_deck_a.dds
+
+newmtl CM028_Swab_Rack
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\CM028_Swab_Rack_a.dds
+
+newmtl JM035_Dinghy_6m
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM035_Dinghy_6m_a.dds
+
+newmtl JM202_Fender
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM202_Fender_a.dds
+
+newmtl JM127_Ventilators_11
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM127_Ventilators_11_a.dds
+
+newmtl JM032_Electric_Deck_Winch
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM032_Electric_Deck_Winch_a.dds
+
+newmtl JM137_Torpedo_Bogie_610mm
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM137_Torpedo_Bogie_610mm_a.dds
+
+newmtl JM101_Runway_Lights_1L
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM101_Runway_Lights_1L_a.dds
+
+newmtl JM117_Crew_Exercise_Machine
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM117_Crew_Exercise_Machine_a.dds
+
+newmtl JM055_Deck_Hatch_4
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM055_Deck_Hatch_4_a.dds
+
+newmtl JM111_Deck_Hatch_13
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM111_Deck_Hatch_13_a.dds
+
+newmtl JM123_Bollards_2
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM123_Bollards_2_a.dds
+
+newmtl JM083_Depth_Charge_Roller_Rack
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\JM083_Depth_Charge_Roller_Rack_a.dds
+
+newmtl CM001_Propeller
+	Ns 56.4386
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3000 0.3000 0.3000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka G:\Models\World_of_Warships\Mutsuki1939\default_ao.dds
+	map_Kd G:\Models\World_of_Warships\Mutsuki1939\CM001_Propeller_a.dds
