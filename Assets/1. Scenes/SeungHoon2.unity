@@ -6017,6 +6017,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7695243918929559307, guid: 48fc7c9f02f22b8448885d1639cdcc5c, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 560742663}
+    - target: {fileID: 7695243918929559307, guid: 48fc7c9f02f22b8448885d1639cdcc5c, type: 3}
       propertyPath: playerSelectFrame
       value: 
       objectReference: {fileID: 225492074}
@@ -6991,17 +6995,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.28615344, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.2861536, b: 0.50980073, a: 1}
   colorDepth: 0.84
-  horizonColor: {r: 0, g: 0.22732997, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22733012, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30183974, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3018399, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20380685, g: 0.30968285, b: 0.517647, a: 1}
+  underwaterColor: {r: 0.203807, g: 0.309683, b: 0.517647, a: 1}
   underwaterColorStrength: 1
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -8587,6 +8591,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2469570572385775386, guid: 30c8a98d5d8dd2b47ba7b2218a9cb655, type: 3}
   m_PrefabInstance: {fileID: 554179511}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &560742663 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1249806675869207685, guid: 76db8e771d3e87d4a80a92540a6ee976, type: 3}
+  m_PrefabInstance: {fileID: 2084690315}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &561604812
 PrefabInstance:
   m_ObjectHideFlags: 0

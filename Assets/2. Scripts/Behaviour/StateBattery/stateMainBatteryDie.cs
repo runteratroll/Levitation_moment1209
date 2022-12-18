@@ -32,6 +32,8 @@ public class stateMainBatteryDie : State<MonsterFSM>
         animator?.SetBool(flagLive, false);
 
         GameObject rot =   GameObject.Instantiate(fireSomok, stateMachineClass.transform.position, Quaternion.identity);
+
+        rot.transform.parent = stateMachineClass.transform;
         rot.transform.rotation = Quaternion.Euler(0, 0, 90);
     }
 

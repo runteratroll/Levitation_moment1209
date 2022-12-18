@@ -1,6 +1,11 @@
 using UnityEngine;
+using Cinemachine;
+
+
 public class PlayerChange : MonoBehaviour
 {
+
+    public CinemachineVirtualCamera virtualCamera;
     public GameObject[] player;
 
 
@@ -28,7 +33,7 @@ public class PlayerChange : MonoBehaviour
 
     void Update()
     {
- 
+        
         Change();
         FollwPosition();
     }
@@ -45,7 +50,7 @@ public class PlayerChange : MonoBehaviour
 
     void whoFollw(int idx, int n1, int n2)
     {
-
+        virtualCamera.transform.rotation = Quaternion.Euler(virtualCamera.transform.rotation.x, playerPosition[n1].transform.rotation.y,virtualCamera.transform.rotation.z);
         playerPosition[n1].transform.position = playerPosition[idx].transform.position;
         playerPosition[n2].transform.position = playerPosition[idx].transform.position;
 
