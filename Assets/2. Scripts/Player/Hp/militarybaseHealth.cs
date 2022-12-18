@@ -14,9 +14,17 @@ public class militarybaseHealth : LivingEntity {
     }
     public override void Die()
     {
+        if(BaseManager.Instance != null)
+        {
+            BaseManager.Instance.MilitaryBaseCheck(this);
+        }
+        else
+        {
 
+            BaseManager.Instance?.MilitaryBaseCheck(this);
+        }
         
-        BaseManager.Instance?.MilitaryBaseCheck(this);
+       
 
         //SceneManager.LoadScene("SeungHoon2");
     }

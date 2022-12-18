@@ -13,12 +13,14 @@ public class BaseManager : MonoSingleton<BaseManager>
     public int deathCount = 0;
 
 
-    private void Start()
-    {
-        deathCount = 0;
-    }
+    //private void Start()
+    //{
+    //    deathCount = 0;
+    //}
 
     //3명이 죽을떄 체크, 3명의 이벤트가 죽는다면?
+
+    //MonoSiglton은 초기 하면 안되는건가
 
     public void MilitaryBaseCheck(militarybaseHealth militayhealth)
     {

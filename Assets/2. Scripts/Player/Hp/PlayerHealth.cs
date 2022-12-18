@@ -16,7 +16,7 @@ public class PlayerHealth : LivingEntity
 
     public override void Die()
     {
-        PlayerHPManager.Instance.PlayerHelathCheck(this); //그냥 여기서 deathCount++해도 될꺼같은데
+        PlayerHPManager.Instance?.PlayerHelathCheck(this); //그냥 여기서 deathCount++해도 될꺼같은데
     }
 
 
