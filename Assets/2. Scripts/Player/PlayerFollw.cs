@@ -11,7 +11,7 @@ public class PlayerFollw : MonoBehaviour
     private void Update()
     {
 
-        player = FindObjectOfType<GunCtrl>().gameObject;
+        player = FindObjectOfType<PlayerHealth>().gameObject;
         transform.position = new Vector3(player.transform.position.x, 0, player.transform.position.z);
     }
 }
