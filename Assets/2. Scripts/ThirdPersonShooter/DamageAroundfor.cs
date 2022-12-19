@@ -35,14 +35,14 @@ public class DamageAroundfor : MonoBehaviour
 
                 if (iDmgAble != null)
                 {
-                    //Debug.Log("È÷È÷ µ¥¹ÌÁö");
+                    //Debug.Log("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 
-                    Debug.Log("ÇÃ·¹ÀÌ¾î ¾î¶ó¿îµå µ¥¹ÌÁø");
-                    iDmgAble.setDmg(damage, null); //atk µ¥¹ÌÁö ÇÒ ÇÊ¿ä¾øÁö?
+                    Debug.Log("ì½”ë“œë¬¸ì œ");
+                    iDmgAble.setDmg(damage, null); //atk ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ï¿½?
                     DamagePopup.Create(other.transform.position, damage, false, true);
 
-                    Destroy(gameObject);
-                    //±×·¯³× ÇÃ·¹ÀÌ¾î´Â MonsterFsm¿¡ attackBehaviour°¡ ¾ø¾úÀÝ¾Æ ±×·¯´Ï ±×·¸Áö 0ÀÌ´Ï±î ¾È¹Ù²ï°Å¿´¾î
+                  
+                    //ï¿½×·ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ MonsterFsmï¿½ï¿½ attackBehaviourï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ý¾ï¿½ ï¿½×·ï¿½ï¿½ï¿½ ï¿½×·ï¿½ï¿½ï¿½ 0ï¿½Ì´Ï±ï¿½ ï¿½È¹Ù²ï¿½Å¿ï¿½ï¿½ï¿½
                 }
 
 
@@ -50,8 +50,11 @@ public class DamageAroundfor : MonoBehaviour
                 
             }
 
+            Destroy(gameObject);
+
         }
-        //ÄÝ¶óÀÌ´õ ºÒ·¿¿¡ ¸ÂÀ»¶§ trueµÇ°¡Áö°í ±×¶§ Player°¨Áö
+
+        //ï¿½Ý¶ï¿½ï¿½Ì´ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ trueï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¶ï¿½ Playerï¿½ï¿½ï¿½ï¿½
 
     }
 }
