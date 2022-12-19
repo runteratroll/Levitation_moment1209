@@ -178,6 +178,13 @@ MonoBehaviour:
   audioSource: {fileID: 5036915989407883530}
   particle: {fileID: 0}
   pitch: 0
+  isDamageAround: 0
+  pos:
+  - {fileID: 7772001814360360872}
+  barrel: 1
+  dispersion: 4.1
+  sigma: 1.09
+  rng: 0
 --- !u!114 &2970343683026319505
 MonoBehaviour:
   m_ObjectHideFlags: 0
