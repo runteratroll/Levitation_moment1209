@@ -58,7 +58,7 @@ MonoBehaviour:
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
   shipEnemyHealthBar: {fileID: 0}
-  shipHealth: 100
+  shipHealth: 148725
 --- !u!1 &1414223037810352692
 GameObject:
   m_ObjectHideFlags: 0
