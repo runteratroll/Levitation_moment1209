@@ -35,6 +35,24 @@ public class TorpedoInfo : MonoBehaviour
 
         distance = Vector3.Distance(enemy.transform.position, transform.position);
 
+        if(shortDis < 40)
+        {
+            TimeLow();
+            if(T < 0)
+            {
+                warm.Play();
+                T = 1f;
+            }
+        }
+        if(shortDis < 20)
+        {
+            TimeLow();
+            if(T < 0)
+            {
+                warm.Play();
+                T = 0.75f;
+            }
+        }
         if(shortDis < 10)
         {
             TimeLow();
