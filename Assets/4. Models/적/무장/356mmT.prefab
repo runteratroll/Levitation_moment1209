@@ -177,6 +177,9 @@ MonoBehaviour:
   audioSource: {fileID: 151839522048436000}
   particle: {fileID: 0}
   pitch: 0
+  dispersion: 7
+  sigma: 1.26
+  rng: 3
 --- !u!114 &7529335642510348924
 MonoBehaviour:
   m_ObjectHideFlags: 0

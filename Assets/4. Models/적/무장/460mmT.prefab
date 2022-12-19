@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8143984610798955422}
   - component: {fileID: 6476369264116152382}
   - component: {fileID: 1535072948245201434}
-  - component: {fileID: 4951675302035625363}
+  - component: {fileID: 2142666891393582226}
   - component: {fileID: 4951908609559337851}
   m_Layer: 8
   m_Name: 460mmT
@@ -151,7 +151,7 @@ MonoBehaviour:
   player: {fileID: 0}
   startDeg: 0
   degSec: 3
---- !u!114 &4951675302035625363
+--- !u!114 &2142666891393582226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3177112315152843618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13d7808dd4c4f0f4398b48c2e41e0356, type: 3}
+  m_Script: {fileID: 11500000, guid: efe199fe5f090ce4cb76405c3dde2931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   devComment: 
@@ -169,13 +169,17 @@ MonoBehaviour:
   atkDmg: 10
   atkRange: 70
   atkCoolTime: 7.5
-  atkEffectPrefab: {fileID: 2882483428165122443, guid: dda46e434ad6f9049abbd64b11894703, type: 3}
+  atkCoolTimeMinuse: 0
+  atkEffectPrefab: {fileID: 5584374886708704271, guid: f51495a111bb8c1478ead7315a29e2a2, type: 3}
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 128
   audioSource: {fileID: 6858470626936366510}
   particle: {fileID: 0}
   pitch: 0
+  dispersion: 5.9
+  sigma: 1.24
+  rng: 0
 --- !u!114 &4951908609559337851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +195,7 @@ MonoBehaviour:
   foc: {fileID: 2692480133156057048}
   atkRange: 0
   attackBehaviours:
-  - {fileID: 4951675302035625363}
+  - {fileID: 2142666891393582226}
   maxHp: 12400
   hp: 0
   targetLayerMask:

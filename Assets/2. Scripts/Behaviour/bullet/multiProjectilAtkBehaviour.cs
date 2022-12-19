@@ -9,6 +9,13 @@ public class multiProjectilAtkBehaviour : AtkBehaviour
     public float pitch;
 
 
+    [Header("집탄")]
+    [Range(1f, 30f)] public float dispersion = 1; // 최대로 분산될수 있는 거리( 10km당 nM)
+    [Range(1f, 3f)] public float sigma = 1; // 시그마가 1일때 보다 3일때 3배 중앙으로 모일확률이 높음
+    private float realdispersion; // 최대분산을 수치화
+    public float rng; // 실제 분산
+
+
     public override void callAtkMotion(GameObject target = null, Transform posAtkStart = null)
     {
         if (target == null && posAtkStart != null) //Ÿ���� ����, �߻���ġ����
@@ -70,8 +77,18 @@ public class multiProjectilAtkBehaviour : AtkBehaviour
                     projectile[i].target = target;
                     projectile[i].attackBehaviour = this;
 
-                    Vector3 vec = new Vector3(Random.Range(target.transform.position.x - 3f, target.transform.position.x + 3f),
-                        target.transform.position.y, Random.Range(target.transform.position.z - 3f, target.transform.position.z + 3f));
+                   
+                    rng = Random.Range(1f, sigma);
+                    float realRng = Random.Range(dispersion * 0.1f, dispersion / rng);
+
+                    //Quaternion.Euler(realRng * 0.5f, bar * realRng, realRng * 0.5f));
+
+                    float x = Random.Range(target.transform.position.x - 1f * realRng * 0.5f, target.transform.position.x + 1f * realRng * 0.5f);
+                    float z = Random.Range(target.transform.position.z - 1f * realRng * 0.5f, target.transform.position.z + 1f * realRng * 0.5f);
+
+
+
+                    Vector3 vec = new Vector3(x, target.transform.position.y, z);
                     projectile[i].transform.LookAt(vec);
 
                     projectile[i].InstanceDamageAround(vec);
