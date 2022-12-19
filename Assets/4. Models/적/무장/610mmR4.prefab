@@ -168,12 +168,12 @@ MonoBehaviour:
   importanceAtkNo: 1
   atkDmg: 10
   atkRange: 70
-  atkCoolTime: 0
-  atkEffectPrefab: {fileID: 3443925998606330619}
+  atkCoolTime: 1
+  atkEffectPrefab: {fileID: 2882483428165122443, guid: 226bdb6777dfbef41a08dbd51f8ac504, type: 3}
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 128
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1801288098753855568}
   particle: {fileID: 0}
   pitch: 0
 --- !u!114 &7844564717972475401
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775a366b8b3a07742b1b97f23d2d5a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foc: {fileID: 0}
+  foc: {fileID: 3443925998606330614}
   atkRange: 0
   attackBehaviours:
   - {fileID: 7844564717972475400}
@@ -198,7 +198,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   atkItemCollider: {fileID: 0}
-  launchWeaponTransform: {fileID: 0}
+  launchWeaponTransform: {fileID: 4422984991920698846}
   weaponHitTransform: {fileID: 0}
   dieDamage: 100
   fireSmoke: {fileID: 6978197608624937477, guid: c5805c96923164c40a8bfb81fe8d6094, type: 3}
@@ -268,11 +268,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1548542285642758664, guid: f0eb8115294774546bc0226f6ab46a18, type: 3}
   m_PrefabInstance: {fileID: 4230796996627255548}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3443925998606330619 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1548542285642758663, guid: f0eb8115294774546bc0226f6ab46a18, type: 3}
+--- !u!114 &3443925998606330614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1548542285642758666, guid: f0eb8115294774546bc0226f6ab46a18, type: 3}
   m_PrefabInstance: {fileID: 4230796996627255548}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab591cdedb6f7784e84745ba9b7fc532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6235332085133039808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -330,6 +336,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3d69bf2f76b8354fadfec8f0ce8d9d0, type: 3}
+--- !u!82 &1801288098753855568 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5654036809994180752, guid: a3d69bf2f76b8354fadfec8f0ce8d9d0, type: 3}
+  m_PrefabInstance: {fileID: 6235332085133039808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4422984991920698846 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7775957425049464094, guid: a3d69bf2f76b8354fadfec8f0ce8d9d0, type: 3}

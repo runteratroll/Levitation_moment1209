@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 2543253732377436977}
   - component: {fileID: 1505513298102332564}
   - component: {fileID: 3675041851814238302}
+  - component: {fileID: -201816014743627977}
   - component: {fileID: -8551049534158284398}
   - component: {fileID: 8853597342371308217}
   m_Layer: 10
-  m_Name: 610mm
+  m_Name: _111
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,6 +87,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-201816014743627977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2882483428165122443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4edf9e3d04358fc49a5b441f082551fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  damage: 20000
+  realDam: 0
+  target: {fileID: 0}
 --- !u!54 &-8551049534158284398
 Rigidbody:
   m_ObjectHideFlags: 0

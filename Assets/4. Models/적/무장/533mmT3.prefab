@@ -174,7 +174,7 @@ MonoBehaviour:
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 128
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 5405205207733937491}
   particle: {fileID: 0}
   pitch: 0
 --- !u!114 &4523091507539917603
@@ -199,7 +199,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   atkItemCollider: {fileID: 0}
-  launchWeaponTransform: {fileID: 0}
+  launchWeaponTransform: {fileID: 7970748941218042077}
   weaponHitTransform: {fileID: 0}
   dieDamage: 100
   fireSmoke: {fileID: 6978197608624937477, guid: c5805c96923164c40a8bfb81fe8d6094, type: 3}
@@ -272,6 +272,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5250d06903314744a445c9a48b56679, type: 3}
+--- !u!82 &5405205207733937491 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5654036809994180752, guid: d5250d06903314744a445c9a48b56679, type: 3}
+  m_PrefabInstance: {fileID: 392950037635481027}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7970748941218042077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7775957425049464094, guid: d5250d06903314744a445c9a48b56679, type: 3}
