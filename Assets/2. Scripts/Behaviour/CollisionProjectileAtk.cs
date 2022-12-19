@@ -83,7 +83,7 @@ public class CollisionProjectileAtk : MonoBehaviour
         {
             Vector3 vecProjectile = target.transform.position;
             vecProjectile.y += 0.9f;
-            transform.LookAt(vecProjectile);
+            //transform.LookAt(vecProjectile);
         }
     }
 

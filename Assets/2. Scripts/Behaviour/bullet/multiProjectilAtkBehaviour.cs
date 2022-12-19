@@ -15,6 +15,7 @@ public class multiProjectilAtkBehaviour : AtkBehaviour
     private float realdispersion; // 최대분산을 수치화
     public float rng; // 실제 분산
 
+    
 
     public override void callAtkMotion(GameObject target = null, Transform posAtkStart = null)
     {
@@ -77,6 +78,9 @@ public class multiProjectilAtkBehaviour : AtkBehaviour
                     projectile[i].target = target;
                     projectile[i].attackBehaviour = this;
 
+
+
+           
                    
                     rng = Random.Range(1f, sigma);
                     float realRng = Random.Range(dispersion * 0.1f, dispersion / rng);

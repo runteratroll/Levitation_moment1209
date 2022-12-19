@@ -170,6 +170,7 @@ MonoBehaviour:
   atkDmg: 10
   atkRange: 70
   atkCoolTime: 1.375
+  atkCoolTimeMinuse: 0
   atkEffectPrefab: {fileID: 2882483428165122443, guid: 09a0c0f178dec7e459a632e425c1788f, type: 3}
   targetLayerMask:
     serializedVersion: 2
@@ -177,6 +178,13 @@ MonoBehaviour:
   audioSource: {fileID: 1788178607411403517}
   particle: {fileID: 0}
   pitch: 0
+  isDamageAround: 0
+  pos:
+  - {fileID: 1401941207613668207}
+  barrel: 1
+  dispersion: 3.5
+  sigma: 1.13
+  rng: 0
 --- !u!114 &7967697036392305377
 MonoBehaviour:
   m_ObjectHideFlags: 0

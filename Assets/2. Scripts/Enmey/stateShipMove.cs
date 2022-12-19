@@ -34,7 +34,15 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
     public override void OnUpdate(float deltaTime)
     {
 
-        stateMachineClass.transform.rotation = rotationColliderCheck.rotShipEnemy();
+        try
+        {
+            stateMachineClass.transform.rotation = rotationColliderCheck.rotShipEnemy();
+        }
+        catch
+        {
+            Debug.LogWarning("rotationCheck스크립트를 붙이세요");
+        }
+     
 
         stateMachineClass.transform.Translate(stateMachineClass.transform.forward * Time.deltaTime  * 10);
 

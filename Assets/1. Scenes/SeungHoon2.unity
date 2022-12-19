@@ -6931,17 +6931,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.28613982, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.2861342, b: 0.50980073, a: 1}
   colorDepth: 0.84
-  horizonColor: {r: 0, g: 0.22731632, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22731072, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3018261, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30182052, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20379391, g: 0.3096692, b: 0.517647, a: 1}
+  underwaterColor: {r: 0.20378861, g: 0.3096636, b: 0.517647, a: 1}
   underwaterColorStrength: 1
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -8456,6 +8456,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2469570572385775386, guid: 30c8a98d5d8dd2b47ba7b2218a9cb655, type: 3}
   m_PrefabInstance: {fileID: 545669483}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &552411770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3932324559441610847, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
+  m_PrefabInstance: {fileID: 1010572384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &552411780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552411770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d7808dd4c4f0f4398b48c2e41e0356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  devComment: 
+  aniMotionIdx: 1
+  importanceAtkNo: 1
+  atkDmg: 1520
+  atkRange: 70
+  atkCoolTime: 1.85
+  atkCoolTimeMinuse: 0
+  atkEffectPrefab: {fileID: 2882483428165122443, guid: 1eee50f92f45a074d838d35b1358c29f, type: 3}
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  audioSource: {fileID: 0}
+  particle: {fileID: 0}
+  pitch: 0
+  isDamageAround: 0
+  pos: []
+  barrel: 0
+  dispersion: 1
+  sigma: 1
+  rng: 0
 --- !u!1001 &554179511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15713,13 +15750,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1126140866363227924, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
+      propertyPath: isDamageAround
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577430119038476177, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
+      propertyPath: dispersion
+      value: 3.8
+      objectReference: {fileID: 0}
     - target: {fileID: 4202255992218222325, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
       propertyPath: m_RootOrder
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4202255992218222325, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 770
       objectReference: {fileID: 0}
     - target: {fileID: 4202255992218222325, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15727,7 +15772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4202255992218222325, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -153
       objectReference: {fileID: 0}
     - target: {fileID: 4202255992218222325, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15757,11 +15802,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4964355636107907533, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
+      propertyPath: attackBehaviours.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8204698708082301011, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
       propertyPath: m_Name
       value: "\uC57C\uB9C8\uD1A0"
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 401753823151294075, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
 --- !u!1001 &1018999634
 PrefabInstance:

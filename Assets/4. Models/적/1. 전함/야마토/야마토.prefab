@@ -737,24 +737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foc: {fileID: 0}
   atkRange: 0
-  attackBehaviours:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  attackBehaviours: []
   maxHp: 100
   hp: 0
   targetLayerMask:

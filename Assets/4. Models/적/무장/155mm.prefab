@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 4155092041089650358}
   - component: {fileID: 219000980165679903}
   - component: {fileID: 6571856730659462926}
-  - component: {fileID: 5336541084118023594}
   - component: {fileID: 4949831621371755989}
+  - component: {fileID: 4449327811603649658}
   m_Layer: 8
   m_Name: 155mm
   m_TagString: Enemy
@@ -38,6 +38,9 @@ Transform:
   m_Children:
   - {fileID: 9057027805881668435}
   - {fileID: 2021514949613681936}
+  - {fileID: 8505164751588419175}
+  - {fileID: 7983867309044263627}
+  - {fileID: 3174962486645728156}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -151,7 +154,37 @@ MonoBehaviour:
   player: {fileID: 0}
   startDeg: 0
   degSec: 3
---- !u!114 &5336541084118023594
+--- !u!114 &4949831621371755989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842348920258264839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 775a366b8b3a07742b1b97f23d2d5a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foc: {fileID: 2021514949613681950}
+  atkRange: 0
+  attackBehaviours:
+  - {fileID: 4449327811603649658}
+  maxHp: 100
+  hp: 0
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  atkItemCollider: {fileID: 0}
+  launchWeaponTransform: {fileID: 9057027805881668435}
+  weaponHitTransform: {fileID: 0}
+  dieDamage: 100
+  fireSmoke: {fileID: 6978197608624937477, guid: c5805c96923164c40a8bfb81fe8d6094, type: 3}
+  colliderSize: 1
+  healthBarScale: {x: 0.00026, y: 0.0002, z: 0.0002}
+  healthBarPosition: {x: 0, y: 0.0002, z: 0}
+  healthBar: {fileID: 7933872996790585587, guid: 16297bb79bfe96741b22ab330953987f, type: 3}
+--- !u!114 &4449327811603649658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +201,8 @@ MonoBehaviour:
   importanceAtkNo: 1
   atkDmg: 10
   atkRange: 70
-  atkCoolTime: 3
+  atkCoolTime: 1.85
+  atkCoolTimeMinuse: 0
   atkEffectPrefab: {fileID: 2882483428165122443, guid: 1eee50f92f45a074d838d35b1358c29f, type: 3}
   targetLayerMask:
     serializedVersion: 2
@@ -176,36 +210,108 @@ MonoBehaviour:
   audioSource: {fileID: 8037099523693229948}
   particle: {fileID: 0}
   pitch: 0
---- !u!114 &4949831621371755989
-MonoBehaviour:
+  isDamageAround: 0
+  pos:
+  - {fileID: 8505164751588419175}
+  - {fileID: 7983867309044263627}
+  - {fileID: 3174962486645728156}
+  barrel: 3
+  dispersion: 4
+  sigma: 1.12
+  rng: 0
+--- !u!1 &3963589983766759685
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842348920258264839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 775a366b8b3a07742b1b97f23d2d5a34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  foc: {fileID: 2021514949613681950}
-  atkRange: 0
-  attackBehaviours:
-  - {fileID: 5336541084118023594}
-  maxHp: 100
-  hp: 0
-  targetLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  atkItemCollider: {fileID: 0}
-  launchWeaponTransform: {fileID: 9057027805881668435}
-  weaponHitTransform: {fileID: 0}
-  dieDamage: 100
-  fireSmoke: {fileID: 6978197608624937477, guid: c5805c96923164c40a8bfb81fe8d6094, type: 3}
-  colliderSize: 1
-  healthBarScale: {x: 0.00026, y: 0.0002, z: 0.0002}
-  healthBarPosition: {x: 0, y: 0.0002, z: 0}
-  healthBar: {fileID: 7933872996790585587, guid: 16297bb79bfe96741b22ab330953987f, type: 3}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8505164751588419175}
+  m_Layer: 8
+  m_Name: pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8505164751588419175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3963589983766759685}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.000171, y: 0, z: 0.000948}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8513329430660539715}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7010523253880400376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7983867309044263627}
+  m_Layer: 8
+  m_Name: pos (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7983867309044263627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7010523253880400376}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.000006, y: 0, z: 0.000948}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8513329430660539715}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7968198304547301279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3174962486645728156}
+  m_Layer: 8
+  m_Name: pos (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3174962486645728156
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7968198304547301279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.000183, y: 0, z: 0.000948}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8513329430660539715}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6573365290188976521
 PrefabInstance:
   m_ObjectHideFlags: 0

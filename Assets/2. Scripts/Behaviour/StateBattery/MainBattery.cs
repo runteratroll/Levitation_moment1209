@@ -17,7 +17,7 @@ public class MainBattery : MonsterFSM_Behaviour
     public GameObject fireSmoke;
 
     public float colliderSize = 100;
-
+    
 
     [Header("Health관련")]
     [SerializeField] private Vector3 healthBarScale;

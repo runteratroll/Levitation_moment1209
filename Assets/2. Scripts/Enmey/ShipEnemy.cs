@@ -22,12 +22,6 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
     //private GameObject coll = null;
 
-    protected void OnEnable()
-    {
-        //워닝사인 표시
-
-
-    }
 
 
 
@@ -60,10 +54,13 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
         //�ڽ��� �޸� ��ü�� �ް��ϴ°�...
     }
-    //�ϴ� ������ ���� ������
 
-   
-  
+
+
+    protected override void Update()
+    {
+        base.Update();
+    }
 
     void GetMaxHpSBattery()
     {

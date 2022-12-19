@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2882483428165122443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -95}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 46, y: 46, z: 46}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -132,6 +132,8 @@ MonoBehaviour:
   ObjProjectileHitEffect: {fileID: 0}
   projectileStartClip: {fileID: 0}
   projectileHitClip: {fileID: 0}
+  isTorpedo: 0
+  TorpedoGravity: 0
   damage: 4232
   attackBehaviour: {fileID: 0}
   projectileParents: {fileID: 0}
