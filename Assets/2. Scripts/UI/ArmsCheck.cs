@@ -12,6 +12,7 @@ public class ArmsCheck : MonoBehaviour
 
     public Image mainArms;
     public Image secondArms;
+    public Image zHotKey;
     void Awake()
     {
         //mainRect = mainArms.rectTransform.position;
@@ -31,6 +32,7 @@ public class ArmsCheck : MonoBehaviour
         if (armsManager == null)
         {
             secondArms.gameObject.SetActive(false);
+            zHotKey.gameObject.SetActive(false);
             // mainArms.rectTransform.position = mainRect;
             // secondArms.rectTransform.position = secondRect;
             mainArms.rectTransform.DOAnchorPos(mainRect, 0.1f).SetEase(Ease.OutSine);
@@ -43,6 +45,7 @@ public class ArmsCheck : MonoBehaviour
         else
         {
             secondArms.gameObject.SetActive(true);
+            zHotKey.gameObject.SetActive(true);
             if (armsManager.armsEnabled)
             {
                 // mainArms.rectTransform.position = mainRect;
