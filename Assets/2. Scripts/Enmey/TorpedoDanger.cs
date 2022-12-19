@@ -19,12 +19,12 @@ public class TorpedoDanger : MonoBehaviour
 
         float Distance = Vector3.Distance(player.transform.position, transform.position);
 
-        if(Distance < 10)
+        if(Distance < 20)
         {
             red.SetActive(true);
             ora.SetActive(false);
         }
-        else if(Distance < 20)
+        else if(Distance < 40)
         {
             red.SetActive(false);
             ora.SetActive(true);

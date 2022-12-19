@@ -30,36 +30,28 @@ public class TorpedoInfo : MonoBehaviour
                 shortDis = Distance;
             }
         }
-       
+        
         torpedo = GameObject.FindGameObjectWithTag("Torpedo").transform;
 
         distance = Vector3.Distance(enemy.transform.position, transform.position);
 
-        if(shortDis < 40)
-        {
-            TimeLow();
-            if(T < 0)
-            {
-                warm.Play();
-                T = 1f;
-            }
-        }
         if(shortDis < 20)
         {
             TimeLow();
             if(T < 0)
             {
-                warm.Play();
-                T = 0.75f;
+                enemy.GetComponent<AudioSource>().Play();
+                //warm.Play();
+                T = 0.5f;
             }
         }
-        if(shortDis < 10)
+        else if(shortDis < 40)
         {
             TimeLow();
             if(T < 0)
             {
-                warm.Play();
-                T = 0.5f;
+                enemy.GetComponent<AudioSource>().Play();
+                T = 1f;
             }
         }
         
