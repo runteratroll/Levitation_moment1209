@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider))]
 [RequireComponent(typeof(stateAtkController))]
 [RequireComponent(typeof(LookAtPlayer))]
-[RequireComponent(typeof(ProjectileTypeAtkBehaviour))]
+
 
 public class MainBattery : MonsterFSM_Behaviour
 {

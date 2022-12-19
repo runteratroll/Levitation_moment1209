@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/1. Scenes/JeongHwan.unity
     guid: 7444301711b2d8d4a85a7d60c43cb6d1
-  - enabled: 0
+  - enabled: 1
     path: Assets/1. Scenes/SeungHoon2.unity
     guid: 61b71675a02daac41aac30d31bb02701
   m_configObjects:
