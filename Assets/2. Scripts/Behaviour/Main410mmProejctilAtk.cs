@@ -27,7 +27,8 @@ public class Main410mmProejctilAtk : CollisionProjectileAtk
         Debug.Log("소환되니?");
         damageObj = Instantiate(damageAround);
 
-        damageObj.transform.position = target.transform.position + Vector3.up * 0.14f; //��ȯ�ǰ�
+        damageObj.transform.position = target.transform.position + Vector3.up * 0.2f; //��ȯ�ǰ�
+        damageObj.transform.localScale = new Vector3(damageObj.transform.localScale.x, 0.01f, damageObj.transform.localScale.z);
 
         //랜덤 레인지 
         range = Random.Range(0, 3000000);

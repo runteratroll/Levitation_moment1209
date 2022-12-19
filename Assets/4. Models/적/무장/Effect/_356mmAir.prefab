@@ -28,9 +28,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3753530267161176618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0.20000005, z: -80}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5.34, y: 0, z: 5.34}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7470046922728153124}
   m_Father: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 2665049049793576129}
   m_Layer: 0
   m_Name: isBulletHit
-  m_TagString: Untagged
+  m_TagString: DamageAround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

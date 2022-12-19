@@ -19,10 +19,7 @@ public class DamageAroundfor : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        Debug.Log("¿ÃπÃ true¥œ?" + isBulletHit);
-    }
+
 
     public void OnTriggerStay(Collider other)
     {

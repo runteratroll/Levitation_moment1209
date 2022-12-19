@@ -402,7 +402,7 @@ Material:
     - _ClearCoatSmoothness: 0
     - _ColorMask: 15
     - _Cull: 0
-    - _CullMode: 1
+    - _CullMode: 0
     - _Cutoff: 0.714
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
