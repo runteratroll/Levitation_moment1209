@@ -169,6 +169,7 @@ MonoBehaviour:
   atkDmg: 10
   atkRange: 70
   atkCoolTime: 1
+  atkCoolTimeMinuse: 0
   atkEffectPrefab: {fileID: 2882483428165122443, guid: 226bdb6777dfbef41a08dbd51f8ac504, type: 3}
   targetLayerMask:
     serializedVersion: 2
@@ -300,11 +301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7775957425049464094, guid: a3d69bf2f76b8354fadfec8f0ce8d9d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000051
+      value: 0.000063
       objectReference: {fileID: 0}
     - target: {fileID: 7775957425049464094, guid: a3d69bf2f76b8354fadfec8f0ce8d9d0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.000603
+      value: 0.00065
       objectReference: {fileID: 0}
     - target: {fileID: 7775957425049464094, guid: a3d69bf2f76b8354fadfec8f0ce8d9d0, type: 3}
       propertyPath: m_LocalRotation.w

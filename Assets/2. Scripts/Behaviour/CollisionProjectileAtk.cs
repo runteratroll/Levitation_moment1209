@@ -13,6 +13,7 @@ public class CollisionProjectileAtk : MonoBehaviour
     protected Rigidbody rigidbody;
 
     public bool isTorpedo = false;
+    public float TorpedoGravity = 0;
 
     public int damage;
     [HideInInspector]
@@ -88,22 +89,24 @@ public class CollisionProjectileAtk : MonoBehaviour
 
     protected virtual void FixedUpdate()
     {
-        if (isTorpedo)
-        {
-            float y = Mathf.Clamp(transform.position.y, -0.2819754f, 10f);
-            transform.position = new Vector3(transform.position.x, y, transform.position.z);
-            transform.localRotation = Quaternion.Euler(transform.localRotation.x, transform.localRotation.y, transform.localRotation.z);
-        }
         if (projectileSpd != 0 && rigidbody != null)
         {
-            rigidbody.position += (transform.forward) * (projectileSpd * Time.deltaTime);
+            transform.position += (transform.forward) * (projectileSpd * Time.deltaTime);
             //transform.Translate(Vector3.forward * Time.deltaTime * projectileSpd);
         }
     }
     //이것도 부모구나 이것도 이제 다르게 하는구나
 
-
-
+    protected void Update()
+    {
+        if (isTorpedo)
+        {
+            float y = Mathf.Clamp(transform.position.y, -0.2819754f, 10f);
+            transform.position = new Vector3(transform.position.x, y, transform.position.z);
+            float rx = Mathf.Clamp(transform.eulerAngles.x, 0f, 0f);
+            transform.rotation = Quaternion.Euler(rx, transform.eulerAngles.y, transform.eulerAngles.z);
+        }
+    }
 
     protected virtual void OnProjectileStartCollision(Collider other)
     {
