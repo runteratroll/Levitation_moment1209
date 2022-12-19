@@ -11,6 +11,7 @@ TagManager:
   - DamageAround
   - Base
   - rotationCheck
+  - Torpedo
   layers:
   - Default
   - TransparentFX
