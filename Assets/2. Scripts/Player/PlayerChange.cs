@@ -13,9 +13,9 @@ public class PlayerChange : MonoBehaviour
     public int ch = 0;
 
     public PlayerHealth[] playerHealths;
-    [Header("ÇÃ·¹ÀÌ¾î Æ÷Áö¼Ç")]
+    [Header("ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")]
     public Transform[] playerPosition;
-    //ÀÚ±âÀÚÃ¼ ÇÏ´Â°Å ¸¸µé¾î¾ß°Ú´Ù.
+    //ï¿½Ú±ï¿½ï¿½ï¿½Ã¼ ï¿½Ï´Â°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ß°Ú´ï¿½.
 
 
     void Start()
@@ -41,7 +41,7 @@ public class PlayerChange : MonoBehaviour
 
     void FollwPosition()
     {
-        if (ch == 0) whoFollw(0, 1, 2); //¹º°¡ ÀÌ°Ô´õ ¾Ë¾Æº¸±â ½±³ª?
+        if (ch == 0) whoFollw(0, 1, 2); //ï¿½ï¿½ï¿½ï¿½ ï¿½Ì°Ô´ï¿½ ï¿½Ë¾Æºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½?
         if (ch == 1) whoFollw(1, 0, 2);
         if (ch == 2) whoFollw(2, 0, 1);
 
@@ -60,7 +60,7 @@ public class PlayerChange : MonoBehaviour
     }
     void Change()
     {
-        //ÇÃ·¹ÀÌ¾î Á×À¸¸é ¹Ù·Î ´Ù¸¥°É·Î ¹Ù²î°Ô
+        //ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù·ï¿½ ï¿½Ù¸ï¿½ï¿½É·ï¿½ ï¿½Ù²ï¿½ï¿½
 
         if (ch == 0 && playerHealths[0].dead)
         {
