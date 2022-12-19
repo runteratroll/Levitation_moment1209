@@ -124,6 +124,7 @@ public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
 
             foreach (AtkBehaviour behaviour in attackBehaviours)
             {
+                
                 //다른 클래스훓다가 
                 if (behaviour.IsAvailable) //공격가능하면 쿨타임
                 {

@@ -35,13 +35,13 @@ public class MainBattery : MonsterFSM_Behaviour
         
         
         hp = maxHp;
-
+        OnAwakeAtkBehaviour();
 
 
         // coll.transform.parent = transform;
         // coll.transform.localScale = new Vector3(colliderSize,colliderSize,colliderSize);
         // coll.transform.localPosition = new Vector3(0,0,0);
-        
+
         // foc = coll.GetComponent<FieldofCollider>();
     }
 
@@ -54,7 +54,7 @@ public class MainBattery : MonsterFSM_Behaviour
         fsmManager.AddStateList(new stateAtkBattery());
         fsmManager.AddStateList(new stateMainBatteryDie( shipEnemy, dieDamage, fireSmoke));
 
-        OnAwakeAtkBehaviour();
+   
 
         atkRange = nowAtkBehaviour?.atkRange ?? 5.0f;
 
