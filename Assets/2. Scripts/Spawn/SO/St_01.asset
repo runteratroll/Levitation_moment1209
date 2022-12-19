@@ -17,11 +17,173 @@ MonoBehaviour:
     - monsterDatas:
       - posID: 0
         enemyID: 0
-  - waveDatas:
+      - posID: 1
+        enemyID: 0
+      - posID: 2
+        enemyID: 0
     - monsterDatas:
       - posID: 0
+        enemyID: 2
+      - posID: 2
+        enemyID: 2
+      - posID: 3
+        enemyID: 0
+      - posID: 5
+        enemyID: 0
+    - monsterDatas:
+      - posID: 1
+        enemyID: 4
+      - posID: 2
+        enemyID: 0
+      - posID: 0
+        enemyID: 0
+      - posID: 3
+        enemyID: 0
+      - posID: 5
         enemyID: 0
   - waveDatas:
     - monsterDatas:
       - posID: 0
         enemyID: 0
+      - posID: 2
+        enemyID: 0
+      - posID: 3
+        enemyID: 0
+      - posID: 5
+        enemyID: 0
+    - monsterDatas:
+      - posID: 1
+        enemyID: 3
+      - posID: 4
+        enemyID: 2
+      - posID: 0
+        enemyID: 0
+      - posID: 2
+        enemyID: 0
+      - posID: 3
+        enemyID: 0
+    - monsterDatas:
+      - posID: 0
+        enemyID: 5
+      - posID: 2
+        enemyID: 5
+      - posID: 3
+        enemyID: 5
+      - posID: 5
+        enemyID: 5
+      - posID: 1
+        enemyID: 0
+      - posID: 4
+        enemyID: 0
+  - waveDatas:
+    - monsterDatas:
+      - posID: 1
+        enemyID: 1
+      - posID: 0
+        enemyID: 0
+      - posID: 3
+        enemyID: 0
+      - posID: 4
+        enemyID: 0
+    - monsterDatas:
+      - posID: 1
+        enemyID: 3
+      - posID: 4
+        enemyID: 2
+      - posID: 2
+        enemyID: 1
+      - posID: 0
+        enemyID: 0
+      - posID: 3
+        enemyID: 0
+    - monsterDatas:
+      - posID: 1
+        enemyID: 6
+      - posID: 4
+        enemyID: 6
+      - posID: 0
+        enemyID: 2
+      - posID: 3
+        enemyID: 0
+      - posID: 2
+        enemyID: 0
+      - posID: 5
+        enemyID: 0
+  - waveDatas:
+    - monsterDatas:
+      - posID: 1
+        enemyID: 1
+      - posID: 0
+        enemyID: 0
+      - posID: 3
+        enemyID: 0
+      - posID: 4
+        enemyID: 0
+      - posID: 5
+        enemyID: 0
+    - monsterDatas:
+      - posID: 1
+        enemyID: 3
+      - posID: 0
+        enemyID: 2
+      - posID: 2
+        enemyID: 2
+      - posID: 4
+        enemyID: 1
+      - posID: 3
+        enemyID: 0
+      - posID: 5
+        enemyID: 0
+    - monsterDatas:
+      - posID: 1
+        enemyID: 7
+      - posID: 0
+        enemyID: 5
+      - posID: 2
+        enemyID: 5
+      - posID: 4
+        enemyID: 2
+      - posID: 3
+        enemyID: 1
+      - posID: 5
+        enemyID: 0
+  - waveDatas:
+    - monsterDatas:
+      - posID: 0
+        enemyID: 1
+      - posID: 1
+        enemyID: 1
+      - posID: 2
+        enemyID: 1
+      - posID: 3
+        enemyID: 0
+      - posID: 4
+        enemyID: 0
+      - posID: 5
+        enemyID: 0
+    - monsterDatas:
+      - posID: 1
+        enemyID: 3
+      - posID: 4
+        enemyID: 3
+      - posID: 0
+        enemyID: 2
+      - posID: 2
+        enemyID: 1
+      - posID: 3
+        enemyID: 1
+      - posID: 5
+        enemyID: 0
+    - monsterDatas:
+      - posID: 1
+        enemyID: 8
+      - posID: 4
+        enemyID: 8
+      - posID: 0
+        enemyID: 6
+      - posID: 3
+        enemyID: 5
+      - posID: 2
+        enemyID: 3
+      - posID: 5
+        enemyID: 1

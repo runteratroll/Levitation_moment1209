@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: -4509560590492044946}
   - component: {fileID: 7710040014916948181}
   m_Layer: 6
-  m_Name: _610mm
+  m_Name: _533mm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -372,7 +372,7 @@ Transform:
   m_GameObject: {fileID: 2882483428165122443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -95}
-  m_LocalScale: {x: 20.333334, y: 20.333334, z: 20.33333}
+  m_LocalScale: {x: 17.766666, y: 17.766666, z: 17.766666}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4528751294038710820}
@@ -478,7 +478,7 @@ MonoBehaviour:
   projectileHitClip: {fileID: 0}
   isTorpedo: 1
   TorpedoGravity: 0
-  damage: 14884
+  damage: 11363
   attackBehaviour: {fileID: 0}
   projectileParents: {fileID: 0}
   target: {fileID: 0}
