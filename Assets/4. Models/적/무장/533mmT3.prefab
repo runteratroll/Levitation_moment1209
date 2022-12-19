@@ -205,7 +205,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 1531029436491531261}
-  maxHp: 100
+  maxHp: 2500
   hp: 0
   targetLayerMask:
     serializedVersion: 2
@@ -213,7 +213,7 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 7970748941218042077}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 100
+  dieDamage: 1250
   fireSmoke: {fileID: 6978197608624937477, guid: c5805c96923164c40a8bfb81fe8d6094, type: 3}
   colliderSize: 1
   healthBarScale: {x: 0.013, y: 0.01, z: 0.01}

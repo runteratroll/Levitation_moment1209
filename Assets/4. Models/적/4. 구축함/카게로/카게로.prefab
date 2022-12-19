@@ -89,8 +89,8 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  shipEnemyHealthBar: {fileID: 0}
-  shipHealth: 100
+  shipEnemyHealthBar: {fileID: 6130363823164763009}
+  shipHealth: 50175
 --- !u!1 &4015365780045103753
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +793,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4015365780039100484}
     m_Modifications:
+    - target: {fileID: 7109526355822468025, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: shipEnemy
+      value: 
+      objectReference: {fileID: 4015365780039100487}
     - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -803,7 +807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 13.58
       objectReference: {fileID: 0}
     - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -841,8 +845,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: pfShipEnemyHelathBar
       objectReference: {fileID: 0}
+    - target: {fileID: 7933872997938353456, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5519.425
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+--- !u!114 &6130363823164763009 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7109526355822468025, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+  m_PrefabInstance: {fileID: 4015365780932096056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee90eec17c625d4aa2ad710700642ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6459207036368533706 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
