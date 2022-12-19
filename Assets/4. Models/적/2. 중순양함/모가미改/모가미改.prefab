@@ -137,6 +137,7 @@ Transform:
   m_Children:
   - {fileID: 7335425200100771375}
   - {fileID: 5144832023408431513}
+  - {fileID: 5670011837841926819}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -163,8 +164,8 @@ MonoBehaviour:
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
-  shipEnemyHealthBar: {fileID: 0}
-  shipHealth: 100
+  shipEnemyHealthBar: {fileID: 4764586582374414824}
+  shipHealth: 166.725
 --- !u!1 &5144832023408431512
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +730,87 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &2356837040896057937
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2565009401724457453}
+    m_Modifications:
+    - target: {fileID: 7109526355822468025, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: shipEnemy
+      value: 
+      objectReference: {fileID: 6844752283810888798}
+    - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 33.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872996790585587, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_Name
+      value: pfShipEnemyHelathBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933872997938353456, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3564.99
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+--- !u!114 &4764586582374414824 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7109526355822468025, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+  m_PrefabInstance: {fileID: 2356837040896057937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee90eec17c625d4aa2ad710700642ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &5670011837841926819 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7933872996790585586, guid: 6d83a22a20a924645ad4c7dda3810ab4, type: 3}
+  m_PrefabInstance: {fileID: 2356837040896057937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5144832023498489532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -882,6 +964,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 999919430861288711, guid: 185d929614f06dd449d449895ba883dc, type: 3}
+      propertyPath: dieDamage
+      value: 4050
+      objectReference: {fileID: 0}
     - target: {fileID: 5537793357380636400, guid: 185d929614f06dd449d449895ba883dc, type: 3}
       propertyPath: m_Name
       value: 203
@@ -987,6 +1073,14 @@ PrefabInstance:
     - target: {fileID: 3757681045988010269, guid: c243f923f4c0af94e8bcfff3f016dad3, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.00000009362675
+      objectReference: {fileID: 0}
+    - target: {fileID: 7003335063349254584, guid: c243f923f4c0af94e8bcfff3f016dad3, type: 3}
+      propertyPath: maxHp
+      value: 8100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7003335063349254584, guid: c243f923f4c0af94e8bcfff3f016dad3, type: 3}
+      propertyPath: dieDamage
+      value: 4050
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c243f923f4c0af94e8bcfff3f016dad3, type: 3}
@@ -1721,6 +1815,14 @@ PrefabInstance:
     - target: {fileID: 1631573321156407690, guid: 5a540fc2eb76867449b2258c77cddd57, type: 3}
       propertyPath: m_Name
       value: 127L
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716131302065593502, guid: 5a540fc2eb76867449b2258c77cddd57, type: 3}
+      propertyPath: maxHp
+      value: 5500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716131302065593502, guid: 5a540fc2eb76867449b2258c77cddd57, type: 3}
+      propertyPath: dieDamage
+      value: 2750
       objectReference: {fileID: 0}
     - target: {fileID: 2971483300261449954, guid: 5a540fc2eb76867449b2258c77cddd57, type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform

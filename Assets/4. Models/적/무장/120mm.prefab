@@ -182,7 +182,7 @@ MonoBehaviour:
   pos:
   - {fileID: 1401941207613668207}
   barrel: 1
-  dispersion: 3.5
+  dispersion: 1.6
   sigma: 1.13
   rng: 0
 --- !u!114 &7967697036392305377

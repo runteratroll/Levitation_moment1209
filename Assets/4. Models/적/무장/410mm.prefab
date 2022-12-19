@@ -169,7 +169,7 @@ MonoBehaviour:
   atkRange: 0
   attackBehaviours:
   - {fileID: 814787455722022445}
-  maxHp: 12.1
+  maxHp: 12100
   hp: 0
   targetLayerMask:
     serializedVersion: 2
