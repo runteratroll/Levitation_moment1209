@@ -203,8 +203,8 @@ MonoBehaviour:
   dieDamage: 1750
   fireSmoke: {fileID: 6978197608624937477, guid: c5805c96923164c40a8bfb81fe8d6094, type: 3}
   colliderSize: 1
-  healthBarScale: {x: 0, y: 0, z: 0}
-  healthBarPosition: {x: 0, y: 0, z: 0}
+  healthBarScale: {x: 0.00013, y: 0.0001, z: 0.0001}
+  healthBarPosition: {x: 0, y: 0.0001, z: 0}
   healthBar: {fileID: 7933872996790585587, guid: 16297bb79bfe96741b22ab330953987f, type: 3}
 --- !u!1001 &3727074545990291963
 PrefabInstance:

@@ -744,17 +744,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.2861501, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.2861477, b: 0.50980073, a: 1}
   colorDepth: 0.84
-  horizonColor: {r: 0, g: 0.2273266, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22732425, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30183637, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30183402, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20380366, g: 0.30967948, b: 0.517647, a: 1}
+  underwaterColor: {r: 0.20380142, g: 0.30967712, b: 0.517647, a: 1}
   underwaterColorStrength: 1
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -2063,7 +2063,7 @@ MonoBehaviour:
   pos:
   - {fileID: 1838280720}
   enemyPrefab:
-  - {fileID: 8204698708082301011, guid: aca532c6f0145eb45a4cc3f46d36db44, type: 3}
+  - {fileID: 2565009401724457454, guid: bca6256e3b763374d9d87f970bfe44f0, type: 3}
   enemyPrefabI:
   - {fileID: 0}
   nextWaveButton: {fileID: 1735382209}
@@ -2815,7 +2815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b4099e61f98aa4997054342e1c7cea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathCount: 0
 --- !u!4 &1546723241
 Transform:
   m_ObjectHideFlags: 0

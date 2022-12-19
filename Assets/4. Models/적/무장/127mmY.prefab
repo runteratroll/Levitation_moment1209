@@ -17,9 +17,9 @@ GameObject:
   - component: {fileID: 3557442965308627584}
   - component: {fileID: 5816395785117703702}
   - component: {fileID: 2306541862821924800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 127mmY
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,6 +37,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8654833696556330422}
+  - {fileID: 5796798600166746397}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -100,7 +101,7 @@ Animator:
   m_GameObject: {fileID: 938912996609944602}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5f669111e4c6c634587f3602d530c6bb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -167,12 +168,12 @@ MonoBehaviour:
   importanceAtkNo: 1
   atkDmg: 10
   atkRange: 70
-  atkCoolTime: 5
-  atkEffectPrefab: {fileID: 0}
+  atkCoolTime: 1.7625
+  atkEffectPrefab: {fileID: 2882483428165122443, guid: a7c6b820c93fb8845971e3c5bd0375f9, type: 3}
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 128
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 2398863295248060415}
   particle: {fileID: 0}
   pitch: 0
 --- !u!114 &2306541862821924800
@@ -187,23 +188,91 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775a366b8b3a07742b1b97f23d2d5a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foc: {fileID: 0}
+  foc: {fileID: 8654833696556330424}
   atkRange: 0
-  attackBehaviours: []
+  attackBehaviours:
+  - {fileID: 5816395785117703702}
   maxHp: 100
   hp: 0
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 128
   atkItemCollider: {fileID: 0}
-  launchWeaponTransform: {fileID: 0}
+  launchWeaponTransform: {fileID: 5796798600166746397}
   weaponHitTransform: {fileID: 0}
-  dieDamage: 0
-  fireSmoke: {fileID: 0}
-  colliderSize: 100
-  healthBarScale: {x: 0, y: 0, z: 0}
-  healthBarPosition: {x: 0, y: 0, z: 0}
-  healthBar: {fileID: 0}
+  dieDamage: 100
+  fireSmoke: {fileID: 6978197608624937477, guid: c5805c96923164c40a8bfb81fe8d6094, type: 3}
+  colliderSize: 1
+  healthBarScale: {x: 0.013, y: 0.01, z: 0.01}
+  healthBarPosition: {x: 0, y: 0.025, z: 0}
+  healthBar: {fileID: 7933872996790585587, guid: 16297bb79bfe96741b22ab330953987f, type: 3}
+--- !u!1001 &2282130811110300489
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5959660230405093011}
+    m_Modifications:
+    - target: {fileID: 3642418419180757093, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_Name
+      value: 127Y_pos
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01127
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.03608
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+--- !u!82 &2398863295248060415 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4531105648973173942, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+  m_PrefabInstance: {fileID: 2282130811110300489}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5796798600166746397 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5753802057788142164, guid: ff5db6027d5a5d04195ed6251bc09c8e, type: 3}
+  m_PrefabInstance: {fileID: 2282130811110300489}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4551081632921542959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282,3 +351,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5130890551562194073, guid: e6f74c46e43afb04da96eb07376fa877, type: 3}
   m_PrefabInstance: {fileID: 4551081632921542959}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8654833696556330424 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5130890551562194071, guid: e6f74c46e43afb04da96eb07376fa877, type: 3}
+  m_PrefabInstance: {fileID: 4551081632921542959}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab591cdedb6f7784e84745ba9b7fc532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
