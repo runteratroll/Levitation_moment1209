@@ -11,7 +11,8 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
     public ShipEnemyHealthBar shipEnemyHealthBar;
 
-
+    public militarybaseHealth militarybase;
+    public float stopRange = 5f;
     //public Transform basePosition;
 
     //[Header("콜라이더매니저 부분")]
@@ -26,6 +27,7 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
     public float shipSpeed = 1f;
 
+    public bool isMove = true;
     public float shipHealth;
     protected override void Start()
     {
@@ -39,12 +41,12 @@ public class ShipEnemy : MonsterFSM_Behaviour
         GetMaxHpSBattery();
         //atkRange = nowAtkBehaviour?.atkRange ?? 5.0f;
         hp = maxHp; // maxHp�� �ڽĵ��� ���� ���ؾߵ�
-        //�� ���Ҷ����� ��ٷ����ϴµ�
+                    //�� ���Ҷ����� ��ٷ����ϴµ�
 
 
+        militarybase = GameObject.FindObjectOfType<militarybaseHealth>();
 
 
-       
 
 
         //Debug.Log("AgnntewrwerewrwVelocity " + agent.velocity);
@@ -60,6 +62,12 @@ public class ShipEnemy : MonsterFSM_Behaviour
     protected override void Update()
     {
         base.Update();
+        float dist = Vector3.Distance(militarybase.transform.position, transform.position);
+
+        if (dist < stopRange)
+        {
+            isMove = false;
+        }
     }
 
     void GetMaxHpSBattery()

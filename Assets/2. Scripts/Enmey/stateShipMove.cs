@@ -12,9 +12,11 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
     private int hashMove = Animator.StringToHash("Move");
     private int hashMoveSpeed = Animator.StringToHash("MoveSpd");
 
+    private ShipEnemy shipEnemy;
 
     private float speed;
 
+    
 
     public stateShipMove(float _shipSpeed)
     {
@@ -23,16 +25,18 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
     private rotationColliderCheck rotationColliderCheck;
     public override void OnAwake()
     {
-
+        shipEnemy = stateMachineClass.GetComponent<ShipEnemy>();
+        //Target = GameObject.FindObjectOfType<militarybaseHealth>().transform;
         //animator = stateMachineClass.GetComponent<Animator>();
-        rotationColliderCheck = stateMachineClass.GetComponentInChildren<rotationColliderCheck>();
+        //agent = stateMachineClass.GetComponent<NavMeshAgent>();
+        rotationColliderCheck = stateMachineClass.GetComponent<rotationColliderCheck>();
     }
 
     public override void OnStart()
     {
         
 
-        //agent?.SetDestination(stateMachineClass.transform.position + stateMachineClass.baseTarget.position);
+        //agent?.SetDestination(Target.position);
         //animator?.SetBool(hashMove, true);
        
     }
@@ -48,9 +52,11 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
         {
             Debug.LogWarning("rotationCheck스크립트를 붙이세요");
         }
-     
 
-        stateMachineClass.transform.Translate(stateMachineClass.transform.forward * Time.deltaTime  * speed);
+
+
+        if (shipEnemy.isMove == true)
+            stateMachineClass.transform.Translate(stateMachineClass.transform.forward * Time.deltaTime * speed);
 
 
 
