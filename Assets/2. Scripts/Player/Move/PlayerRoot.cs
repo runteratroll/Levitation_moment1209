@@ -19,19 +19,26 @@ public class PlayerRoot : MonoBehaviour
     public Vector3 move;
 
 
+  
     void Update()
     {
-        yRotateSize = Input.GetAxis("Mouse X") * turnSpeed;
+        Debug.Log("게임매니저 타임 " + GameManager.GameManagerTime);
+        if(GameManager.GameManagerTime <= 0)
+        {
+
+            return;
+        }
+        yRotateSize = Input.GetAxis("Mouse X") * turnSpeed ;
         yRotate = transform.eulerAngles.y + yRotateSize;
-        xRotateSize = -Input.GetAxis("Mouse Y") * turnSpeed;
+        xRotateSize = -Input.GetAxis("Mouse Y") * turnSpeed ;
         xRotate = Mathf.Clamp(xRotate + xRotateSize, -70, 70);
 
         transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
         camPos.transform.eulerAngles = new Vector3(0, yRotate, 0);
 
         move =
-            camPos.transform.forward * Input.GetAxis("Vertical") +
-            camPos.transform.right * Input.GetAxis("Horizontal");
+            camPos.transform.forward * Input.GetAxis("Vertical")  +
+            camPos.transform.right * Input.GetAxis("Horizontal") ;
 
 
         camPos.transform.position += move * moveSpeed * Time.deltaTime;

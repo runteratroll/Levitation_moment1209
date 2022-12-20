@@ -13,7 +13,10 @@ public class DieDamage : MonoBehaviour
             instance = this;
 
         gameObject.SetActive(false);
-       
+
+
+
+
     }
     public void Retry()
     {

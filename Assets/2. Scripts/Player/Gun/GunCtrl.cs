@@ -36,6 +36,10 @@ public class GunCtrl : MonoBehaviour
     }
     void Update()
     {
+        if (GameManager.GameManagerTime <= 0f)
+        {
+            return;
+        }
         GunTime();
         GunFire();
     }

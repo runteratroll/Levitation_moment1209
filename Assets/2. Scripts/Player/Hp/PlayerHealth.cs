@@ -17,6 +17,8 @@ public class PlayerHealth : LivingEntity
     protected override void Start()
     {
         base.Start();
+
+        GameManager.GameManagerTime = 1f;
     }
 
     private void Update()
@@ -47,7 +49,7 @@ public class PlayerHealth : LivingEntity
                 //æ¿ ¿ÁΩ√¿€
                 DieDamage.instance.RetryPopup();
                 dieCount = 0;
-                
+                GameManager.GameManagerTime = 0f;
 
             }
         }
