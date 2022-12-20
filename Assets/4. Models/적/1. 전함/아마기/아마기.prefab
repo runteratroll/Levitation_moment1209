@@ -231,7 +231,10 @@ GameObject:
   - component: {fileID: 629939214557015562}
   - component: {fileID: 3319773590264517300}
   - component: {fileID: 8264703073852953380}
-  m_Layer: 0
+  - component: {fileID: 5226709426019823335}
+  - component: {fileID: 1969223055513467158}
+  - component: {fileID: 5920770035199990016}
+  m_Layer: 14
   m_Name: "\uC544\uB9C8\uAE30"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,10 +284,10 @@ MonoBehaviour:
   weaponHitTransform: {fileID: 0}
   shipEnemyHealthBar: {fileID: 7386881896801405841}
   militarybase: {fileID: 0}
-  stopRange: 5
   shipSpeed: 1
-  isMove: 1
   shipHealth: 451125
+  isMove: 1
+  rotationSpeed: 0.5
 --- !u!65 &70172958852617840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -376,6 +379,49 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.9606647, y: 6.943695, z: 10.176235}
   m_Center: {x: -0.20918465, y: 22.57563, z: 7.090728}
+--- !u!114 &5226709426019823335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299882448266446204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3c3d5272a2c9a4e8e0d843caeb3d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 0
+  isStop: 0
+--- !u!65 &1969223055513467158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299882448266446204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 36.7, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 83}
+--- !u!54 &5920770035199990016
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299882448266446204}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1456504043750061023
 GameObject:
   m_ObjectHideFlags: 0

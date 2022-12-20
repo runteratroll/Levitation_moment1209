@@ -414,6 +414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3c3d5272a2c9a4e8e0d843caeb3d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 0
+  isStop: 0
 --- !u!54 &5832603428481538892
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1220,16 +1222,16 @@ MonoBehaviour:
   hp: 0
   targetLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
   shipEnemyHealthBar: {fileID: 2174535428067153330}
   militarybase: {fileID: 0}
-  stopRange: 70
-  shipSpeed: 79
-  isMove: 1
+  shipSpeed: 10
   shipHealth: 240075
+  isMove: 1
+  rotationSpeed: 0.5
 --- !u!195 &8251670430148087737
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1422,6 +1424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3c3d5272a2c9a4e8e0d843caeb3d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 0
+  isStop: 0
 --- !u!1 &8483937706726019312
 GameObject:
   m_ObjectHideFlags: 0
