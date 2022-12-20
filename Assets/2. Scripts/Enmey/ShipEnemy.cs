@@ -62,11 +62,7 @@ public class ShipEnemy : MonsterFSM_Behaviour
     protected override void Update()
     {
 
-        if(GameManager.GameManagerTime <= 0f)
-        {
-            return;
-        }
-
+     
         base.Update();
         float dist = Vector3.Distance(militarybase.transform.position, transform.position);
 

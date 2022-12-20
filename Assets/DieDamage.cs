@@ -5,19 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class DieDamage : MonoBehaviour
 {
-    public static DieDamage  instance = null;
 
-    private void Awake()
-    {
-        if (instance == null)
-            instance = this;
-
-        gameObject.SetActive(false);
-
-
-
-
-    }
+  
     public void Retry()
     {
         Debug.Log("다시시작");
@@ -25,8 +14,8 @@ public class DieDamage : MonoBehaviour
     }
 
 
-    public void RetryPopup()
-    {
-        gameObject.SetActive(true);
-    }
+    //public void RetryPopup()
+    //{
+    //    gameObject.SetActive(true);
+    //}
 }

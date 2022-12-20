@@ -7,6 +7,6 @@ public class NextToStart : MonoBehaviour
 {
     public void TouchToStart()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("SeungHoon2");
     }
 }

@@ -1226,8 +1226,8 @@ MonoBehaviour:
   weaponHitTransform: {fileID: 0}
   shipEnemyHealthBar: {fileID: 2174535428067153330}
   militarybase: {fileID: 0}
-  stopRange: 128
-  shipSpeed: 70
+  stopRange: 70
+  shipSpeed: 79
   isMove: 1
   shipHealth: 240075
 --- !u!195 &8251670430148087737

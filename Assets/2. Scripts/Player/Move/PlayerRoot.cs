@@ -22,12 +22,13 @@ public class PlayerRoot : MonoBehaviour
   
     void Update()
     {
-        Debug.Log("게임매니저 타임 " + GameManager.GameManagerTime);
-        if(GameManager.GameManagerTime <= 0)
-        {
+        //Debug.Log("게임매니저 타임 " + GameManager.GameManagerTime);
+        //if(GameManager.GameManagerTime <= 0)
+        //{
 
-            return;
-        }
+        //    return;
+        //}
+
         yRotateSize = Input.GetAxis("Mouse X") * turnSpeed ;
         yRotate = transform.eulerAngles.y + yRotateSize;
         xRotateSize = -Input.GetAxis("Mouse Y") * turnSpeed ;

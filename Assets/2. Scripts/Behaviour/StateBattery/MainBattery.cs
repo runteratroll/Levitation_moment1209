@@ -146,10 +146,7 @@ public class MainBattery : MonsterFSM_Behaviour
     }
     protected override void Update()
     {
-        if (GameManager.GameManagerTime <= 0f)
-        {
-            return;
-        }
+       
         OnCheckAtkBehaviour();
         base.Update();
     }

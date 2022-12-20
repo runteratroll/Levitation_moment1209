@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject player;
 
-    public float gameManagerTime = 1f;
+    //public float gameManagerTime = 1f;
     static public GameObject Player
     {
         get
@@ -27,19 +27,19 @@ public class GameManager : MonoBehaviour
 
     }
 
-    static public float GameManagerTime
-    {
-        get
-        {
-            return instance.gameManagerTime;
-        }
-        set
-        {
-            float v = Mathf.Clamp(value, 0f, 1f);
+    //static public float GameManagerTime
+    //{
+    //    get
+    //    {
+    //        return instance.gameManagerTime;
+    //    }
+    //    set
+    //    {
+    //        float v = Mathf.Clamp(value, 0f, 1f);
 
-            instance.gameManagerTime = v;
-        }
-    }
+    //        instance.gameManagerTime = v;
+    //    }
+    //}
 
     private void Start()
     {

@@ -12,6 +12,8 @@ public class CameraCtrl : MonoBehaviour
 
     void Update()
     {
+
+        
         Zoom();
         QETab();
     }

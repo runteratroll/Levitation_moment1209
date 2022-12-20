@@ -17,9 +17,9 @@ public class militarybaseHealth : LivingEntity {
     {
         dieCount++;
 
-        if(dieCount >= 2)
+        if(dieCount >= 1)
         {
-            SceneManager.LoadScene("SeungHoon2");
+            SceneManager.LoadScene("DieScene");
         }
         //if(BaseManager.Instance != null)
         //{
