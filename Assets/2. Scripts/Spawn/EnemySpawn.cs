@@ -23,6 +23,13 @@ public class EnemySpawn : MonoBehaviour
     private void Update()
     {
         Wavebool();
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(nextWaveButton.activeSelf == true)
+            {
+                WaveRun();
+            }
+        }
     }
 
     /// <summary>

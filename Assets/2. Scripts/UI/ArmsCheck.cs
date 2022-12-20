@@ -33,13 +33,9 @@ public class ArmsCheck : MonoBehaviour
         {
             secondArms.gameObject.SetActive(false);
             zHotKey.gameObject.SetActive(false);
-            // mainArms.rectTransform.position = mainRect;
-            // secondArms.rectTransform.position = secondRect;
             mainArms.rectTransform.DOAnchorPos(mainRect, 0.1f).SetEase(Ease.OutSine);
             secondArms.rectTransform.DOAnchorPos(secondRect, 0.1f).SetEase(Ease.OutSine);
-            //mainArms.rectTransform.sizeDelta = new Vector2(150,150);
-            mainArms.rectTransform.DOSizeDelta(new Vector2(150, 150), 0.1f).SetEase(Ease.OutSine);
-            //secondArms.rectTransform.sizeDelta = new Vector2(100,100);
+            mainArms.rectTransform.DOSizeDelta(new Vector2(125, 125), 0.1f).SetEase(Ease.OutSine);
             secondArms.rectTransform.DOSizeDelta(new Vector2(100, 100), 0.1f).SetEase(Ease.OutSine);
         }
         else
@@ -48,25 +44,17 @@ public class ArmsCheck : MonoBehaviour
             zHotKey.gameObject.SetActive(true);
             if (armsManager.armsEnabled)
             {
-                // mainArms.rectTransform.position = mainRect;
-                // secondArms.rectTransform.position = secondRect;
                 mainArms.rectTransform.DOAnchorPos(mainRect, 0.1f).SetEase(Ease.OutSine);
                 secondArms.rectTransform.DOAnchorPos(secondRect, 0.1f).SetEase(Ease.OutSine);
-                //mainArms.rectTransform.sizeDelta = new Vector2(150,150);
-                mainArms.rectTransform.DOSizeDelta(new Vector2(150, 150), 0.1f).SetEase(Ease.OutSine);
-                //secondArms.rectTransform.sizeDelta = new Vector2(100,100);
+                mainArms.rectTransform.DOSizeDelta(new Vector2(125, 125), 0.1f).SetEase(Ease.OutSine);
                 secondArms.rectTransform.DOSizeDelta(new Vector2(100, 100), 0.1f).SetEase(Ease.OutSine);
             }
             else
             {
-                // mainArms.rectTransform.position = secondRect;
-                // secondArms.rectTransform.position = mainRect;
                 mainArms.rectTransform.DOAnchorPos(secondRect, 0.1f).SetEase(Ease.OutSine);
                 secondArms.rectTransform.DOAnchorPos(mainRect, 0.1f).SetEase(Ease.OutSine);
-                // mainArms.rectTransform.sizeDelta = new Vector2(100,100);
                 mainArms.rectTransform.DOSizeDelta(new Vector2(100, 100), 0.1f).SetEase(Ease.OutSine);
-                // secondArms.rectTransform.sizeDelta = new Vector2(150,150);
-                secondArms.rectTransform.DOSizeDelta(new Vector2(150, 150), 0.1f).SetEase(Ease.OutSine);
+                secondArms.rectTransform.DOSizeDelta(new Vector2(125, 125), 0.1f).SetEase(Ease.OutSine);
             }
         }
     }
