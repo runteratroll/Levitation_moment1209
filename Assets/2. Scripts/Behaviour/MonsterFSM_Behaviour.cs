@@ -38,11 +38,6 @@ public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
         base.Start();
 
 
-
-        fsmManager.AddStateList(new stateMove());
-        fsmManager.AddStateList(new stateAtk());
-        fsmManager.AddStateList(new stateDie());
-
         OnAwakeAtkBehaviour();
 
         atkRange = nowAtkBehaviour?.atkRange ?? 5.0f;
@@ -172,8 +167,9 @@ public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
         }
         else
         {
+            
             //죽은 상태면 stateDie로 상태 전환 
-            fsmManager.ChangeState<stateDie>(); //
+            fsmManager.ChangeState<stateDie>(); 
         }
     }
 

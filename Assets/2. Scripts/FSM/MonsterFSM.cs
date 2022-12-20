@@ -21,10 +21,7 @@ public class MonsterFSM : MonoBehaviour
 
     protected virtual void Start()
     {
-        fsmManager = new StateMachine<MonsterFSM>(this, new stateIdle());
-        fsmManager.AddStateList(new stateMove());
-        fsmManager.AddStateList(new stateAtk());
-        
+   
 
 
     }

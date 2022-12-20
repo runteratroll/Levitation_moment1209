@@ -73,27 +73,7 @@ namespace CodeMonkey.Utils {
         }
 
         // Create a Sprite in the World with Button_Sprite, no parent
-        public static Button_Sprite CreateWorldSpriteButton(string name, Sprite sprite, Vector3 localPosition, Vector3 localScale, int sortingOrder, Color color) {
-            return CreateWorldSpriteButton(null, name, sprite, localPosition, localScale, sortingOrder, color);
-        }
-
-        // Create a Sprite in the World with Button_Sprite
-        public static Button_Sprite CreateWorldSpriteButton(Transform parent, string name, Sprite sprite, Vector3 localPosition, Vector3 localScale, int sortingOrder, Color color) {
-            GameObject gameObject = CreateWorldSprite(parent, name, sprite, localPosition, localScale, sortingOrder, color);
-            gameObject.AddComponent<BoxCollider2D>();
-            Button_Sprite buttonSprite = gameObject.AddComponent<Button_Sprite>();
-            return buttonSprite;
-        }
-
-        // Creates a Text Mesh in the World and constantly updates it
-        public static FunctionUpdater CreateWorldTextUpdater(Func<string> GetTextFunc, Vector3 localPosition, Transform parent = null) {
-            TextMesh textMesh = CreateWorldText(GetTextFunc(), parent, localPosition);
-            return FunctionUpdater.Create(() => {
-                textMesh.text = GetTextFunc();
-                return false;
-            }, "WorldTextUpdater");
-        }
-
+        
         // Create Text in the World
         public static TextMesh CreateWorldText(string text, Transform parent = null, Vector3 localPosition = default(Vector3), int fontSize = 40, Color? color = null, TextAnchor textAnchor = TextAnchor.UpperLeft, TextAlignment textAlignment = TextAlignment.Left, int sortingOrder = sortingOrderDefault) {
             if (color == null) color = Color.white;
@@ -118,35 +98,8 @@ namespace CodeMonkey.Utils {
 
 
         // Create a Text Popup in the World, no parent
-        public static void CreateWorldTextPopup(string text, Vector3 localPosition) {
-            CreateWorldTextPopup(null, text, localPosition, 40, Color.white, localPosition + new Vector3(0, 20), 1f);
-        }
-        
-        // Create a Text Popup in the World
-        public static void CreateWorldTextPopup(Transform parent, string text, Vector3 localPosition, int fontSize, Color color, Vector3 finalPopupPosition, float popupTime) {
-            TextMesh textMesh = CreateWorldText(parent, text, localPosition, fontSize, color, TextAnchor.LowerLeft, TextAlignment.Left, sortingOrderDefault);
-            Transform transform = textMesh.transform;
-            Vector3 moveAmount = (finalPopupPosition - localPosition) / popupTime;
-            FunctionUpdater.Create(delegate () {
-                transform.position += moveAmount * Time.deltaTime;
-                popupTime -= Time.deltaTime;
-                if (popupTime <= 0f) {
-                    UnityEngine.Object.Destroy(transform.gameObject);
-                    return true;
-                } else {
-                    return false;
-                }
-            }, "WorldTextPopup");
-        }
 
-        // Create Text Updater in UI
-        public static FunctionUpdater CreateUITextUpdater(Func<string> GetTextFunc, Vector2 anchoredPosition) {
-            Text text = DrawTextUI(GetTextFunc(), anchoredPosition,  20, GetDefaultFont());
-            return FunctionUpdater.Create(() => {
-                text.text = GetTextFunc();
-                return false;
-            }, "UITextUpdater");
-        }
+    
 
 
         // Draw a UI Sprite
@@ -380,77 +333,8 @@ namespace CodeMonkey.Utils {
 
 
         
-        public static FunctionUpdater CreateMouseDraggingAction(Action<Vector3> onMouseDragging) {
-            return CreateMouseDraggingAction(0, onMouseDragging);
-        }
-
-        public static FunctionUpdater CreateMouseDraggingAction(int mouseButton, Action<Vector3> onMouseDragging) {
-            bool dragging = false;
-            return FunctionUpdater.Create(() => {
-                if (Input.GetMouseButtonDown(mouseButton)) {
-                    dragging = true;
-                }
-                if (Input.GetMouseButtonUp(mouseButton)) {
-                    dragging = false;
-                }
-                if (dragging) {
-                    onMouseDragging(UtilsClass.GetMouseWorldPosition());
-                }
-                return false; 
-            });
-        }
-
-        public static FunctionUpdater CreateMouseClickFromToAction(Action<Vector3, Vector3> onMouseClickFromTo, Action<Vector3, Vector3> onWaitingForToPosition) {
-            return CreateMouseClickFromToAction(0, 1, onMouseClickFromTo, onWaitingForToPosition);
-        }
-
-        public static FunctionUpdater CreateMouseClickFromToAction(int mouseButton, int cancelMouseButton, Action<Vector3, Vector3> onMouseClickFromTo, Action<Vector3, Vector3> onWaitingForToPosition) {
-            int state = 0;
-            Vector3 from = Vector3.zero;
-            return FunctionUpdater.Create(() => {
-                if (state == 1) {
-                    if (onWaitingForToPosition != null) onWaitingForToPosition(from, UtilsClass.GetMouseWorldPosition());
-                }
-                if (state == 1 && Input.GetMouseButtonDown(cancelMouseButton)) {
-                    // Cancel
-                    state = 0;
-                }
-                if (Input.GetMouseButtonDown(mouseButton) && !UtilsClass.IsPointerOverUI()) {
-                    if (state == 0) {
-                        state = 1;
-                        from = UtilsClass.GetMouseWorldPosition();
-                    } else {
-                        state = 0;
-                        onMouseClickFromTo(from, UtilsClass.GetMouseWorldPosition());
-                    }
-                }
-                return false; 
-            });
-        }
-
-        public static FunctionUpdater CreateMouseClickAction(Action<Vector3> onMouseClick) {
-            return CreateMouseClickAction(0, onMouseClick);
-        }
-
-        public static FunctionUpdater CreateMouseClickAction(int mouseButton, Action<Vector3> onMouseClick) {
-            return FunctionUpdater.Create(() => {
-                if (Input.GetMouseButtonDown(mouseButton)) {
-                    onMouseClick(GetWorldPositionFromUI());
-                }
-                return false; 
-            });
-        }
-
-        public static FunctionUpdater CreateKeyCodeAction(KeyCode keyCode, Action onKeyDown) {
-            return FunctionUpdater.Create(() => {
-                if (Input.GetKeyDown(keyCode)) {
-                    onKeyDown();
-                }
-                return false; 
-            });
-        }
-
-        
+    
+      
 
         // Get UI Position from World Position
         public static Vector2 GetWorldUIPosition(Vector3 worldPosition, Transform parent, Camera uiCamera, Camera worldCamera) {
@@ -496,18 +380,6 @@ namespace CodeMonkey.Utils {
             return ray.GetPoint(distance);
         }
 
-
-        // Screen Shake
-        public static void ShakeCamera(float intensity, float timer) {
-            Vector3 lastCameraMovement = Vector3.zero;
-            FunctionUpdater.Create(delegate () {
-                timer -= Time.unscaledDeltaTime;
-                Vector3 randomMovement = new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)).normalized * intensity;
-                Camera.main.transform.position = Camera.main.transform.position - lastCameraMovement + randomMovement;
-                lastCameraMovement = randomMovement;
-                return timer <= 0f;
-            }, "CAMERA_SHAKE");
-        }
 
     }
 
