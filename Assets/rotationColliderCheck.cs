@@ -6,20 +6,20 @@ public class rotationColliderCheck : MonoBehaviour
 {
 
 
-    private ShipEnemy shipEnemy;
+
     //자식을 찾아가지고 
     private Vector3 rotation = Vector3.zero;
-
+   
 
 
     private void Awake()
     {
-        shipEnemy = GetComponentInParent<ShipEnemy>();
+      
     }
     public void Setup(Vector3 _rotValue)
     {
         //rotation = Vector3.zero;
-        rotation = _rotValue;
+        rotation = _rotValue; //50
 
     }
 
@@ -33,7 +33,7 @@ public class rotationColliderCheck : MonoBehaviour
 
         if(rotation == Vector3.zero)
         {
-            return shipEnemy.transform.rotation;
+            return transform.rotation;
         }
         else 
         {
@@ -44,7 +44,7 @@ public class rotationColliderCheck : MonoBehaviour
             Quaternion nextDirect = Quaternion.Euler(rotation);
 
 
-            Quaternion lerpRot = Quaternion.Lerp(shipEnemy.transform.rotation, nextDirect, 0.2f * Time.deltaTime);
+            Quaternion lerpRot = Quaternion.Lerp(transform.rotation, nextDirect, 0.7f * Time.deltaTime );
             //Vector3 shipRot = Quaternion.Euler(shipEnemy.transform.rotation);
 
 

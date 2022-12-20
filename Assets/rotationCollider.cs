@@ -8,16 +8,14 @@ public class rotationCollider : MonoBehaviour
     public Vector3 rotValue;
     //private bool istouch = false;
 
-    GameObject Arrow;
     private void Awake()
     {
-        Arrow = Instantiate(GameAssets.i.ColliderRotationArrow, transform.position, Quaternion.identity);
 
-        Vector3 dir = rotValue - Arrow.transform.position;
+        //Vector3 dir = rotValue - Arrow.transform.position;
+        //이러는 이유가 아마도 180도가 넘어가면 마이너스가 되서 그런거 같에
 
 
-
-       Quaternion look = Quaternion.LookRotation(dir );
+       //Quaternion look = Quaternion.LookRotation(dir );
         //look = 
 
        
@@ -26,7 +24,6 @@ public class rotationCollider : MonoBehaviour
     }
     private void Update()
     {
-        Arrow.transform.rotation = Quaternion.Euler(90f, rotValue.y, rotValue.z);
     }
     private void OnTriggerEnter(Collider other)
     {
