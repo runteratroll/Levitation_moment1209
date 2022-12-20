@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject player;
 
+    public float gameManagerTime;
     static public GameObject Player
     {
         get
