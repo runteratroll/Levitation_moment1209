@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class PlayerRoot : MonoBehaviour
 {
-    public float turnSpeed = 4.0f; // ¸¶¿ì½º È¸Àü ¼Óµµ
-    public float moveSpeed = 4.0f; // ÀÌµ¿ ¼Óµµ
+    public float turnSpeed = 4.0f; // ï¿½ï¿½ï¿½ì½º È¸ï¿½ï¿½ ï¿½Óµï¿½
+    public float moveSpeed = 4.0f; // ï¿½Ìµï¿½ ï¿½Óµï¿½
 
     private float yRotateSize;
     public float yRotate;
     private float xRotateSize;
     public float xRotate;
 
-    public GameObject camPos; // µû¶ó°¥ Ä³¸¯ÅÍ
+    public GameObject camPos; // ï¿½ï¿½ï¿½ï¿½ Ä³ï¿½ï¿½ï¿½ï¿½
 
-    public float heigt = 1.5f; // Ä³¸¯ÅÍ Å°
+    public float heigt = 1.5f; // Ä³ï¿½ï¿½ï¿½ï¿½ Å°
 
     public Vector3 move;
 
@@ -36,6 +36,6 @@ public class PlayerRoot : MonoBehaviour
 
         camPos.transform.position += move * moveSpeed * Time.deltaTime;
 
-        transform.position = new Vector3(camPos.transform.position.x, heigt, camPos.transform.position.z);
+        transform.position = new Vector3(camPos.transform.position.x, camPos.transform.position.y + heigt, camPos.transform.position.z);
     }
 }
