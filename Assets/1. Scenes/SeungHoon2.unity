@@ -2573,6 +2573,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5526471861553395622}
     m_Modifications:
+    - target: {fileID: 4882172803607425968, guid: 69f5d93df0e10304782139fe98478140, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
     - target: {fileID: 4882172803607425970, guid: 69f5d93df0e10304782139fe98478140, type: 3}
       propertyPath: m_Name
       value: PlayerMinimapIcon
@@ -4036,6 +4040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\uB9C8\uC694\uAE30"
       objectReference: {fileID: 0}
+    - target: {fileID: 8431575016857754173, guid: b6a86cb5ba77626469060ee7aa56d8f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6a86cb5ba77626469060ee7aa56d8f1, type: 3}
 --- !u!1001 &258155457
@@ -7068,17 +7076,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.286123, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.28612414, b: 0.50980073, a: 1}
   colorDepth: 0.84
-  horizonColor: {r: 0, g: 0.22729951, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22730064, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3018093, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30181044, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.203778, g: 0.30965242, b: 0.517647, a: 1}
+  underwaterColor: {r: 0.20377907, g: 0.30965355, b: 0.517647, a: 1}
   underwaterColorStrength: 1
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -16206,6 +16214,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5998176574510892086}
     m_Modifications:
+    - target: {fileID: 4882172803607425968, guid: 69f5d93df0e10304782139fe98478140, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
     - target: {fileID: 4882172803607425970, guid: 69f5d93df0e10304782139fe98478140, type: 3}
       propertyPath: m_Name
       value: PlayerMinimapIcon
@@ -25467,7 +25479,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -52064,6 +52076,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8860716288919991639}
     m_Modifications:
+    - target: {fileID: 4882172803607425968, guid: 69f5d93df0e10304782139fe98478140, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
     - target: {fileID: 4882172803607425970, guid: 69f5d93df0e10304782139fe98478140, type: 3}
       propertyPath: m_Name
       value: MinimapIcon
