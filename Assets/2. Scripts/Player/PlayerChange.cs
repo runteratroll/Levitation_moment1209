@@ -13,7 +13,7 @@ public class PlayerChange : MonoBehaviour
     public int ch = 0;
 
     public PlayerHealth[] playerHealths;
-    [Header("�÷��̾� ������")]
+    [Header("플레이어 포지션")]
     public Transform[] playerPosition;
     //�ڱ���ü �ϴ°� �����߰ڴ�.
 
