@@ -5,21 +5,35 @@ using UnityEngine;
 public class rotationCollider : MonoBehaviour
 {
 
-    public Vector3 rotValue;
+    //public Vector3 rotValue;
     //private bool istouch = false;
+
+    public Transform nextPos;
+    public bool isBase = false;
+    public bool isStop = false;
+    public int baseRotation;
+    Vector3 lookDir;
 
     private void Awake()
     {
+
+        if(isBase)
+        {
+            nextPos = FindObjectOfType<militarybaseHealth>().transform;
+        }
 
         //Vector3 dir = rotValue - Arrow.transform.position;
         //이러는 이유가 아마도 180도가 넘어가면 마이너스가 되서 그런거 같에
 
 
-       //Quaternion look = Quaternion.LookRotation(dir );
+        //look = Quaternion.LookRotation(nextPos.transform.position);
         //look = 
 
-       
-      
+
+
+        lookDir = (nextPos.position - transform.position).normalized;
+
+        lookDir.y = 0f;
 
     }
     private void Update()
@@ -39,7 +53,7 @@ public class rotationCollider : MonoBehaviour
             Debug.Log("어떻게 되는거야?");
             rotationColliderCheck rotationCheck = other.GetComponent<rotationColliderCheck>();
 
-            rotationCheck.Setup(rotValue);
+            rotationCheck.Setup(lookDir, baseRotation, isStop);
         }
     
     }

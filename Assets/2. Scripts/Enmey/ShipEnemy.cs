@@ -29,10 +29,13 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
     public bool isMove = true;
     public float shipHealth;
+
+    rotationColliderCheck roCheck;
     protected override void Start()
     {
 
         fsmManager = new StateMachine<MonsterFSM>(this, new stateShipIdle());
+        roCheck = GetComponent<rotationColliderCheck>();
         fsmManager.AddStateList(new stateShipMove(shipSpeed));
         fsmManager.AddStateList(new stateDie());
 
@@ -58,7 +61,8 @@ public class ShipEnemy : MonsterFSM_Behaviour
     }
 
 
-
+    Vector3 vec90 = new Vector3(0f, 90f, 0f);
+    Quaternion To;
     protected override void Update()
     {
 
@@ -66,9 +70,31 @@ public class ShipEnemy : MonsterFSM_Behaviour
         base.Update();
         float dist = Vector3.Distance(militarybase.transform.position, transform.position);
 
-        if (dist < stopRange)
+        if (dist < stopRange || roCheck.isStop)
         {
             isMove = false;
+
+
+            //부모로
+            Quaternion From = transform.rotation;
+           
+
+            switch(roCheck.value) //0에서 2로 만듬
+            {
+                case 0:
+                   To = Quaternion.Euler(0, 57f, 0);
+                    break;
+                case 1:
+                    To = Quaternion.Euler(0, 90f, 0);
+                    break;
+                case 2:
+                    To = Quaternion.Euler(0, 153f, 0);
+                    break;
+            }
+
+
+            transform.rotation = Quaternion.Slerp(From, To, 2f * Time.deltaTime); 
+
         }
         else
         {
