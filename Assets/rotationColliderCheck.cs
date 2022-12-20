@@ -42,11 +42,11 @@ public class rotationColliderCheck : MonoBehaviour
             rotation.z = 0f;
             rotation.x = 0f;
             Quaternion nextDirect = Quaternion.Euler(rotation);
+            //Quaternion
 
 
-            Quaternion lerpRot = Quaternion.Lerp(transform.rotation, nextDirect, 0.7f * Time.deltaTime );
+            Quaternion lerpRot = Quaternion.Lerp(transform.rotation, nextDirect, 0.3f * Time.deltaTime );
             //Vector3 shipRot = Quaternion.Euler(shipEnemy.transform.rotation);
-
 
             lerpRot.z = 0;
             lerpRot.x = 0;
