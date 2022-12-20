@@ -46,7 +46,7 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
 
         try
         {
-            stateMachineClass.transform.rotation = rotationColliderCheck.rotShipEnemy();
+            stateMachineClass.transform.rotation = rotationColliderCheck.rotShipEnemy(); //월드 기준으로 회전
         }
         catch
         {
@@ -56,9 +56,9 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
 
 
         if (shipEnemy.isMove == true)
-            stateMachineClass.transform.Translate(stateMachineClass.transform.forward * Time.deltaTime * speed);
+            stateMachineClass.transform.Translate( stateMachineClass.transform.forward * Time.deltaTime * speed);
 
-
+    
 
 
     }

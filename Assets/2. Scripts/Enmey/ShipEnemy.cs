@@ -68,6 +68,10 @@ public class ShipEnemy : MonsterFSM_Behaviour
         {
             isMove = false;
         }
+        else
+        {
+            isMove = true;
+        }
     }
 
     void GetMaxHpSBattery()
