@@ -187,7 +187,7 @@ MonoBehaviour:
   - {fileID: 6682021029655191719}
   - {fileID: 5239196119403626319}
   barrel: 4
-  dispersion: 1
+  dispersion: 10
   sigma: 1
   rng: 0
 --- !u!114 &5828114325969803742

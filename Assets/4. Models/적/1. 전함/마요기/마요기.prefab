@@ -1222,6 +1222,7 @@ MonoBehaviour:
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
   shipEnemyHealthBar: {fileID: 2174535428067153330}
+  shipSpeed: 1
   shipHealth: 240075
 --- !u!195 &8251670430148087737
 NavMeshAgent:
@@ -1308,8 +1309,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 11.67, z: 5}
-  m_Center: {x: 0, y: 13.6, z: 0}
+  m_Size: {x: 5, y: 12.46923, z: 5}
+  m_Center: {x: 0, y: 13.200386, z: 0}
 --- !u!65 &8251670430148087731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1321,8 +1322,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 11.67, z: 5}
-  m_Center: {x: 0, y: 13.6, z: 18}
+  m_Size: {x: 5, y: 12.464704, z: 5}
+  m_Center: {x: 0, y: 13.20265, z: 18}
 --- !u!65 &8251670430148087732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1334,8 +1335,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 24.93, z: 11}
-  m_Center: {x: 0, y: 19.6, z: 35.48}
+  m_Size: {x: 10, y: 25.062595, z: 11}
+  m_Center: {x: 0, y: 19.533705, z: 35.48}
 --- !u!65 &8251670430148087733
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1347,8 +1348,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 7.7, z: 3.53}
-  m_Center: {x: 0, y: 11, z: 43.05}
+  m_Size: {x: 5, y: 7.865742, z: 3.5299988}
+  m_Center: {x: 0, y: 10.9171295, z: 43.05}
 --- !u!65 &8251670430148087734
 BoxCollider:
   m_ObjectHideFlags: 0
