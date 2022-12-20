@@ -24,14 +24,14 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
 
 
-
+    public float shipSpeed = 1f;
 
     public float shipHealth;
     protected override void Start()
     {
 
         fsmManager = new StateMachine<MonsterFSM>(this, new stateShipIdle());
-        fsmManager.AddStateList(new stateShipMove());
+        fsmManager.AddStateList(new stateShipMove(shipSpeed));
         fsmManager.AddStateList(new stateDie());
 
         //감지되면 모든포의 target이 baseTarget됨

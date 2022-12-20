@@ -13,7 +13,13 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
     private int hashMoveSpeed = Animator.StringToHash("MoveSpd");
 
 
+    private float speed;
 
+
+    public stateShipMove(float _shipSpeed)
+    {
+        speed = _shipSpeed;
+    }
     private rotationColliderCheck rotationColliderCheck;
     public override void OnAwake()
     {
@@ -44,7 +50,7 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
         }
      
 
-        stateMachineClass.transform.Translate(stateMachineClass.transform.forward * Time.deltaTime  * 10);
+        stateMachineClass.transform.Translate(stateMachineClass.transform.forward * Time.deltaTime  * speed);
 
 
 
