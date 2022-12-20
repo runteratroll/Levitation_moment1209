@@ -12,7 +12,7 @@ public class ShipEnemy : MonsterFSM_Behaviour
     public ShipEnemyHealthBar shipEnemyHealthBar;
 
     public militarybaseHealth militarybase;
-    public float stopRange = 5f;
+    //public float stopRange = 5f;
     //public Transform basePosition;
 
     //[Header("콜라이더매니저 부분")]
@@ -27,9 +27,14 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
     public float shipSpeed = 1f;
 
-    public bool isMove = true;
     public float shipHealth;
 
+    [Header("콜라이더체크관련")]
+    public bool isMove = true;
+   
+
+    [Range(0f, 1f)]
+    public float rotationSpeed = 0.5f;
     rotationColliderCheck roCheck;
     protected override void Start()
     {
@@ -68,9 +73,9 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
      
         base.Update();
-        float dist = Vector3.Distance(militarybase.transform.position, transform.position);
+        //float dist = Vector3.Distance(militarybase.transform.position, transform.position);
 
-        if (dist < stopRange || roCheck.isStop)
+        if (roCheck.isStop)
         {
             isMove = false;
 
@@ -93,7 +98,7 @@ public class ShipEnemy : MonsterFSM_Behaviour
             }
 
 
-            transform.rotation = Quaternion.Slerp(From, To, 2f * Time.deltaTime); 
+            transform.rotation = Quaternion.Slerp(From, To, 0.5f * Time.deltaTime); 
 
         }
         else
