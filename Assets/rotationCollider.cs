@@ -53,7 +53,7 @@ public class rotationCollider : MonoBehaviour
             Debug.Log("어떻게 되는거야?");
             rotationColliderCheck rotationCheck = other.GetComponent<rotationColliderCheck>();
 
-            rotationCheck.Setup(lookDir, baseRotation);
+            rotationCheck.Setup(lookDir, baseRotation, isStop);
         }
     
     }
