@@ -18,7 +18,7 @@ public class PlayerSerachCamera : MonoBehaviour
 
     void SerachPlayer()
     {
-        VirtualCamera.Follow = GameObject.FindGameObjectWithTag("CamRoot").transform;
-        VirtualCamera.LookAt = GameObject.FindGameObjectWithTag("CamRoot").transform;
+        VirtualCamera.Follow = GameObject.FindGameObjectWithTag("root").transform;
+        VirtualCamera.LookAt = GameObject.FindGameObjectWithTag("root").transform;
     }
 }
