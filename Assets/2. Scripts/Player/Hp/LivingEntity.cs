@@ -5,7 +5,7 @@ using UnityEngine;
 public class LivingEntity : MonoBehaviour, IDmgAble
 {
     
-    [SerializeField] public int maxHealth;
+    public int maxHealth;
     
     
     //HealthSystem healthSystem;
@@ -19,6 +19,8 @@ public class LivingEntity : MonoBehaviour, IDmgAble
 
     protected virtual void Start()
     {
+      
+
         currentHealth = (int)hpBar.maxHp;
         
     }

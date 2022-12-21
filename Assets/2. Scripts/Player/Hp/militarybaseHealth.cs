@@ -9,15 +9,28 @@ public class militarybaseHealth : LivingEntity {
     static int dieCount;
 
 
+    private BoxCollider boxCollider;
+    protected override void Start()
+    {
+        currentHealth = maxHealth;
+        
+
+    }
     private void Awake()
     {
         dieCount = 0;
+        boxCollider = GetComponent<BoxCollider>();
     }
     public override void Die()
     {
+        if (dead == true)
+            return;
+
+        dead = true;
+        boxCollider.enabled = false;
         dieCount++;
 
-        if(dieCount >= 1)
+        if(dieCount >= 3)
         {
             SceneManager.LoadScene("DieScene");
         }
@@ -44,9 +57,12 @@ public class militarybaseHealth : LivingEntity {
 
         //안 죽었다면, 현재 hp에서 데미지를 차감 해준다 
         currentHealth -= dmg;
-        hpBar.hp -= (float)dmg; //내가 참조하고 있는 HpBar에 Hp를 줄인다. 
         //healthSystem.Damage(dmg);
 
+        if(currentHealth <= 0)
+        {
+            currentHealth = 0;
+        }
 
 
         //if (atkEffectPrefab)

@@ -41,7 +41,7 @@ public class rotationColliderCheck : MonoBehaviour
             
           
 
-            return Quaternion.Lerp(from, to, Time.deltaTime); //로테이션값이 없다면 자기 회전값을 사용하고, 있다면 설정한  로테이션값을 줌
+            return Quaternion.Lerp(from, to, Time.deltaTime * 5f); //로테이션값이 없다면 자기 회전값을 사용하고, 있다면 설정한  로테이션값을 줌
         }
 
        

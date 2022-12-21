@@ -32,7 +32,7 @@ public class FieldofCollider : MonoBehaviour
 
         if (other.CompareTag("Base"))
         {
-
+            Debug.Log("베이스 찾음");
             target = null;
             target = other.transform;
 

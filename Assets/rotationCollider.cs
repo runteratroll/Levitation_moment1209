@@ -29,11 +29,8 @@ public class rotationCollider : MonoBehaviour
         //look = Quaternion.LookRotation(nextPos.transform.position);
         //look = 
 
-
-
-        lookDir = (nextPos.position - transform.position).normalized;
-
-        lookDir.y = 0f;
+ 
+     
 
     }
     private void Update()
@@ -51,6 +48,15 @@ public class rotationCollider : MonoBehaviour
         {
             //istouch = true;
             Debug.Log("어떻게 되는거야?");
+
+
+            if (nextPos != null)
+            {
+                lookDir = (nextPos.position - other.gameObject.transform.position).normalized;
+
+                lookDir.y = 0f;
+            }
+
             rotationColliderCheck rotationCheck = other.GetComponent<rotationColliderCheck>();
 
             rotationCheck.Setup(lookDir, baseRotation, isStop);

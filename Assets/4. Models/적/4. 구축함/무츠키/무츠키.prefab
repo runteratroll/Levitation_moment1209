@@ -558,7 +558,7 @@ MonoBehaviour:
   hp: 0
   targetLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   atkItemCollider: {fileID: 0}
   launchWeaponTransform: {fileID: 0}
   weaponHitTransform: {fileID: 0}
@@ -683,7 +683,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 13.6, y: 1, z: 1}
+  m_Size: {x: 24.83, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 37.66}
 --- !u!54 &7161453863077746381
 Rigidbody:
@@ -1241,6 +1241,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3452727167400739725}
     m_Modifications:
+    - target: {fileID: 1531029436491531261, guid: eea9da4eed0dabe43b0bd8a966f1c408, type: 3}
+      propertyPath: atkCoolTime
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1934455597470305828, guid: eea9da4eed0dabe43b0bd8a966f1c408, type: 3}
       propertyPath: m_RootOrder
       value: 4
