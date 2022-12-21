@@ -300,7 +300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5933616871506074891}
   - component: {fileID: 1965313031839845780}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,6 +870,7 @@ GameObject:
   - component: {fileID: 1408387209133491117}
   - component: {fileID: 6968958922905898372}
   - component: {fileID: 650946702766011184}
+  - component: {fileID: 644975747604253605}
   m_Layer: 8
   m_Name: "\uC57C\uB9C8\uD1A0"
   m_TagString: Untagged
@@ -926,6 +927,7 @@ MonoBehaviour:
   shipHealth: 261450
   isMove: 1
   rotationSpeed: 0.111
+  dist: 0
 --- !u!65 &3044409765036398190
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1069,6 +1071,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.37, y: 6.4634027, z: 6.1219482}
   m_Center: {x: 0, y: 10.016237, z: -48.999878}
+--- !u!114 &644975747604253605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8204698708082301011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d49d1bdf6a4f646a3ab695c0b4775c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9151377752420496045
 GameObject:
   m_ObjectHideFlags: 0

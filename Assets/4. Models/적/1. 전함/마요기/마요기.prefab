@@ -622,7 +622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3641014466953831537}
   - component: {fileID: 8431575016857754173}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1307,6 +1307,7 @@ MonoBehaviour:
   shipHealth: 240075
   isMove: 1
   rotationSpeed: 0.165
+  dist: 0
 --- !u!195 &8251670430148087737
 NavMeshAgent:
   m_ObjectHideFlags: 0

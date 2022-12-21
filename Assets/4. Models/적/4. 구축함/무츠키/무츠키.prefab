@@ -504,7 +504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2829344530488598608}
   - component: {fileID: 8092780368808000039}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,6 +654,7 @@ MonoBehaviour:
   shipHealth: 58770
   isMove: 1
   rotationSpeed: 0.5
+  dist: 0
 --- !u!65 &1747272133465794710
 BoxCollider:
   m_ObjectHideFlags: 0

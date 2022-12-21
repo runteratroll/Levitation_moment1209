@@ -231,6 +231,7 @@ GameObject:
   - component: {fileID: 629939214557015562}
   - component: {fileID: 3319773590264517300}
   - component: {fileID: 8264703073852953380}
+  - component: {fileID: 8278952869278882965}
   m_Layer: 8
   m_Name: "\uC544\uB9C8\uAE30"
   m_TagString: Untagged
@@ -287,6 +288,7 @@ MonoBehaviour:
   shipHealth: 451125
   isMove: 1
   rotationSpeed: 0.235
+  dist: 0
 --- !u!65 &70172958852617840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -378,6 +380,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.9606647, y: 6.943695, z: 10.176235}
   m_Center: {x: -0.20918465, y: 22.57563, z: 7.090728}
+--- !u!114 &8278952869278882965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299882448266446204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d49d1bdf6a4f646a3ab695c0b4775c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1456504043750061023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +1081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2331290646317056937}
   - component: {fileID: 8083371269784953765}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Img
   m_TagString: Untagged
   m_Icon: {fileID: 0}

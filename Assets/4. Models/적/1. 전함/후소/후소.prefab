@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8788616447042571568}
   - component: {fileID: 2273636751467914181}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,6 +493,7 @@ GameObject:
   - component: {fileID: 3565554555120757497}
   - component: {fileID: 4445667710970849365}
   - component: {fileID: 1529413076603969749}
+  - component: {fileID: 8290941979912094664}
   m_Layer: 8
   m_Name: "\uD6C4\uC18C"
   m_TagString: Untagged
@@ -549,6 +550,7 @@ MonoBehaviour:
   shipHealth: 406350
   isMove: 1
   rotationSpeed: 0.262
+  dist: 0
 --- !u!65 &8157912910518140598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -705,6 +707,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.739384, y: 24.205467, z: 9.213169}
   m_Center: {x: -0.09672189, y: 28.81129, z: 28.615736}
+--- !u!114 &8290941979912094664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4163206765086167756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d49d1bdf6a4f646a3ab695c0b4775c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6941754897988062756
 GameObject:
   m_ObjectHideFlags: 0

@@ -106,6 +106,7 @@ MonoBehaviour:
   shipHealth: 50175
   isMove: 1
   rotationSpeed: 0.5
+  dist: 0
 --- !u!65 &5484931552286946013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -698,7 +699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7995109121981090985}
   - component: {fileID: 8516742469854625593}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: Img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
