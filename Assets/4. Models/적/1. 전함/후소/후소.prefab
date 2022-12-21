@@ -546,7 +546,7 @@ MonoBehaviour:
   weaponHitTransform: {fileID: 0}
   shipEnemyHealthBar: {fileID: 7940081672969991918}
   militarybase: {fileID: 0}
-  shipSpeed: 1
+  shipSpeed: 12.25
   shipHealth: 406350
   isMove: 1
   rotationSpeed: 0.262
