@@ -10,10 +10,15 @@ public class militarybaseHealth : LivingEntity {
 
 
     private BoxCollider boxCollider;
+    public ParticleSystem ExplosionBase;
+
+    private SpriteRenderer spriteRenderer;
     protected override void Start()
     {
         currentHealth = maxHealth;
-        
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+
 
     }
     private void Awake()
@@ -25,15 +30,18 @@ public class militarybaseHealth : LivingEntity {
     {
         if (dead == true)
             return;
-
+        spriteRenderer.enabled = false;
         dead = true;
         boxCollider.enabled = false;
         dieCount++;
 
-        if(dieCount >= 3)
-        {
-            SceneManager.LoadScene("DieScene");
-        }
+        ExplosionBase.Play();
+
+
+
+
+
+        Invoke("ExplodeDelay", 3f);
         //if(BaseManager.Instance != null)
         //{
         //    BaseManager.Instance.MilitaryBaseCheck(this);
@@ -44,6 +52,14 @@ public class militarybaseHealth : LivingEntity {
         //    BaseManager.Instance?.MilitaryBaseCheck(this);
         //}
         
+    }
+
+    void ExplodeDelay()
+    {
+        if (dieCount >= 3)
+        {
+            SceneManager.LoadScene("DieScene");
+        }
     }
 
     public override void setDmg(int dmg, GameObject prefabEffect)
