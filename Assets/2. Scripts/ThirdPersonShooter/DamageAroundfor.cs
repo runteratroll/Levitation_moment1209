@@ -12,10 +12,12 @@ public class DamageAroundfor : MonoBehaviour
     {
         isBulletHit = false;
     }
-    public void DamageBulletHit(int _damage, bool _isBulletHit)
+    private GameObject bullet;
+    public void DamageBulletHit(int _damage, bool _isBulletHit , GameObject _gameObject = null)
     {
         damage = _damage;
         isBulletHit = _isBulletHit;
+        bullet = _gameObject;
 
     }
 
@@ -50,6 +52,7 @@ public class DamageAroundfor : MonoBehaviour
                 
             }
 
+            Destroy(bullet);
             Destroy(gameObject);
 
         }

@@ -209,6 +209,8 @@ public class CollisionProjectileAtk : MonoBehaviour
 
         yield return new WaitForSeconds(waittingTime);
 
+
+        Debug.Log("총알 삭제 안되는거 같은데");
         Destroy(gameObject);
     }
 }

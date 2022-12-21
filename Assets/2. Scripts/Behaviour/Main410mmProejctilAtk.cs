@@ -113,7 +113,7 @@ public class Main410mmProejctilAtk : CollisionProjectileAtk
             {
 
                 DamageAroundfor damageAroundfor = damageObj?.GetComponent<DamageAroundfor>();
-                damageAroundfor.DamageBulletHit(damage, true);
+                damageAroundfor.DamageBulletHit(damage, true , gameObject);
             }
 
 

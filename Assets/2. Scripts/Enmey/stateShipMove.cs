@@ -29,7 +29,7 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
         //Target = GameObject.FindObjectOfType<militarybaseHealth>().transform;
         //animator = stateMachineClass.GetComponent<Animator>();
         //agent = stateMachineClass.GetComponent<NavMeshAgent>();
-        rotationColliderCheck = stateMachineClass.GetComponent<rotationColliderCheck>();
+        rotationColliderCheck = stateMachineClass.GetComponentInChildren<rotationColliderCheck>();
     }
 
     public override void OnStart()
@@ -57,7 +57,7 @@ public class stateShipMove : State<MonsterFSM> //������ ��FSM�
 
 
         if (shipEnemy.isMove == true)
-            stateMachineClass.transform.Translate(Vector3.forward * Time.deltaTime * speed * 50); //로컬로 변환해주나?
+            stateMachineClass.transform.Translate(Vector3.forward * Time.deltaTime * speed * 1); //로컬로 변환해주나?
             
     
 

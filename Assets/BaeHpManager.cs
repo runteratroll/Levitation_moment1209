@@ -29,6 +29,11 @@ public class BaeHpManager : MonoBehaviour
         currentTotalMaxHp = 0;
         for (int i = 0; i < militaryBase.Length; i++)
         {
+            if(militaryBase[i].currentHealth <= 0)
+            {
+                militaryBase[i].currentHealth = 0;
+            }
+
             currentTotalMaxHp += militaryBase[i].currentHealth;
 
         }

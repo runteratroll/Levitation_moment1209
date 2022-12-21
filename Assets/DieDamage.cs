@@ -10,7 +10,7 @@ public class DieDamage : MonoBehaviour
     public void Retry()
     {
         Debug.Log("다시시작");
-        SceneManager.LoadScene("SeungHoon2");
+        SceneManager.LoadScene("FinalGame");
     }
 
 

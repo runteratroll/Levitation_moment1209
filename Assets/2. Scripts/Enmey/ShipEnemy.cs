@@ -40,7 +40,7 @@ public class ShipEnemy : MonsterFSM_Behaviour
     {
 
         fsmManager = new StateMachine<MonsterFSM>(this, new stateShipIdle());
-        roCheck = GetComponent<rotationColliderCheck>();
+        roCheck = GetComponentInChildren<rotationColliderCheck>();
         fsmManager.AddStateList(new stateShipMove(shipSpeed));
         fsmManager.AddStateList(new stateDie());
 
