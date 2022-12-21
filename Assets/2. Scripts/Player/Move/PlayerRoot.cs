@@ -13,6 +13,7 @@ public class PlayerRoot : MonoBehaviour
     public float xRotate;
 
     public GameObject camPos; // ���� ĳ����
+    public GameObject gunPos;
 
     public float heigt = 1.5f; // ĳ���� Ű
 
@@ -22,6 +23,8 @@ public class PlayerRoot : MonoBehaviour
   
     void Update()
     {
+        camPos = FindObjectOfType<PlayerHealth>().gameObject;
+        gunPos = FindObjectOfType<TorpedoInfo>().gameObject;
         //Debug.Log("게임매니저 타임 " + GameManager.GameManagerTime);
         //if(GameManager.GameManagerTime <= 0)
         //{
@@ -36,14 +39,14 @@ public class PlayerRoot : MonoBehaviour
 
         transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
         camPos.transform.eulerAngles = new Vector3(0, yRotate, 0);
-
+        gunPos.transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
         move =
             camPos.transform.forward * Input.GetAxis("Vertical")  +
             camPos.transform.right * Input.GetAxis("Horizontal") ;
 
 
-        camPos.transform.position += move * moveSpeed * Time.deltaTime;
+        transform.position += move * moveSpeed * Time.deltaTime;
 
-        transform.position = new Vector3(camPos.transform.position.x, camPos.transform.position.y + heigt, camPos.transform.position.z);
+        camPos.transform.position = new Vector3(transform.position.x, transform.position.y + heigt, transform.position.z);
     }
 }

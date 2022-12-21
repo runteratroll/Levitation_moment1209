@@ -12,6 +12,7 @@ TagManager:
   - Base
   - rotationCheck
   - Torpedo
+  - root
   layers:
   - Default
   - TransparentFX

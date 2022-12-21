@@ -16,7 +16,7 @@ public class TorpedoInfo : MonoBehaviour
         
 
         FoundObjects = new List<GameObject>(GameObject.FindGameObjectsWithTag("Torpedo"));
-        if(FoundObjects[0] != null)
+        if(FoundObjects != null)
         {
             shortDis = Vector3.Distance(gameObject.transform.position, FoundObjects[0].transform.position); // 첫번째를 기준으로 잡아주기 
 

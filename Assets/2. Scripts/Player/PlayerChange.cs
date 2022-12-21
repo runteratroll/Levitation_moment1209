@@ -36,32 +36,9 @@ public class PlayerChange : MonoBehaviour
     {
         
         Change();
-        FollwPosition();
-    }
-
-
-    void FollwPosition()
-    {
-        if (ch == 0) whoFollw(0, 1, 2); //���� �̰Դ� �˾ƺ��� ����?
-        if (ch == 1) whoFollw(1, 0, 2);
-        if (ch == 2) whoFollw(2, 0, 1);
-
-
-    }
-
-    void whoFollw(int idx, int n1, int n2)
-    {
-        virtualCamera.transform.rotation = Quaternion.Euler(virtualCamera.transform.rotation.x, playerPosition[n1].transform.rotation.y,virtualCamera.transform.rotation.z);
-        playerPosition[n1].transform.position = playerPosition[idx].transform.position;
-        playerPosition[n2].transform.position = playerPosition[idx].transform.position;
-
-        playerPosition[n1].transform.rotation = playerPosition[idx].transform.rotation;
-        playerPosition[n2].transform.rotation = playerPosition[idx].transform.rotation;
-
     }
     void Change()
     {
-        //�÷��̾� ������ �ٷ� �ٸ��ɷ� �ٲ��
 
         if (ch == 0 && playerHealths[0].dead)
         {
@@ -127,7 +104,6 @@ public class PlayerChange : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha3) && ch != 2 && playerHealths[2].dead == false || (ch == 2 && playerHealths[2].dead == false))
         {
-
             player[0].SetActive(false);
             player[1].SetActive(false);
             player[2].SetActive(true);
