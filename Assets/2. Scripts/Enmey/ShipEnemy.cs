@@ -62,9 +62,37 @@ public class ShipEnemy : MonsterFSM_Behaviour
         healthSystem = new HealthSystem(maxHp);
         shipEnemyHealthBar?.Setup(healthSystem);
 
+        //findShipArrow();
+
         //�ڽ��� �޸� ��ü�� �ް��ϴ°�...
     }
 
+    public float dist;
+    private Transform player;
+    public void findShipArrow()
+    {
+        GameObject arrow =  Instantiate( GameAssets.i.findShipEnemy);
+        player = GameManager.Player;
+        arrow.transform.position = new Vector3(player.position.x , player.position.y, player.position.z + dist);
+
+        //Vector3 dir = new Vector3(-90f, )
+
+        Vector3 dir = transform.position - player.position;
+
+        
+        Quaternion y = Quaternion.LookRotation(dir);
+
+        y.x = -90f;
+        arrow.transform.rotation = y;
+
+
+        arrow.transform.parent = player.transform;
+
+
+
+
+
+    }
 
     Vector3 vec90 = new Vector3(0f, 90f, 0f);
     Quaternion To;

@@ -47,3 +47,4 @@ MonoBehaviour:
   pfDamagePopup: {fileID: 2920174026715650587, guid: 1edbf91b65f72de4da8537e8e62f71e0, type: 3}
   WaringSign: {fileID: 156554082825299545, guid: ee87f173c94abf7498e541f59c340673, type: 3}
   ColliderRotationArrow: {fileID: 804121805939604200, guid: 955a8f956e2c53b469d473925d8f52f4, type: 3}
+  findShipEnemy: {fileID: 4574277070383540151, guid: f251158321d383c439d5e8387a2dc1d9, type: 3}

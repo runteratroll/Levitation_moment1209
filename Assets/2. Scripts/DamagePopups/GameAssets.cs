@@ -21,4 +21,5 @@ public class GameAssets : MonoBehaviour
     public Transform pfDamagePopup;
     public Canvas WaringSign;
     public GameObject ColliderRotationArrow;
+    public GameObject findShipEnemy;
 }
