@@ -290,6 +290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 127_pos
       objectReference: {fileID: 0}
+    - target: {fileID: 6273878218086071271, guid: b25d4cf9fa6be1242acb0ce961ebf9d9, type: 3}
+      propertyPath: m_Volume
+      value: 0.627
+      objectReference: {fileID: 0}
     - target: {fileID: 6680274339019512437, guid: b25d4cf9fa6be1242acb0ce961ebf9d9, type: 3}
       propertyPath: m_RootOrder
       value: 0

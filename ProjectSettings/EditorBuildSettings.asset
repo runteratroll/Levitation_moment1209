@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/1. Scenes/Start.unity
     guid: f86e4ad81cb0ed74e9024ba33ba05433
   - enabled: 1
-    path: Assets/1. Scenes/DieScene.unity
-    guid: a02e5381b2020ef46bfbc51e04f7e6dd
-  - enabled: 1
     path: Assets/1. Scenes/FinalGame.unity
     guid: a26db399f9072a64da754875756a392c
+  - enabled: 1
+    path: Assets/1. Scenes/DieScene.unity
+    guid: a02e5381b2020ef46bfbc51e04f7e6dd
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 72973d6bc5d370c498662e87e6720735, type: 2}
