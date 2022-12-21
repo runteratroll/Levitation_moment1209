@@ -32,6 +32,7 @@ public class BulletMove : MonoBehaviour
             iDmgAble.setDmg(realDam, null); //atk ������ �� �ʿ����?
             DamagePopup.Create(other.transform.position, realDam, false);
 
+            Debug.Log("삭제되니?");
             Destroy(gameObject);
             //for문으로 
             //�׷��� �÷��̾�� MonsterFsm�� attackBehaviour�� �����ݾ� �׷��� �׷��� 0�̴ϱ� �ȹٲ�ſ���

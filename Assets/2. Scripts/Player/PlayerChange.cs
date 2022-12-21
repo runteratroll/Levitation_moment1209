@@ -24,6 +24,7 @@ public class PlayerChange : MonoBehaviour
         player[2].SetActive(false);
         player[0].SetActive(true);
 
+        ch = 4;
         //playerHealths[0] = player[0].GetComponent<PlayerHealth>(); 
         //playerHealths[1] = player[1].transform.GetChild(1).GetComponent<PlayerHealth>();
         //playerHealths[2] = player[2].transform.GetChild(1).GetComponent<PlayerHealth>();
@@ -108,7 +109,7 @@ public class PlayerChange : MonoBehaviour
             player[1].SetActive(false);
             player[2].SetActive(false);
             player[0].SetActive(true);
-
+            Debug.Log("테스트");
 
 
             ch = 0;
@@ -135,6 +136,6 @@ public class PlayerChange : MonoBehaviour
         }
 
 
-
+        ch = 4;
     }
 }

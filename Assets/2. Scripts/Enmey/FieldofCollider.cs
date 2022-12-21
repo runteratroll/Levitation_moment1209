@@ -26,49 +26,59 @@ public class FieldofCollider : MonoBehaviour
         lookAtPlayer = transform.parent.GetComponentInParent<LookAtPlayer>();
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-      
-
         if (other.CompareTag("Base"))
         {
             Debug.Log("베이스 찾음");
-            target = null;
+            //target = null;
             target = other.transform;
 
+            isBase = true;
+        }
+
+    }
+
+    bool isBase = false;
+    private void OnTriggerStay(Collider other)
+    {
+        if (isBase == true)
+        {
             return;
         }
-
-
-        if (other.CompareTag("Player"))
-        {
-
-            //�Ƹ��� taret�� �ִ� �ٷ� ������ϱ� �׷��žƴұ�?
-            target = other.transform;
-
-            if(lookAtPlayer != null)
+            if (other.CompareTag("Player"))
             {
-                lookAtPlayer.LookPlayer();
+
+
+                //�Ƹ��� taret�� �ִ� �ٷ� ������ϱ� �׷��žƴұ�?
+                target = other.transform;
+
+                if (lookAtPlayer != null)
+                {
+                    lookAtPlayer.LookPlayer();
+                }
+
+
+
+
+
+                //���⿡ ��� �ڵ�
+                //������ ��� �ڵ� 
+                //������ �ߴٴ� �� �˸��� �ڵ� 
+                // �������� ����Ʈ�� ������ �� �ϴ� �ڵ�, 
+                //�Ѿ˱���ü�� �߻��ڵ� ��� �ڵ� �ֱ�
+                // �׸��� ��Ÿ�Ӹ��� ��� �ڵ� ����� TIme.time�ϱ�
+                //��Ÿ�Ӿ����� ������ �̰� ���� �Լ�ȭ ��Ű�� ���� ������? 
+                //FUncitonTImer�ϸ� ������ �̰� �ݺ��ϸ� �Ǳ��ϴµ�, ��� ���������� ���� ������ ������
             }
-   
-
-
-
-
-            //���⿡ ��� �ڵ�
-            //������ ��� �ڵ� 
-            //������ �ߴٴ� �� �˸��� �ڵ� 
-            // �������� ����Ʈ�� ������ �� �ϴ� �ڵ�, 
-            //�Ѿ˱���ü�� �߻��ڵ� ��� �ڵ� �ֱ�
-            // �׸��� ��Ÿ�Ӹ��� ��� �ڵ� ����� TIme.time�ϱ�
-            //��Ÿ�Ӿ����� ������ �̰� ���� �Լ�ȭ ��Ű�� ���� ������? 
-            //FUncitonTImer�ϸ� ������ �̰� �ݺ��ϸ� �Ǳ��ϴµ�, ��� ���������� ���� ������ ������
         }
-       
-    }
 
     private void OnTriggerExit(Collider other)
     {
-        target = null;
+        //target = null;
     }
-}
+
+
+        
+       
+    }

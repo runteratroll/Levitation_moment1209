@@ -20,16 +20,18 @@ public class BaeHpManager : MonoBehaviour
 
         }
         currentTotalMaxHp = totalMaxHp;
+
         hpbar.maxHp = totalMaxHp;
+        hpbar.hp = totalMaxHp;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DmgHealth()
     {
+        Debug.Log("´Ù´Ï?");
         currentTotalMaxHp = 0;
         for (int i = 0; i < militaryBase.Length; i++)
         {
-            if(militaryBase[i].currentHealth <= 0)
+            if (militaryBase[i].currentHealth <= 0)
             {
                 militaryBase[i].currentHealth = 0;
             }
@@ -39,6 +41,7 @@ public class BaeHpManager : MonoBehaviour
         }
 
         hpbar.hp = currentTotalMaxHp;
-
     }
+
+
 }

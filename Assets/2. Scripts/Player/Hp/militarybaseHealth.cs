@@ -13,6 +13,8 @@ public class militarybaseHealth : LivingEntity {
     public ParticleSystem ExplosionBase;
 
     private SpriteRenderer spriteRenderer;
+
+    public BaeHpManager hpManager;
     protected override void Start()
     {
         currentHealth = maxHealth;
@@ -25,6 +27,8 @@ public class militarybaseHealth : LivingEntity {
     {
         dieCount = 0;
         boxCollider = GetComponent<BoxCollider>();
+
+        //hpManager = FindObjectOfType<BaeHpManager>();
     }
     public override void Die()
     {
@@ -71,6 +75,8 @@ public class militarybaseHealth : LivingEntity {
             return;
         }
 
+
+
         //안 죽었다면, 현재 hp에서 데미지를 차감 해준다 
         currentHealth -= dmg;
         //healthSystem.Damage(dmg);
@@ -80,6 +86,7 @@ public class militarybaseHealth : LivingEntity {
             currentHealth = 0;
         }
 
+        hpManager.DmgHealth();
 
         //if (atkEffectPrefab)
         //{

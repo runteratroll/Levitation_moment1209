@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1346857079530410115}
   - component: {fileID: 8352354834915682306}
   - component: {fileID: 4140483073087217187}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: RotationCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

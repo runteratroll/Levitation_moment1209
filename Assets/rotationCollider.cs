@@ -33,9 +33,6 @@ public class rotationCollider : MonoBehaviour
      
 
     }
-    private void Update()
-    {
-    }
     private void OnTriggerEnter(Collider other)
     {
 
