@@ -23,6 +23,7 @@ public class LivingEntity : MonoBehaviour, IDmgAble
 
         currentHealth = (int)hpBar.maxHp;
         
+        
     }
 
     //3���� ������ �ٽý���

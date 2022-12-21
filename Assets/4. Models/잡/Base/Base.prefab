@@ -197,11 +197,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ef21938c505d748adf5f66c8f39614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000000
+  maxHealth: 500000
   currentHealth: 0
   dead: 0
   hpBar: {fileID: 0}
   ExplosionBase: {fileID: 5558361938668477929}
+  hpManager: {fileID: 0}
 --- !u!54 &6441625840811964447
 Rigidbody:
   m_ObjectHideFlags: 0
