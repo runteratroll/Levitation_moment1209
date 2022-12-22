@@ -85,7 +85,6 @@ public class EnemySpawn : MonoBehaviour
         {
             for (int i = 0; i < spawanData.stageDatas[stageWave].waveDatas[wave].monsterDatas.Length; i++)
             {
-                Debug.Log(i);
                 PosSpawn(
                     spawanData.stageDatas[stageWave].waveDatas[wave].monsterDatas[i].posID,
                     spawanData.stageDatas[stageWave].waveDatas[wave].monsterDatas[i].enemyID

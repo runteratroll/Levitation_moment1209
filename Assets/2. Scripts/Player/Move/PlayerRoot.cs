@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,11 +12,10 @@ public class PlayerRoot : MonoBehaviour
     private float xRotateSize;
     public float xRotate;
 
-    public GameObject camPos; // ���� ĳ����
+    public GameObject camPos;
     public GameObject gunPos;
 
-    public float heigt = 1.5f; // ĳ���� Ű
-
+    public float heigt = 1.5f;
     public Vector3 move;
 
 
@@ -25,12 +24,6 @@ public class PlayerRoot : MonoBehaviour
     {
         camPos = FindObjectOfType<PlayerHealth>().gameObject;
         gunPos = FindObjectOfType<TorpedoInfo>().gameObject;
-        //Debug.Log("게임매니저 타임 " + GameManager.GameManagerTime);
-        //if(GameManager.GameManagerTime <= 0)
-        //{
-
-        //    return;
-        //}
 
         yRotateSize = Input.GetAxis("Mouse X") * turnSpeed ;
         yRotate = transform.eulerAngles.y + yRotateSize;

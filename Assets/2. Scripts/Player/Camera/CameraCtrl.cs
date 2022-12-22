@@ -26,8 +26,6 @@ public class CameraCtrl : MonoBehaviour
 
     void QETab()
     {
-        
-
         if (qeBool)
         {
             if (Input.GetKeyDown(KeyCode.F))

@@ -28,14 +28,11 @@ public class BulletMove : MonoBehaviour
 
         if (iDmgAble != null)
         {
-            //Debug.Log("���� ������");
-            iDmgAble.setDmg(realDam, null); //atk ������ �� �ʿ����?
+            iDmgAble.setDmg(realDam, null);
             DamagePopup.Create(other.transform.position, realDam, false);
 
             Debug.Log("삭제되니?");
             Destroy(gameObject);
-            //for문으로 
-            //�׷��� �÷��̾�� MonsterFsm�� attackBehaviour�� �����ݾ� �׷��� �׷��� 0�̴ϱ� �ȹٲ�ſ���
         }
 
     }
@@ -45,10 +42,9 @@ public class BulletMove : MonoBehaviour
         if(other.CompareTag("Player"))
         return;
 
-
-        
         Debug.Log("OntriggerEnter Bullet");
         OnProjectileStartCollision(other);
 
     }
 }
+

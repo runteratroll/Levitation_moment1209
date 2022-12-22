@@ -12,7 +12,7 @@ public class stateIdleBattery : State<MonsterFSM>
     public override void OnAwake()
     {
         animator = stateMachineClass.GetComponent<Animator>();
-        //¾Ö´Ï¸ÞÀÌÅÍ ¹®Á¦? ÇÏÁö¸¸ applay root motionÇß´Ù°í
+        //ï¿½Ö´Ï¸ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½? ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ applay root motionï¿½ß´Ù°ï¿½
     }
 
     public override void OnStart()
@@ -25,7 +25,6 @@ public class stateIdleBattery : State<MonsterFSM>
     public override void OnUpdate(float deltaTime)
     {
 
-        Debug.Log("stateMachineClass.target = " + stateMachineClass.target);
         if (stateMachineClass.target )
         {
 
@@ -33,7 +32,7 @@ public class stateIdleBattery : State<MonsterFSM>
             Debug.Log(stateMachineClass.getFlagAtk);
             if (stateMachineClass.getFlagAtk )
             {
-                Debug.Log("°ø°Ý°ø°Ý");
+                Debug.Log("ï¿½ï¿½ï¿½Ý°ï¿½ï¿½ï¿½");
                 stateMachine.ChangeState<stateAtkBattery>();
             }
           

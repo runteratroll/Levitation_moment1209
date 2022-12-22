@@ -24,7 +24,7 @@ public class PlayerChange : MonoBehaviour
         player[2].SetActive(false);
         player[0].SetActive(true);
 
-        playerSelectFrame.Select(ch);
+        //playerSelectFrame.Select(ch);
     }
 
     void Update()

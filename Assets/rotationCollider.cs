@@ -23,7 +23,7 @@ public class rotationCollider : MonoBehaviour
         }
 
         //Vector3 dir = rotValue - Arrow.transform.position;
-        //ÀÌ·¯´Â ÀÌÀ¯°¡ ¾Æ¸¶µµ 180µµ°¡ ³Ñ¾î°¡¸é ¸¶ÀÌ³Ê½º°¡ µÇ¼­ ±×·±°Å °°¿¡
+        //ï¿½Ì·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ¸ï¿½ï¿½ï¿½ 180ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½ ï¿½ï¿½ï¿½Ì³Ê½ï¿½ï¿½ï¿½ ï¿½Ç¼ï¿½ ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 
         //look = Quaternion.LookRotation(nextPos.transform.position);
@@ -38,13 +38,12 @@ public class rotationCollider : MonoBehaviour
 
         //if(other.CompareTag("rotationCheck"))
         //{
-        //    Debug.Log("¾î¶»°Ô µÇ´Â°Å¾ß?");
+        //    Debug.Log("ï¿½î¶»ï¿½ï¿½ ï¿½Ç´Â°Å¾ï¿½?");
         //}
-        //Debug.Log("¾î¶»°Ô µÇ´Â°Å¾ß?");
+        //Debug.Log("ï¿½î¶»ï¿½ï¿½ ï¿½Ç´Â°Å¾ï¿½?");
         if (other.gameObject.layer == LayerMask.NameToLayer("rotationColliderCheck"))
         {
             //istouch = true;
-            Debug.Log("¾î¶»°Ô µÇ´Â°Å¾ß?");
 
 
             if (nextPos != null)
