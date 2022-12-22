@@ -30,14 +30,5 @@ public class PlayerInput : MonoBehaviour
         {
             torpedo.fillAmount = torpedoCtrl.reload / torpedoCtrl.randomReloadTime;
         }
-        // if (gunCtrl.reload >= gunCtrl.reloadTime)
-        // {
-        //     fire.fillAmount = 1;
-        // }
-
-        // if (fullBurst.reload < fullBurst.reloadTime)
-        // {
-        //     burst.fillAmount = 1;
-        // }
     }
 }

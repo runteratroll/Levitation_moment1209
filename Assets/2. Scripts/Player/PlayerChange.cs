@@ -24,10 +24,6 @@ public class PlayerChange : MonoBehaviour
         player[2].SetActive(false);
         player[0].SetActive(true);
 
-        //playerHealths[0] = player[0].GetComponent<PlayerHealth>(); 
-        //playerHealths[1] = player[1].transform.GetChild(1).GetComponent<PlayerHealth>();
-        //playerHealths[2] = player[2].transform.GetChild(1).GetComponent<PlayerHealth>();
-
         playerSelectFrame.Select(ch);
     }
 
@@ -78,23 +74,14 @@ public class PlayerChange : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1) && ch != 0 && playerHealths[0].dead == false || (ch == 0 && playerHealths[0].dead == false))
         {
-
-
-
-
             player[1].SetActive(false);
             player[2].SetActive(false);
             player[0].SetActive(true);
-            Debug.Log("테스트");
-
-
             ch = 0;
             playerSelectFrame.Select(ch);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && ch != 1 && playerHealths[1].dead == false || (ch == 1 && playerHealths[1].dead == false))
         {
-
-
             player[0].SetActive(false);
             player[2].SetActive(false);
             player[1].SetActive(true);
@@ -109,7 +96,5 @@ public class PlayerChange : MonoBehaviour
             ch = 2;
             playerSelectFrame.Select(ch);
         }
-
-
     }
 }

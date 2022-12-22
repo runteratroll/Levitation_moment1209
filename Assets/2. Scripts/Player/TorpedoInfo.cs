@@ -44,6 +44,7 @@ public class TorpedoInfo : MonoBehaviour
             TimeLow();
             if(T < 0)
             {
+                Debug.Log("a");
                 enemy.GetComponent<AudioSource>().Play();
                 //warm.Play();
                 T = 0.5f;
@@ -54,6 +55,7 @@ public class TorpedoInfo : MonoBehaviour
             TimeLow();
             if(T < 0)
             {
+                Debug.Log("b");
                 enemy.GetComponent<AudioSource>().Play();
                 T = 1f;
             }
