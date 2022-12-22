@@ -23,7 +23,7 @@ public class PlayerRoot : MonoBehaviour
     void Update()
     {
         camPos = FindObjectOfType<PlayerHealth>().gameObject;
-        gunPos = FindObjectOfType<TorpedoInfo>().gameObject;
+        gunPos = FindObjectOfType<GunPosIn>().gameObject;
 
         yRotateSize = Input.GetAxis("Mouse X") * turnSpeed ;
         yRotate = transform.eulerAngles.y + yRotateSize;
