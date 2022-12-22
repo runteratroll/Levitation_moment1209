@@ -11,9 +11,15 @@ public class ShipEnemyHealthBar : MonoBehaviour
     private Transform tran;
     private Transform tranChild;
     private Transform background;
+
+
+    private void Awake()
+    {
+        
+    }
     private void Start()
     {
-        InvokeRepeating("UpdateHealthBar", 0, 0.01f); //0���� 0.1�ʸ��� ����
+
         tran = transform.Find("Bar").transform;
         tranChild = tran.Find("sprite").transform;
         background = transform.Find("Background").transform;
@@ -23,6 +29,8 @@ public class ShipEnemyHealthBar : MonoBehaviour
         //1300이면 그 반에 / 
         tran.transform.localPosition = new Vector3(v, 0, 0);
         tranChild.transform.localPosition = new Vector3(-v, 0, 0);
+
+        InvokeRepeating("UpdateHealthBar", 0, 0.01f); //0���� 0.1�ʸ��� ����
     }
     public void Setup(HealthSystem healthSystem)
     {
